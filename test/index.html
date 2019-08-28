@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<body>
+	<script>
+		Function.prototype.myCall = function (context = window, ...rest) {
+			context.fn = this
+			context.fn(...rest)
+			delete context.fn
+		}
+
+		var name = 'Jeden'
+
+		function co(aaa) {
+			console.log(this.name, aaa)
+		}
+
+		let obj = {
+			name: 'Zhan'
+		}
+
+		co.myCall(obj, '1234')
+	</script>
+</body>
+
+</html>
