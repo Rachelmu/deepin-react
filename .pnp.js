@@ -82,7 +82,7 @@ function blacklistCheck(locator) {
         `A package has been resolved through a blacklisted path - this is usually caused by one of your tools calling`,
         `"realpath" on the return value of "require.resolve". Since the returned values use symlinks to disambiguate`,
         `peer dependencies, they must be passed untransformed to "require".`,
-      ].join(` `),
+      ].join(` `)
     );
   }
 
@@ -154,6 +154,30 @@ let packageInformationStores = new Map([
         ["loose-envify", "1.4.0"],
         ["object-assign", "4.1.1"],
         ["scheduler", "0.15.0"],
+      ]),
+    }],
+  ])],
+  ["vue", new Map([
+    ["2.6.10", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-2.6.10-a72b1a42a4d82a721ea438d1b6bf55e66195c637/node_modules/vue/"),
+      packageDependencies: new Map([
+        ["vue", "2.6.10"],
+      ]),
+    }],
+  ])],
+  ["vue-router", new Map([
+    ["3.1.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-router-3.1.2-2e0904703545dabdd42b2b7a2e617f02f99a1969/node_modules/vue-router/"),
+      packageDependencies: new Map([
+        ["vue-router", "3.1.2"],
+      ]),
+    }],
+  ])],
+  ["vuex", new Map([
+    ["3.1.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vuex-3.1.1-0c264bfe30cdbccf96ab9db3177d211828a5910e/node_modules/vuex/"),
+      packageDependencies: new Map([
+        ["vuex", "3.1.1"],
       ]),
     }],
   ])],
@@ -656,6 +680,28 @@ let packageInformationStores = new Map([
         ["@babel/traverse", "7.5.5"],
         ["@babel/types", "7.5.5"],
         ["@babel/helper-replace-supers", "7.5.5"],
+      ]),
+    }],
+  ])],
+  ["@babel/plugin-proposal-decorators", new Map([
+    ["7.4.4", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-@babel-plugin-proposal-decorators-7.4.4-de9b2a1a8ab0196f378e2a82f10b6e2a36f21cc0/node_modules/@babel/plugin-proposal-decorators/"),
+      packageDependencies: new Map([
+        ["@babel/core", "7.5.5"],
+        ["@babel/helper-create-class-features-plugin", "pnp:3564fbcb07a2dcc7aa8dfbe963eaa50a0c7b4a60"],
+        ["@babel/helper-plugin-utils", "7.0.0"],
+        ["@babel/plugin-syntax-decorators", "7.2.0"],
+        ["@babel/plugin-proposal-decorators", "7.4.4"],
+      ]),
+    }],
+  ])],
+  ["@babel/plugin-syntax-decorators", new Map([
+    ["7.2.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-@babel-plugin-syntax-decorators-7.2.0-c50b1b957dcc69e4b1127b65e1c33eef61570c1b/node_modules/@babel/plugin-syntax-decorators/"),
+      packageDependencies: new Map([
+        ["@babel/core", "7.5.5"],
+        ["@babel/helper-plugin-utils", "7.0.0"],
+        ["@babel/plugin-syntax-decorators", "7.2.0"],
       ]),
     }],
   ])],
@@ -1805,6 +1851,12 @@ let packageInformationStores = new Map([
         ["cssesc", "3.0.0"],
       ]),
     }],
+    ["2.0.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-cssesc-2.0.0-3b13bd1bb1cb36e1bcb5a4dcd27f54c5dcb35703/node_modules/cssesc/"),
+      packageDependencies: new Map([
+        ["cssesc", "2.0.0"],
+      ]),
+    }],
   ])],
   ["icss-utils", new Map([
     ["4.1.1", {
@@ -1870,6 +1922,15 @@ let packageInformationStores = new Map([
         ["indexes-of", "1.0.1"],
         ["uniq", "1.0.1"],
         ["postcss-selector-parser", "6.0.2"],
+      ]),
+    }],
+    ["5.0.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-postcss-selector-parser-5.0.0-249044356697b33b64f1a8f7c80922dddee7195c/node_modules/postcss-selector-parser/"),
+      packageDependencies: new Map([
+        ["cssesc", "2.0.0"],
+        ["indexes-of", "1.0.1"],
+        ["uniq", "1.0.1"],
+        ["postcss-selector-parser", "5.0.0"],
       ]),
     }],
   ])],
@@ -2957,6 +3018,145 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-when-3.6.4-473b517ec159e2b85005497a13983f095412e34e/node_modules/when/"),
       packageDependencies: new Map([
         ["when", "3.6.4"],
+      ]),
+    }],
+  ])],
+  ["vue-loader", new Map([
+    ["15.7.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-loader-15.7.1-6ccacd4122aa80f69baaac08ff295a62e3aefcfd/node_modules/vue-loader/"),
+      packageDependencies: new Map([
+        ["css-loader", "3.2.0"],
+        ["webpack", "4.39.3"],
+        ["@vue/component-compiler-utils", "3.0.0"],
+        ["hash-sum", "1.0.2"],
+        ["loader-utils", "1.2.3"],
+        ["vue-hot-reload-api", "2.3.3"],
+        ["vue-style-loader", "4.1.2"],
+        ["vue-loader", "15.7.1"],
+      ]),
+    }],
+  ])],
+  ["@vue/component-compiler-utils", new Map([
+    ["3.0.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-@vue-component-compiler-utils-3.0.0-d16fa26b836c06df5baaeb45f3d80afc47e35634/node_modules/@vue/component-compiler-utils/"),
+      packageDependencies: new Map([
+        ["consolidate", "0.15.1"],
+        ["hash-sum", "1.0.2"],
+        ["lru-cache", "4.1.5"],
+        ["merge-source-map", "1.1.0"],
+        ["postcss", "7.0.17"],
+        ["postcss-selector-parser", "5.0.0"],
+        ["prettier", "1.16.3"],
+        ["source-map", "0.6.1"],
+        ["vue-template-es2015-compiler", "1.9.1"],
+        ["@vue/component-compiler-utils", "3.0.0"],
+      ]),
+    }],
+  ])],
+  ["consolidate", new Map([
+    ["0.15.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-consolidate-0.15.1-21ab043235c71a07d45d9aad98593b0dba56bab7/node_modules/consolidate/"),
+      packageDependencies: new Map([
+        ["bluebird", "3.5.5"],
+        ["consolidate", "0.15.1"],
+      ]),
+    }],
+  ])],
+  ["bluebird", new Map([
+    ["3.5.5", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-bluebird-3.5.5-a8d0afd73251effbbd5fe384a77d73003c17a71f/node_modules/bluebird/"),
+      packageDependencies: new Map([
+        ["bluebird", "3.5.5"],
+      ]),
+    }],
+  ])],
+  ["hash-sum", new Map([
+    ["1.0.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-hash-sum-1.0.2-33b40777754c6432573c120cc3808bbd10d47f04/node_modules/hash-sum/"),
+      packageDependencies: new Map([
+        ["hash-sum", "1.0.2"],
+      ]),
+    }],
+  ])],
+  ["lru-cache", new Map([
+    ["4.1.5", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-lru-cache-4.1.5-8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd/node_modules/lru-cache/"),
+      packageDependencies: new Map([
+        ["pseudomap", "1.0.2"],
+        ["yallist", "2.1.2"],
+        ["lru-cache", "4.1.5"],
+      ]),
+    }],
+    ["5.1.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-lru-cache-5.1.1-1da27e6710271947695daf6848e847f01d84b920/node_modules/lru-cache/"),
+      packageDependencies: new Map([
+        ["yallist", "3.0.3"],
+        ["lru-cache", "5.1.1"],
+      ]),
+    }],
+  ])],
+  ["pseudomap", new Map([
+    ["1.0.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-pseudomap-1.0.2-f052a28da70e618917ef0a8ac34c1ae5a68286b3/node_modules/pseudomap/"),
+      packageDependencies: new Map([
+        ["pseudomap", "1.0.2"],
+      ]),
+    }],
+  ])],
+  ["yallist", new Map([
+    ["2.1.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-yallist-2.1.2-1c11f9218f076089a47dd512f93c6699a6a81d52/node_modules/yallist/"),
+      packageDependencies: new Map([
+        ["yallist", "2.1.2"],
+      ]),
+    }],
+    ["3.0.3", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-yallist-3.0.3-b4b049e314be545e3ce802236d6cd22cd91c3de9/node_modules/yallist/"),
+      packageDependencies: new Map([
+        ["yallist", "3.0.3"],
+      ]),
+    }],
+  ])],
+  ["merge-source-map", new Map([
+    ["1.1.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-merge-source-map-1.1.0-2fdde7e6020939f70906a68f2d7ae685e4c8c646/node_modules/merge-source-map/"),
+      packageDependencies: new Map([
+        ["source-map", "0.6.1"],
+        ["merge-source-map", "1.1.0"],
+      ]),
+    }],
+  ])],
+  ["prettier", new Map([
+    ["1.16.3", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-prettier-1.16.3-8c62168453badef702f34b45b6ee899574a6a65d/node_modules/prettier/"),
+      packageDependencies: new Map([
+        ["prettier", "1.16.3"],
+      ]),
+    }],
+  ])],
+  ["vue-template-es2015-compiler", new Map([
+    ["1.9.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-template-es2015-compiler-1.9.1-1ee3bc9a16ecbf5118be334bb15f9c46f82f5825/node_modules/vue-template-es2015-compiler/"),
+      packageDependencies: new Map([
+        ["vue-template-es2015-compiler", "1.9.1"],
+      ]),
+    }],
+  ])],
+  ["vue-hot-reload-api", new Map([
+    ["2.3.3", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-hot-reload-api-2.3.3-2756f46cb3258054c5f4723de8ae7e87302a1ccf/node_modules/vue-hot-reload-api/"),
+      packageDependencies: new Map([
+        ["vue-hot-reload-api", "2.3.3"],
+      ]),
+    }],
+  ])],
+  ["vue-style-loader", new Map([
+    ["4.1.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-style-loader-4.1.2-dedf349806f25ceb4e64f3ad7c0a44fba735fcf8/node_modules/vue-style-loader/"),
+      packageDependencies: new Map([
+        ["hash-sum", "1.0.2"],
+        ["loader-utils", "1.2.3"],
+        ["vue-style-loader", "4.1.2"],
       ]),
     }],
   ])],
@@ -4727,14 +4927,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["bluebird", new Map([
-    ["3.5.5", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-bluebird-3.5.5-a8d0afd73251effbbd5fe384a77d73003c17a71f/node_modules/bluebird/"),
-      packageDependencies: new Map([
-        ["bluebird", "3.5.5"],
-      ]),
-    }],
-  ])],
   ["chownr", new Map([
     ["1.1.2", {
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-chownr-1.1.2-a18f1e0b269c8a6a5d3c86eb298beb14c3dd7bf6/node_modules/chownr/"),
@@ -4756,23 +4948,6 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-infer-owner-1.0.4-c4cefcaa8e51051c2a40ba2ce8a3d27295af9467/node_modules/infer-owner/"),
       packageDependencies: new Map([
         ["infer-owner", "1.0.4"],
-      ]),
-    }],
-  ])],
-  ["lru-cache", new Map([
-    ["5.1.1", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-lru-cache-5.1.1-1da27e6710271947695daf6848e847f01d84b920/node_modules/lru-cache/"),
-      packageDependencies: new Map([
-        ["yallist", "3.0.3"],
-        ["lru-cache", "5.1.1"],
-      ]),
-    }],
-  ])],
-  ["yallist", new Map([
-    ["3.0.3", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-yallist-3.0.3-b4b049e314be545e3ce802236d6cd22cd91c3de9/node_modules/yallist/"),
-      packageDependencies: new Map([
-        ["yallist", "3.0.3"],
       ]),
     }],
   ])],
@@ -7096,25 +7271,21 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["@babel/plugin-proposal-decorators", new Map([
-    ["7.4.4", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-@babel-plugin-proposal-decorators-7.4.4-de9b2a1a8ab0196f378e2a82f10b6e2a36f21cc0/node_modules/@babel/plugin-proposal-decorators/"),
+  ["vue-template-compiler", new Map([
+    ["2.6.10", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-vue-template-compiler-2.6.10-323b4f3495f04faa3503337a82f5d6507799c9cc/node_modules/vue-template-compiler/"),
       packageDependencies: new Map([
-        ["@babel/core", "7.5.5"],
-        ["@babel/helper-create-class-features-plugin", "pnp:3564fbcb07a2dcc7aa8dfbe963eaa50a0c7b4a60"],
-        ["@babel/helper-plugin-utils", "7.0.0"],
-        ["@babel/plugin-syntax-decorators", "7.2.0"],
-        ["@babel/plugin-proposal-decorators", "7.4.4"],
+        ["he", "1.2.0"],
+        ["de-indent", "1.0.2"],
+        ["vue-template-compiler", "2.6.10"],
       ]),
     }],
   ])],
-  ["@babel/plugin-syntax-decorators", new Map([
-    ["7.2.0", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-@babel-plugin-syntax-decorators-7.2.0-c50b1b957dcc69e4b1127b65e1c33eef61570c1b/node_modules/@babel/plugin-syntax-decorators/"),
+  ["de-indent", new Map([
+    ["1.0.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-de-indent-1.0.2-b2038e846dc33baa5796128d0804b455b8c1e21d/node_modules/de-indent/"),
       packageDependencies: new Map([
-        ["@babel/core", "7.5.5"],
-        ["@babel/helper-plugin-utils", "7.0.0"],
-        ["@babel/plugin-syntax-decorators", "7.2.0"],
+        ["de-indent", "1.0.2"],
       ]),
     }],
   ])],
@@ -7123,8 +7294,12 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "./"),
       packageDependencies: new Map([
         ["react-dom", "16.9.0"],
+        ["vue", "2.6.10"],
+        ["vue-router", "3.1.2"],
+        ["vuex", "3.1.1"],
         ["@babel/core", "7.5.5"],
         ["@babel/plugin-proposal-class-properties", "7.5.5"],
+        ["@babel/plugin-proposal-decorators", "7.4.4"],
         ["@babel/plugin-transform-react-jsx", "7.3.0"],
         ["@babel/preset-env", "7.5.5"],
         ["babel-loader", "8.0.6"],
@@ -7138,10 +7313,11 @@ let packageInformationStores = new Map([
         ["style-loader", "1.0.0"],
         ["stylus", "0.54.7"],
         ["stylus-loader", "3.0.2"],
+        ["vue-loader", "15.7.1"],
         ["webpack", "4.39.3"],
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
-        ["@babel/plugin-proposal-decorators", "7.4.4"],
+        ["vue-template-compiler", "2.6.10"],
       ]),
     }],
   ])],
@@ -7149,6 +7325,7 @@ let packageInformationStores = new Map([
 
 let locatorsByLocations = new Map([
   ["./.pnp/externals/pnp-72983efd88121eeb0f9c153c80db0a94bcfa5cb8/node_modules/@babel/helper-create-class-features-plugin/", blacklistedLocator],
+  ["./.pnp/externals/pnp-3564fbcb07a2dcc7aa8dfbe963eaa50a0c7b4a60/node_modules/@babel/helper-create-class-features-plugin/", blacklistedLocator],
   ["./.pnp/externals/pnp-e1289699c92c5471053094bf56601a20dd146109/node_modules/@babel/plugin-syntax-async-generators/", blacklistedLocator],
   ["./.pnp/externals/pnp-b1095e1ac67836e8cfcad17a762a76842926e10f/node_modules/@babel/plugin-syntax-dynamic-import/", blacklistedLocator],
   ["./.pnp/externals/pnp-47468ae5ad79c84462c0a769d6bfe7cf7b5d5df9/node_modules/@babel/plugin-syntax-json-strings/", blacklistedLocator],
@@ -7162,7 +7339,6 @@ let locatorsByLocations = new Map([
   ["./.pnp/externals/pnp-3efb2741e608616bf7267c6cf64eb2cd2f3e404b/node_modules/ajv-keywords/", blacklistedLocator],
   ["./.pnp/externals/pnp-37a5350bf2a3241db2b58ecc3cfadf49186d1bbd/node_modules/ajv-keywords/", blacklistedLocator],
   ["./.pnp/externals/pnp-98617499d4d50a8cd551a218fe8b73ef64f99afe/node_modules/ajv-keywords/", blacklistedLocator],
-  ["./.pnp/externals/pnp-3564fbcb07a2dcc7aa8dfbe963eaa50a0c7b4a60/node_modules/@babel/helper-create-class-features-plugin/", blacklistedLocator],
   ["../../.cache/yarn/v4/npm-react-dom-16.9.0-5e65527a5e26f22ae3701131bcccaee9fb0d3962/node_modules/react-dom/", {"name":"react-dom","reference":"16.9.0"}],
   ["../../.cache/yarn/v4/npm-loose-envify-1.4.0-71ee51fa7be4caec1a63839f7e682d8132d30caf/node_modules/loose-envify/", {"name":"loose-envify","reference":"1.4.0"}],
   ["../../.cache/yarn/v4/npm-js-tokens-4.0.0-19203fb59991df98e3a287050d4647cdeaf32499/node_modules/js-tokens/", {"name":"js-tokens","reference":"4.0.0"}],
@@ -7170,6 +7346,9 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-prop-types-15.7.2-52c41e75b8c87e72b9d9360e0206b99dcbffa6c5/node_modules/prop-types/", {"name":"prop-types","reference":"15.7.2"}],
   ["../../.cache/yarn/v4/npm-react-is-16.9.0-21ca9561399aad0ff1a7701c01683e8ca981edcb/node_modules/react-is/", {"name":"react-is","reference":"16.9.0"}],
   ["../../.cache/yarn/v4/npm-scheduler-0.15.0-6bfcf80ff850b280fed4aeecc6513bc0b4f17f8e/node_modules/scheduler/", {"name":"scheduler","reference":"0.15.0"}],
+  ["../../.cache/yarn/v4/npm-vue-2.6.10-a72b1a42a4d82a721ea438d1b6bf55e66195c637/node_modules/vue/", {"name":"vue","reference":"2.6.10"}],
+  ["../../.cache/yarn/v4/npm-vue-router-3.1.2-2e0904703545dabdd42b2b7a2e617f02f99a1969/node_modules/vue-router/", {"name":"vue-router","reference":"3.1.2"}],
+  ["../../.cache/yarn/v4/npm-vuex-3.1.1-0c264bfe30cdbccf96ab9db3177d211828a5910e/node_modules/vuex/", {"name":"vuex","reference":"3.1.1"}],
   ["../../.cache/yarn/v4/npm-@babel-core-7.5.5-17b2686ef0d6bc58f963dddd68ab669755582c30/node_modules/@babel/core/", {"name":"@babel/core","reference":"7.5.5"}],
   ["../../.cache/yarn/v4/npm-@babel-code-frame-7.5.5-bc0782f6d69f7b7d49531219699b988f669a8f9d/node_modules/@babel/code-frame/", {"name":"@babel/code-frame","reference":"7.5.5"}],
   ["../../.cache/yarn/v4/npm-@babel-highlight-7.5.0-56d11312bd9248fa619591d02472be6e8cb32540/node_modules/@babel/highlight/", {"name":"@babel/highlight","reference":"7.5.0"}],
@@ -7226,6 +7405,8 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-@babel-helper-optimise-call-expression-7.0.0-a2920c5702b073c15de51106200aa8cad20497d5/node_modules/@babel/helper-optimise-call-expression/", {"name":"@babel/helper-optimise-call-expression","reference":"7.0.0"}],
   ["../../.cache/yarn/v4/npm-@babel-helper-plugin-utils-7.0.0-bbb3fbee98661c569034237cc03967ba99b4f250/node_modules/@babel/helper-plugin-utils/", {"name":"@babel/helper-plugin-utils","reference":"7.0.0"}],
   ["../../.cache/yarn/v4/npm-@babel-helper-replace-supers-7.5.5-f84ce43df031222d2bad068d2626cb5799c34bc2/node_modules/@babel/helper-replace-supers/", {"name":"@babel/helper-replace-supers","reference":"7.5.5"}],
+  ["../../.cache/yarn/v4/npm-@babel-plugin-proposal-decorators-7.4.4-de9b2a1a8ab0196f378e2a82f10b6e2a36f21cc0/node_modules/@babel/plugin-proposal-decorators/", {"name":"@babel/plugin-proposal-decorators","reference":"7.4.4"}],
+  ["../../.cache/yarn/v4/npm-@babel-plugin-syntax-decorators-7.2.0-c50b1b957dcc69e4b1127b65e1c33eef61570c1b/node_modules/@babel/plugin-syntax-decorators/", {"name":"@babel/plugin-syntax-decorators","reference":"7.2.0"}],
   ["../../.cache/yarn/v4/npm-@babel-plugin-transform-react-jsx-7.3.0-f2cab99026631c767e2745a5368b331cfe8f5290/node_modules/@babel/plugin-transform-react-jsx/", {"name":"@babel/plugin-transform-react-jsx","reference":"7.3.0"}],
   ["../../.cache/yarn/v4/npm-@babel-helper-builder-react-jsx-7.3.0-a1ac95a5d2b3e88ae5e54846bf462eeb81b318a4/node_modules/@babel/helper-builder-react-jsx/", {"name":"@babel/helper-builder-react-jsx","reference":"7.3.0"}],
   ["../../.cache/yarn/v4/npm-@babel-plugin-syntax-jsx-7.2.0-0b85a3b4bc7cdf4cc4b8bf236335b907ca22e7c7/node_modules/@babel/plugin-syntax-jsx/", {"name":"@babel/plugin-syntax-jsx","reference":"7.2.0"}],
@@ -7336,6 +7517,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-css-loader-3.2.0-bb570d89c194f763627fcf1f80059c6832d009b2/node_modules/css-loader/", {"name":"css-loader","reference":"3.2.0"}],
   ["../../.cache/yarn/v4/npm-camelcase-5.3.1-e3c9b31569e106811df242f715725a1f4c494320/node_modules/camelcase/", {"name":"camelcase","reference":"5.3.1"}],
   ["../../.cache/yarn/v4/npm-cssesc-3.0.0-37741919903b868565e1c09ea747445cd18983ee/node_modules/cssesc/", {"name":"cssesc","reference":"3.0.0"}],
+  ["../../.cache/yarn/v4/npm-cssesc-2.0.0-3b13bd1bb1cb36e1bcb5a4dcd27f54c5dcb35703/node_modules/cssesc/", {"name":"cssesc","reference":"2.0.0"}],
   ["../../.cache/yarn/v4/npm-icss-utils-4.1.1-21170b53789ee27447c2f47dd683081403f9a467/node_modules/icss-utils/", {"name":"icss-utils","reference":"4.1.1"}],
   ["../../.cache/yarn/v4/npm-postcss-7.0.17-4da1bdff5322d4a0acaab4d87f3e782436bad31f/node_modules/postcss/", {"name":"postcss","reference":"7.0.17"}],
   ["../../.cache/yarn/v4/npm-normalize-path-3.0.0-0dcd69ff23a1c9b11fd0978316644a0388216a65/node_modules/normalize-path/", {"name":"normalize-path","reference":"3.0.0"}],
@@ -7343,6 +7525,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-postcss-modules-extract-imports-2.0.0-818719a1ae1da325f9832446b01136eeb493cd7e/node_modules/postcss-modules-extract-imports/", {"name":"postcss-modules-extract-imports","reference":"2.0.0"}],
   ["../../.cache/yarn/v4/npm-postcss-modules-local-by-default-3.0.2-e8a6561be914aaf3c052876377524ca90dbb7915/node_modules/postcss-modules-local-by-default/", {"name":"postcss-modules-local-by-default","reference":"3.0.2"}],
   ["../../.cache/yarn/v4/npm-postcss-selector-parser-6.0.2-934cf799d016c83411859e09dcecade01286ec5c/node_modules/postcss-selector-parser/", {"name":"postcss-selector-parser","reference":"6.0.2"}],
+  ["../../.cache/yarn/v4/npm-postcss-selector-parser-5.0.0-249044356697b33b64f1a8f7c80922dddee7195c/node_modules/postcss-selector-parser/", {"name":"postcss-selector-parser","reference":"5.0.0"}],
   ["../../.cache/yarn/v4/npm-indexes-of-1.0.1-f30f716c8e2bd346c7b67d3df3915566a7c05607/node_modules/indexes-of/", {"name":"indexes-of","reference":"1.0.1"}],
   ["../../.cache/yarn/v4/npm-uniq-1.0.1-b31c5ae8254844a3a8281541ce2b04b865a734ff/node_modules/uniq/", {"name":"uniq","reference":"1.0.1"}],
   ["../../.cache/yarn/v4/npm-postcss-value-parser-4.0.2-482282c09a42706d1fc9a069b73f44ec08391dc9/node_modules/postcss-value-parser/", {"name":"postcss-value-parser","reference":"4.0.2"}],
@@ -7463,6 +7646,21 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-stylus-loader-3.0.2-27a706420b05a38e038e7cacb153578d450513c6/node_modules/stylus-loader/", {"name":"stylus-loader","reference":"3.0.2"}],
   ["../../.cache/yarn/v4/npm-lodash-clonedeep-4.5.0-e23f3f9c4f8fbdde872529c1071857a086e5ccef/node_modules/lodash.clonedeep/", {"name":"lodash.clonedeep","reference":"4.5.0"}],
   ["../../.cache/yarn/v4/npm-when-3.6.4-473b517ec159e2b85005497a13983f095412e34e/node_modules/when/", {"name":"when","reference":"3.6.4"}],
+  ["../../.cache/yarn/v4/npm-vue-loader-15.7.1-6ccacd4122aa80f69baaac08ff295a62e3aefcfd/node_modules/vue-loader/", {"name":"vue-loader","reference":"15.7.1"}],
+  ["../../.cache/yarn/v4/npm-@vue-component-compiler-utils-3.0.0-d16fa26b836c06df5baaeb45f3d80afc47e35634/node_modules/@vue/component-compiler-utils/", {"name":"@vue/component-compiler-utils","reference":"3.0.0"}],
+  ["../../.cache/yarn/v4/npm-consolidate-0.15.1-21ab043235c71a07d45d9aad98593b0dba56bab7/node_modules/consolidate/", {"name":"consolidate","reference":"0.15.1"}],
+  ["../../.cache/yarn/v4/npm-bluebird-3.5.5-a8d0afd73251effbbd5fe384a77d73003c17a71f/node_modules/bluebird/", {"name":"bluebird","reference":"3.5.5"}],
+  ["../../.cache/yarn/v4/npm-hash-sum-1.0.2-33b40777754c6432573c120cc3808bbd10d47f04/node_modules/hash-sum/", {"name":"hash-sum","reference":"1.0.2"}],
+  ["../../.cache/yarn/v4/npm-lru-cache-4.1.5-8bbe50ea85bed59bc9e33dcab8235ee9bcf443cd/node_modules/lru-cache/", {"name":"lru-cache","reference":"4.1.5"}],
+  ["../../.cache/yarn/v4/npm-lru-cache-5.1.1-1da27e6710271947695daf6848e847f01d84b920/node_modules/lru-cache/", {"name":"lru-cache","reference":"5.1.1"}],
+  ["../../.cache/yarn/v4/npm-pseudomap-1.0.2-f052a28da70e618917ef0a8ac34c1ae5a68286b3/node_modules/pseudomap/", {"name":"pseudomap","reference":"1.0.2"}],
+  ["../../.cache/yarn/v4/npm-yallist-2.1.2-1c11f9218f076089a47dd512f93c6699a6a81d52/node_modules/yallist/", {"name":"yallist","reference":"2.1.2"}],
+  ["../../.cache/yarn/v4/npm-yallist-3.0.3-b4b049e314be545e3ce802236d6cd22cd91c3de9/node_modules/yallist/", {"name":"yallist","reference":"3.0.3"}],
+  ["../../.cache/yarn/v4/npm-merge-source-map-1.1.0-2fdde7e6020939f70906a68f2d7ae685e4c8c646/node_modules/merge-source-map/", {"name":"merge-source-map","reference":"1.1.0"}],
+  ["../../.cache/yarn/v4/npm-prettier-1.16.3-8c62168453badef702f34b45b6ee899574a6a65d/node_modules/prettier/", {"name":"prettier","reference":"1.16.3"}],
+  ["../../.cache/yarn/v4/npm-vue-template-es2015-compiler-1.9.1-1ee3bc9a16ecbf5118be334bb15f9c46f82f5825/node_modules/vue-template-es2015-compiler/", {"name":"vue-template-es2015-compiler","reference":"1.9.1"}],
+  ["../../.cache/yarn/v4/npm-vue-hot-reload-api-2.3.3-2756f46cb3258054c5f4723de8ae7e87302a1ccf/node_modules/vue-hot-reload-api/", {"name":"vue-hot-reload-api","reference":"2.3.3"}],
+  ["../../.cache/yarn/v4/npm-vue-style-loader-4.1.2-dedf349806f25ceb4e64f3ad7c0a44fba735fcf8/node_modules/vue-style-loader/", {"name":"vue-style-loader","reference":"4.1.2"}],
   ["../../.cache/yarn/v4/npm-webpack-4.39.3-a02179d1032156b713b6ec2da7e0df9d037def50/node_modules/webpack/", {"name":"webpack","reference":"4.39.3"}],
   ["../../.cache/yarn/v4/npm-@webassemblyjs-ast-1.8.5-51b1c5fe6576a34953bf4b253df9f0d490d9e359/node_modules/@webassemblyjs/ast/", {"name":"@webassemblyjs/ast","reference":"1.8.5"}],
   ["../../.cache/yarn/v4/npm-@webassemblyjs-helper-module-context-1.8.5-def4b9927b0101dc8cbbd8d1edb5b7b9c82eb245/node_modules/@webassemblyjs/helper-module-context/", {"name":"@webassemblyjs/helper-module-context","reference":"1.8.5"}],
@@ -7638,12 +7836,9 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-ajv-errors-1.0.1-f35986aceb91afadec4102fbd85014950cefa64d/node_modules/ajv-errors/", {"name":"ajv-errors","reference":"1.0.1"}],
   ["../../.cache/yarn/v4/npm-terser-webpack-plugin-1.4.1-61b18e40eaee5be97e771cdbb10ed1280888c2b4/node_modules/terser-webpack-plugin/", {"name":"terser-webpack-plugin","reference":"1.4.1"}],
   ["../../.cache/yarn/v4/npm-cacache-12.0.3-be99abba4e1bf5df461cd5a2c1071fc432573390/node_modules/cacache/", {"name":"cacache","reference":"12.0.3"}],
-  ["../../.cache/yarn/v4/npm-bluebird-3.5.5-a8d0afd73251effbbd5fe384a77d73003c17a71f/node_modules/bluebird/", {"name":"bluebird","reference":"3.5.5"}],
   ["../../.cache/yarn/v4/npm-chownr-1.1.2-a18f1e0b269c8a6a5d3c86eb298beb14c3dd7bf6/node_modules/chownr/", {"name":"chownr","reference":"1.1.2"}],
   ["../../.cache/yarn/v4/npm-figgy-pudding-3.5.1-862470112901c727a0e495a80744bd5baa1d6790/node_modules/figgy-pudding/", {"name":"figgy-pudding","reference":"3.5.1"}],
   ["../../.cache/yarn/v4/npm-infer-owner-1.0.4-c4cefcaa8e51051c2a40ba2ce8a3d27295af9467/node_modules/infer-owner/", {"name":"infer-owner","reference":"1.0.4"}],
-  ["../../.cache/yarn/v4/npm-lru-cache-5.1.1-1da27e6710271947695daf6848e847f01d84b920/node_modules/lru-cache/", {"name":"lru-cache","reference":"5.1.1"}],
-  ["../../.cache/yarn/v4/npm-yallist-3.0.3-b4b049e314be545e3ce802236d6cd22cd91c3de9/node_modules/yallist/", {"name":"yallist","reference":"3.0.3"}],
   ["../../.cache/yarn/v4/npm-mississippi-3.0.0-ea0a3291f97e0b5e8776b363d5f0a12d94c67022/node_modules/mississippi/", {"name":"mississippi","reference":"3.0.0"}],
   ["../../.cache/yarn/v4/npm-concat-stream-1.6.2-904bdf194cd3122fc675c77fc4ac3d4ff0fd1a34/node_modules/concat-stream/", {"name":"concat-stream","reference":"1.6.2"}],
   ["../../.cache/yarn/v4/npm-buffer-from-1.1.1-32713bc028f75c02fdb710d7c7bcec1f2c6070ef/node_modules/buffer-from/", {"name":"buffer-from","reference":"1.1.1"}],
@@ -7886,8 +8081,8 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-async-limiter-1.0.1-dd379e94f0db8310b08291f9d64c3209766617fd/node_modules/async-limiter/", {"name":"async-limiter","reference":"1.0.1"}],
   ["../../.cache/yarn/v4/npm-code-point-at-1.1.0-0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77/node_modules/code-point-at/", {"name":"code-point-at","reference":"1.1.0"}],
   ["../../.cache/yarn/v4/npm-number-is-nan-1.0.1-097b602b53422a522c1afb8790318336941a011d/node_modules/number-is-nan/", {"name":"number-is-nan","reference":"1.0.1"}],
-  ["../../.cache/yarn/v4/npm-@babel-plugin-proposal-decorators-7.4.4-de9b2a1a8ab0196f378e2a82f10b6e2a36f21cc0/node_modules/@babel/plugin-proposal-decorators/", {"name":"@babel/plugin-proposal-decorators","reference":"7.4.4"}],
-  ["../../.cache/yarn/v4/npm-@babel-plugin-syntax-decorators-7.2.0-c50b1b957dcc69e4b1127b65e1c33eef61570c1b/node_modules/@babel/plugin-syntax-decorators/", {"name":"@babel/plugin-syntax-decorators","reference":"7.2.0"}],
+  ["../../.cache/yarn/v4/npm-vue-template-compiler-2.6.10-323b4f3495f04faa3503337a82f5d6507799c9cc/node_modules/vue-template-compiler/", {"name":"vue-template-compiler","reference":"2.6.10"}],
+  ["../../.cache/yarn/v4/npm-de-indent-1.0.2-b2038e846dc33baa5796128d0804b455b8c1e21d/node_modules/de-indent/", {"name":"de-indent","reference":"1.0.2"}],
   ["./", topLevelLocator],
 ]);
 exports.findPackageLocator = function findPackageLocator(location) {
@@ -8210,7 +8405,7 @@ function getPackageInformationSafe(packageLocator) {
   if (!packageInformation) {
     throw makeError(
       `INTERNAL`,
-      `Couldn't find a matching entry in the dependency tree for the specified parent (this is probably an internal error)`,
+      `Couldn't find a matching entry in the dependency tree for the specified parent (this is probably an internal error)`
     );
   }
 
@@ -8442,7 +8637,7 @@ exports.resolveToUnqualified = function resolveToUnqualified(request, issuer, {c
         {
           request,
           issuer,
-        },
+        }
       );
     }
 
@@ -8486,7 +8681,7 @@ exports.resolveToUnqualified = function resolveToUnqualified(request, issuer, {c
           {
             request,
             issuer,
-          },
+          }
         );
       }
 
@@ -8518,13 +8713,13 @@ exports.resolveToUnqualified = function resolveToUnqualified(request, issuer, {c
           throw makeError(
             `MISSING_PEER_DEPENDENCY`,
             `You seem to be requiring a peer dependency ("${dependencyName}"), but it is not installed (which might be because you're the top-level package)`,
-            {request, issuer, dependencyName},
+            {request, issuer, dependencyName}
           );
         } else {
           throw makeError(
             `MISSING_PEER_DEPENDENCY`,
             `Package "${issuerLocator.name}@${issuerLocator.reference}" is trying to access a peer dependency ("${dependencyName}") that should be provided by its direct ancestor but isn't`,
-            {request, issuer, issuerLocator: Object.assign({}, issuerLocator), dependencyName},
+            {request, issuer, issuerLocator: Object.assign({}, issuerLocator), dependencyName}
           );
         }
       } else {
@@ -8532,16 +8727,16 @@ exports.resolveToUnqualified = function resolveToUnqualified(request, issuer, {c
           throw makeError(
             `UNDECLARED_DEPENDENCY`,
             `You cannot require a package ("${dependencyName}") that is not declared in your dependencies (via "${issuer}")`,
-            {request, issuer, dependencyName},
+            {request, issuer, dependencyName}
           );
         } else {
           const candidates = Array.from(issuerInformation.packageDependencies.keys());
           throw makeError(
             `UNDECLARED_DEPENDENCY`,
             `Package "${issuerLocator.name}@${issuerLocator.reference}" (via "${issuer}") is trying to require the package "${dependencyName}" (via "${request}") without it being listed in its dependencies (${candidates.join(
-              `, `,
+              `, `
             )})`,
-            {request, issuer, issuerLocator: Object.assign({}, issuerLocator), dependencyName, candidates},
+            {request, issuer, issuerLocator: Object.assign({}, issuerLocator), dependencyName, candidates}
           );
         }
       }
@@ -8557,7 +8752,7 @@ exports.resolveToUnqualified = function resolveToUnqualified(request, issuer, {c
       throw makeError(
         `MISSING_DEPENDENCY`,
         `Package "${dependencyLocator.name}@${dependencyLocator.reference}" is a valid dependency, but hasn't been installed and thus cannot be required (it might be caused if you install a partial tree, such as on production environments)`,
-        {request, issuer, dependencyLocator: Object.assign({}, dependencyLocator)},
+        {request, issuer, dependencyLocator: Object.assign({}, dependencyLocator)}
       );
     }
 
@@ -8580,7 +8775,7 @@ exports.resolveToUnqualified = function resolveToUnqualified(request, issuer, {c
 
 exports.resolveUnqualified = function resolveUnqualified(
   unqualifiedPath,
-  {extensions = Object.keys(Module._extensions)} = {},
+  {extensions = Object.keys(Module._extensions)} = {}
 ) {
   const qualifiedPath = applyNodeExtensionResolution(unqualifiedPath, {extensions});
 
@@ -8590,7 +8785,7 @@ exports.resolveUnqualified = function resolveUnqualified(
     throw makeError(
       `QUALIFIED_PATH_RESOLUTION_FAILED`,
       `Couldn't find a suitable Node resolution for unqualified path "${unqualifiedPath}"`,
-      {unqualifiedPath},
+      {unqualifiedPath}
     );
   }
 };
@@ -8644,7 +8839,7 @@ exports.resolveRequest = function resolveRequest(request, issuer, {considerBuilt
             request,
             issuer,
             realIssuer,
-          },
+          }
         );
       }
     }
@@ -8767,7 +8962,7 @@ exports.setup = function setup() {
       if (optionNames.size > 0) {
         throw makeError(
           `UNSUPPORTED`,
-          `Some options passed to require() aren't supported by PnP yet (${Array.from(optionNames).join(', ')})`,
+          `Some options passed to require() aren't supported by PnP yet (${Array.from(optionNames).join(', ')})`
         );
       }
 
@@ -8867,6 +9062,10 @@ exports.setupCompatibilityLayer = () => {
           // Extract the name of the package being requested (1=full name, 2=scope name, 3=local name)
           const parts = request.match(/^((?:(@[^\/]+)\/)?([^\/]+))/);
 
+          // make sure that basedir ends with a slash
+          if (basedir.charAt(basedir.length - 1) !== '/') {
+            basedir = path.join(basedir, '/');
+          }
           // This is guaranteed to return the path to the "package.json" file from the given package
           const manifestPath = exports.resolveToUnqualified(`${parts[1]}/package.json`, basedir);
 

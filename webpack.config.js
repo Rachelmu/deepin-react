@@ -1,7 +1,8 @@
 const path = require('path'),
 	webpack = require('webpack'),
 	PnpWebpackPlugin = require('pnp-webpack-plugin'),
-	HtmlWebpackPlugin = require('html-webpack-plugin')
+	HtmlWebpackPlugin = require('html-webpack-plugin'),
+	VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const config = {
 	mode: 'development',
@@ -24,6 +25,10 @@ const config = {
 						'css-loader',
 						'stylus-loader'
 					]
+				},
+				{
+					test: /\.vue$/,
+					use: 'vue-loader'
 				},
 				{
 					test: /\.(jpg|jpeg|webp|png|gif)$/,
@@ -55,6 +60,7 @@ const config = {
 		new HtmlWebpackPlugin({
 			template: './index.html'
 		}),
+		new VueLoaderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin()
 	]

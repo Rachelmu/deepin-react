@@ -31,11 +31,16 @@
     "style-loader": "^1.0.0",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
     "webpack-dev-server": "^3.8.0"
   },
   "dependencies": {
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.2",
+    "vuex": "^3.1.1"
   }
 }
