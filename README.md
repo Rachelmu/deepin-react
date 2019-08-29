@@ -4,7 +4,9 @@
 
 index为基本使用, 其他则为深入理解
 
-参考:
+参考: 
+
+[伢羽大大的JS深入](https://github.com/mqyqingfeng/Blog)
 
 
 
