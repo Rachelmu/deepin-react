@@ -11,4 +11,5 @@
 5. [call, apply 和 bind 的实现](./call-and-apply.md)
 6. [new的实现](./new实现.md)
 7. [**创建对象方法**](./createObject.md)
+8. [**继承方法**](./inherit.md)
 
