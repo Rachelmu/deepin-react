@@ -75,9 +75,9 @@ const App = (props) => {
 取而代之的是:
 
 - static getDrivedStateFromProps
-- getSnapshotBeforeUpdate 和 componentDidMount 可
+- getSnapshotBeforeUpdate 和 componentDidMount
 
-![img](./assets/React-Life-circle.png)
+![img](../../assets/React-Life-circle.png)
 
 ## 新版本生命周期
 
@@ -86,7 +86,6 @@ const App = (props) => {
 ### 生命周期函数讲解
 
 - 父组件state发生变化, 会导致不需要渲染的子组件也会重新执行render函数, 子组件可以使用shouleComponentUpdate() `接收两个参数nextProps和nextState`可以用来对比判断是否需要更新
-- 
 - 发送ajax请求会在componentDidMount()`因为只执行一次, 并且是最佳实践`内部, 如果写在render里面, 因为render会反复执行的
 
 
@@ -95,7 +94,7 @@ const App = (props) => {
 
 可以看做一个图书馆
 
-![img](./assets/redux-flow.png)
+![img](../../assets/redux-flow.png)
 
 **组件:** 借书的人
 
@@ -109,7 +108,7 @@ const App = (props) => {
 
 创建目录结构: redux> store.js, reducers.js
 
-store.js >
+store.js 
 
 ```js
 import { createStore } from 'redux';
@@ -205,12 +204,6 @@ export const init_list = () => {
 
 中间件:
 
-![img](./assets/redux-flow2.png)
-
-中间件指action和store中间, 对dispatch方法的封装, 如果是函数, 就执行函数, 如果是对象, 直接传给store
-
-
-
-![img](./assets/redux-flow2.png)
+![img](../../assets/redux-flow2.png)
 
 中间件指action和store中间, 对dispatch方法的封装, 如果是函数, 就执行函数, 如果是对象, 直接传给store
