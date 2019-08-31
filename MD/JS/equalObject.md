@@ -80,7 +80,67 @@ function eq(a, b, aStack=[], bStack=[]) { // stack表示循环引用的栈
   let aType = typeof a, bType = typeof b
   if (aType !== 'function' && aType !== 'object' && bType != 'object') return false // type不一样就返回 false
   return deepEq(a, b, aStack, bStack)
-	
+	function deepEq(a, b, aStack, bStack) {
+    let aClassName = toString.call(a), bClassName = toString.call(b)
+    if (aClassName !== bClassName) return false
+    switch (className) {
+      case '[object RegExp]':
+      case '[object String]':
+        return '' + a === '' + b;
+      case '[object Number]':
+        if (+a !== +a) return +b !== +b;
+        return +a === 0 ? 1 / +a === 1 / b : +a === +b;
+      case '[object Date]':
+      case '[object Boolean]':
+        return +a === +b;
+    }
+    let isArrays = aClassName === '[object Array]'
+    if (!isArrays) {
+      if (typeof a !== 'object' || b !== 'object') return false
+      let aCtor = a.constructor, bCtor = b.constructor
+// aCtor 和 bCtor 必须都存在并且都不是 Object 构造函数的情况下，aCtor 不等于 bCtor， 那这两个对象就真的不相等啦
+      if (aCtor !== bCtor && !(isFunction(aCtor) && aCtor instanceof aCtor && isFunction(bCtor) && bCtor instanceof bCtor) && ('constructor' in a && 'constructor' in b)) {
+          return false
+      }
+    }
+  }
+  let aStack = aStack || [],
+  bStack = bStack || [],
+  length = aStack.length
+  // 检查是否有循环引用的部分
+  while (length--) {
+    if (aStack[length] === a) {
+      return bStack[length] === b
+    }
+  }
+
+  aStack.push(a);
+  bStack.push(b);
+
+  // 数组判断
+  if (isArrays) {
+    let length = a.length;
+    if (length !== b.length) return false
+    while (length--) {
+      if (!eq(a[length], b[length], aStack, bStack)) return false
+    }
+  }
+  // 对象判断
+  else {
+    let keys = Object.keys(a), key
+    length = keys.length
+
+    if (Object.keys(b).length !== length) return false
+    while (length--) {
+
+      key = keys[length]
+      if (!(b.hasOwnProperty(key) && eq(a[key], b[key], aStack, bStack))) return false
+    }
+  }
+
+    aStack.pop();
+    bStack.pop();
+    return true;
 }
 
 ```
