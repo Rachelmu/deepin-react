@@ -28,7 +28,7 @@ Function.prototype.myCall = function (context=window, ...rest) {
 
 
 
-最终版本
+最终版本, 增加返回值功能
 
 ```js
 Function.prototype.myCall = function (context=window, ...rest) {

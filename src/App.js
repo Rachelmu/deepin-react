@@ -1,9 +1,13 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from "react"
+
+import Todo from "./components/Todo"
+import Hooks from './components/Hooks'
 
 const App = () => {
 	return (
 		<Fragment>
-			Hello World
+			<Todo></Todo>
+			<Hooks></Hooks>
 		</Fragment>
 	)
 }

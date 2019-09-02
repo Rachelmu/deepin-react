@@ -157,6 +157,87 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
+  ["react-redux", new Map([
+    ["7.1.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-react-redux-7.1.1-ce6eee1b734a7a76e0788b3309bf78ff6b34fa0a/node_modules/react-redux/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["redux", "4.0.4"],
+        ["@babel/runtime", "7.5.5"],
+        ["hoist-non-react-statics", "3.3.0"],
+        ["invariant", "2.2.4"],
+        ["loose-envify", "1.4.0"],
+        ["prop-types", "15.7.2"],
+        ["react-is", "16.9.0"],
+        ["react-redux", "7.1.1"],
+      ]),
+    }],
+  ])],
+  ["@babel/runtime", new Map([
+    ["7.5.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132/node_modules/@babel/runtime/"),
+      packageDependencies: new Map([
+        ["regenerator-runtime", "0.13.3"],
+        ["@babel/runtime", "7.5.5"],
+      ]),
+    }],
+  ])],
+  ["regenerator-runtime", new Map([
+    ["0.13.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-regenerator-runtime-0.13.3-7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5/node_modules/regenerator-runtime/"),
+      packageDependencies: new Map([
+        ["regenerator-runtime", "0.13.3"],
+      ]),
+    }],
+    ["0.11.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-regenerator-runtime-0.11.1-be05ad7f9bf7d22e056f9726cee5017fbf19e2e9/node_modules/regenerator-runtime/"),
+      packageDependencies: new Map([
+        ["regenerator-runtime", "0.11.1"],
+      ]),
+    }],
+  ])],
+  ["hoist-non-react-statics", new Map([
+    ["3.3.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-hoist-non-react-statics-3.3.0-b09178f0122184fb95acf525daaecb4d8f45958b/node_modules/hoist-non-react-statics/"),
+      packageDependencies: new Map([
+        ["react-is", "16.9.0"],
+        ["hoist-non-react-statics", "3.3.0"],
+      ]),
+    }],
+    ["2.5.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-hoist-non-react-statics-2.5.5-c5903cf409c0dfd908f388e619d86b9c1174cb47/node_modules/hoist-non-react-statics/"),
+      packageDependencies: new Map([
+        ["hoist-non-react-statics", "2.5.5"],
+      ]),
+    }],
+  ])],
+  ["invariant", new Map([
+    ["2.2.4", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6/node_modules/invariant/"),
+      packageDependencies: new Map([
+        ["loose-envify", "1.4.0"],
+        ["invariant", "2.2.4"],
+      ]),
+    }],
+  ])],
+  ["redux", new Map([
+    ["4.0.4", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-redux-4.0.4-4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796/node_modules/redux/"),
+      packageDependencies: new Map([
+        ["loose-envify", "1.4.0"],
+        ["symbol-observable", "1.2.0"],
+        ["redux", "4.0.4"],
+      ]),
+    }],
+  ])],
+  ["symbol-observable", new Map([
+    ["1.2.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-symbol-observable-1.2.0-c22688aed4eab3cdc2dfeacbb561660560a00804/node_modules/symbol-observable/"),
+      packageDependencies: new Map([
+        ["symbol-observable", "1.2.0"],
+      ]),
+    }],
+  ])],
   ["vue", new Map([
     ["2.6.10", {
       packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-vue-2.6.10-a72b1a42a4d82a721ea438d1b6bf55e66195c637/node_modules/vue/"),
@@ -1627,15 +1708,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["invariant", new Map([
-    ["2.2.4", {
-      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6/node_modules/invariant/"),
-      packageDependencies: new Map([
-        ["loose-envify", "1.4.0"],
-        ["invariant", "2.2.4"],
-      ]),
-    }],
-  ])],
   ["js-levenshtein", new Map([
     ["1.1.6", {
       packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-js-levenshtein-1.1.6-c6cee58eb3550372df8deb85fad5ce66ce01d59d/node_modules/js-levenshtein/"),
@@ -2662,23 +2734,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["@babel/runtime", new Map([
-    ["7.5.5", {
-      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132/node_modules/@babel/runtime/"),
-      packageDependencies: new Map([
-        ["regenerator-runtime", "0.13.3"],
-        ["@babel/runtime", "7.5.5"],
-      ]),
-    }],
-  ])],
-  ["regenerator-runtime", new Map([
-    ["0.13.3", {
-      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-regenerator-runtime-0.13.3-7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5/node_modules/regenerator-runtime/"),
-      packageDependencies: new Map([
-        ["regenerator-runtime", "0.13.3"],
-      ]),
-    }],
-  ])],
   ["history", new Map([
     ["4.9.0", {
       packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-history-4.9.0-84587c2068039ead8af769e9d6a6860a14fa1bca/node_modules/history/"),
@@ -2722,15 +2777,6 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-value-equal-0.4.0-c5bdd2f54ee093c04839d71ce2e4758a6890abc7/node_modules/value-equal/"),
       packageDependencies: new Map([
         ["value-equal", "0.4.0"],
-      ]),
-    }],
-  ])],
-  ["hoist-non-react-statics", new Map([
-    ["3.3.0", {
-      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-hoist-non-react-statics-3.3.0-b09178f0122184fb95acf525daaecb4d8f45958b/node_modules/hoist-non-react-statics/"),
-      packageDependencies: new Map([
-        ["react-is", "16.9.0"],
-        ["hoist-non-react-statics", "3.3.0"],
       ]),
     }],
   ])],
@@ -7558,11 +7604,1213 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
+  ["antd", new Map([
+    ["3.22.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-antd-3.22.2-ae8279d940decf062a0708880bc4340783b7b270/node_modules/antd/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["@ant-design/create-react-context", "pnp:8a73753cc25da4d54439df6b0a2b243b49601b82"],
+        ["@ant-design/icons", "2.1.1"],
+        ["@ant-design/icons-react", "2.0.1"],
+        ["@types/react-slick", "0.23.4"],
+        ["array-tree-filter", "2.1.0"],
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["copy-to-clipboard", "3.2.0"],
+        ["css-animation", "1.6.1"],
+        ["dom-closest", "0.2.0"],
+        ["enquire.js", "2.1.6"],
+        ["lodash", "4.17.15"],
+        ["moment", "2.24.0"],
+        ["omit.js", "1.0.2"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-animate", "2.10.0"],
+        ["rc-calendar", "9.15.5"],
+        ["rc-cascader", "0.17.4"],
+        ["rc-checkbox", "2.1.7"],
+        ["rc-collapse", "1.11.6"],
+        ["rc-dialog", "7.5.5"],
+        ["rc-drawer", "2.0.8"],
+        ["rc-dropdown", "2.4.1"],
+        ["rc-editor-mention", "1.1.13"],
+        ["rc-form", "2.4.8"],
+        ["rc-input-number", "4.4.5"],
+        ["rc-mentions", "0.4.0"],
+        ["rc-menu", "7.4.23"],
+        ["rc-notification", "3.3.1"],
+        ["rc-pagination", "1.20.5"],
+        ["rc-progress", "2.5.2"],
+        ["rc-rate", "2.5.0"],
+        ["rc-select", "9.2.1"],
+        ["rc-slider", "8.6.13"],
+        ["rc-steps", "3.5.0"],
+        ["rc-switch", "1.9.0"],
+        ["rc-table", "6.7.0"],
+        ["rc-tabs", "9.6.6"],
+        ["rc-time-picker", "3.7.2"],
+        ["rc-tooltip", "3.7.3"],
+        ["rc-tree", "2.1.2"],
+        ["rc-tree-select", "2.9.1"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-upload", "2.7.0"],
+        ["rc-util", "4.11.0"],
+        ["react-lazy-load", "3.0.13"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["react-slick", "0.25.2"],
+        ["resize-observer-polyfill", "1.5.1"],
+        ["shallowequal", "1.1.0"],
+        ["warning", "4.0.3"],
+        ["antd", "3.22.2"],
+      ]),
+    }],
+  ])],
+  ["@ant-design/create-react-context", new Map([
+    ["pnp:8a73753cc25da4d54439df6b0a2b243b49601b82", {
+      packageLocation: path.resolve(__dirname, "./.pnp/externals/pnp-8a73753cc25da4d54439df6b0a2b243b49601b82/node_modules/@ant-design/create-react-context/"),
+      packageDependencies: new Map([
+        ["prop-types", "15.7.2"],
+        ["react", "16.9.0"],
+        ["gud", "1.0.0"],
+        ["warning", "4.0.3"],
+        ["@ant-design/create-react-context", "pnp:8a73753cc25da4d54439df6b0a2b243b49601b82"],
+      ]),
+    }],
+    ["pnp:7099467d41d73d19e208fa4b9aaf72215e68a090", {
+      packageLocation: path.resolve(__dirname, "./.pnp/externals/pnp-7099467d41d73d19e208fa4b9aaf72215e68a090/node_modules/@ant-design/create-react-context/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["gud", "1.0.0"],
+        ["warning", "4.0.3"],
+        ["@ant-design/create-react-context", "pnp:7099467d41d73d19e208fa4b9aaf72215e68a090"],
+      ]),
+    }],
+    ["pnp:b2b97106097a2b8ab572d9cc64a7d1d114015756", {
+      packageLocation: path.resolve(__dirname, "./.pnp/externals/pnp-b2b97106097a2b8ab572d9cc64a7d1d114015756/node_modules/@ant-design/create-react-context/"),
+      packageDependencies: new Map([
+        ["prop-types", "15.7.2"],
+        ["react", "16.9.0"],
+        ["gud", "1.0.0"],
+        ["warning", "4.0.3"],
+        ["@ant-design/create-react-context", "pnp:b2b97106097a2b8ab572d9cc64a7d1d114015756"],
+      ]),
+    }],
+    ["pnp:c4082800bdf47f09a504999332cc7b3a51a0fc04", {
+      packageLocation: path.resolve(__dirname, "./.pnp/externals/pnp-c4082800bdf47f09a504999332cc7b3a51a0fc04/node_modules/@ant-design/create-react-context/"),
+      packageDependencies: new Map([
+        ["prop-types", "15.7.2"],
+        ["react", "16.9.0"],
+        ["gud", "1.0.0"],
+        ["warning", "4.0.3"],
+        ["@ant-design/create-react-context", "pnp:c4082800bdf47f09a504999332cc7b3a51a0fc04"],
+      ]),
+    }],
+  ])],
+  ["warning", new Map([
+    ["4.0.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-warning-4.0.3-16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3/node_modules/warning/"),
+      packageDependencies: new Map([
+        ["loose-envify", "1.4.0"],
+        ["warning", "4.0.3"],
+      ]),
+    }],
+    ["3.0.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-warning-3.0.0-32e5377cb572de4ab04753bdf8821c01ed605b7c/node_modules/warning/"),
+      packageDependencies: new Map([
+        ["loose-envify", "1.4.0"],
+        ["warning", "3.0.0"],
+      ]),
+    }],
+  ])],
+  ["@ant-design/icons", new Map([
+    ["2.1.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@ant-design-icons-2.1.1-7b9c08dffd4f5d41db667d9dbe5e0107d0bd9a4a/node_modules/@ant-design/icons/"),
+      packageDependencies: new Map([
+        ["@ant-design/icons", "2.1.1"],
+      ]),
+    }],
+  ])],
+  ["@ant-design/icons-react", new Map([
+    ["2.0.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@ant-design-icons-react-2.0.1-17a2513571ab317aca2927e58cea25dd31e536fb/node_modules/@ant-design/icons-react/"),
+      packageDependencies: new Map([
+        ["@ant-design/icons", "2.1.1"],
+        ["react", "16.9.0"],
+        ["@ant-design/colors", "3.2.1"],
+        ["babel-runtime", "6.26.0"],
+        ["@ant-design/icons-react", "2.0.1"],
+      ]),
+    }],
+  ])],
+  ["@ant-design/colors", new Map([
+    ["3.2.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@ant-design-colors-3.2.1-ad86cbf2d1a0039d01586aa73a7ea8a7ce0455a2/node_modules/@ant-design/colors/"),
+      packageDependencies: new Map([
+        ["tinycolor2", "1.4.1"],
+        ["@ant-design/colors", "3.2.1"],
+      ]),
+    }],
+  ])],
+  ["tinycolor2", new Map([
+    ["1.4.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-tinycolor2-1.4.1-f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8/node_modules/tinycolor2/"),
+      packageDependencies: new Map([
+        ["tinycolor2", "1.4.1"],
+      ]),
+    }],
+  ])],
+  ["babel-runtime", new Map([
+    ["6.26.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-babel-runtime-6.26.0-965c7058668e82b55d7bfe04ff2337bc8b5647fe/node_modules/babel-runtime/"),
+      packageDependencies: new Map([
+        ["core-js", "2.6.9"],
+        ["regenerator-runtime", "0.11.1"],
+        ["babel-runtime", "6.26.0"],
+      ]),
+    }],
+  ])],
+  ["core-js", new Map([
+    ["2.6.9", {
+      packageLocation: path.resolve(__dirname, "./.pnp/unplugged/npm-core-js-2.6.9-6b4b214620c834152e179323727fc19741b084f2/node_modules/core-js/"),
+      packageDependencies: new Map([
+        ["core-js", "2.6.9"],
+      ]),
+    }],
+    ["1.2.7", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-core-js-1.2.7-652294c14651db28fa93bd2d5ff2983a4f08c636/node_modules/core-js/"),
+      packageDependencies: new Map([
+        ["core-js", "1.2.7"],
+      ]),
+    }],
+  ])],
+  ["@types/react-slick", new Map([
+    ["0.23.4", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@types-react-slick-0.23.4-c97e2a9e7e3d1933c68593b8e82752fab1e8ce53/node_modules/@types/react-slick/"),
+      packageDependencies: new Map([
+        ["@types/react", "16.9.2"],
+        ["@types/react-slick", "0.23.4"],
+      ]),
+    }],
+  ])],
+  ["@types/react", new Map([
+    ["16.9.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@types-react-16.9.2-6d1765431a1ad1877979013906731aae373de268/node_modules/@types/react/"),
+      packageDependencies: new Map([
+        ["@types/prop-types", "15.7.1"],
+        ["csstype", "2.6.6"],
+        ["@types/react", "16.9.2"],
+      ]),
+    }],
+  ])],
+  ["@types/prop-types", new Map([
+    ["15.7.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-@types-prop-types-15.7.1-f1a11e7babb0c3cad68100be381d1e064c68f1f6/node_modules/@types/prop-types/"),
+      packageDependencies: new Map([
+        ["@types/prop-types", "15.7.1"],
+      ]),
+    }],
+  ])],
+  ["csstype", new Map([
+    ["2.6.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-csstype-2.6.6-c34f8226a94bbb10c32cc0d714afdf942291fc41/node_modules/csstype/"),
+      packageDependencies: new Map([
+        ["csstype", "2.6.6"],
+      ]),
+    }],
+  ])],
+  ["array-tree-filter", new Map([
+    ["2.1.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-array-tree-filter-2.1.0-873ac00fec83749f255ac8dd083814b4f6329190/node_modules/array-tree-filter/"),
+      packageDependencies: new Map([
+        ["array-tree-filter", "2.1.0"],
+      ]),
+    }],
+  ])],
+  ["classnames", new Map([
+    ["2.2.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-classnames-2.2.6-43935bffdd291f326dad0a205309b38d00f650ce/node_modules/classnames/"),
+      packageDependencies: new Map([
+        ["classnames", "2.2.6"],
+      ]),
+    }],
+  ])],
+  ["copy-to-clipboard", new Map([
+    ["3.2.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-copy-to-clipboard-3.2.0-d2724a3ccbfed89706fac8a894872c979ac74467/node_modules/copy-to-clipboard/"),
+      packageDependencies: new Map([
+        ["toggle-selection", "1.0.6"],
+        ["copy-to-clipboard", "3.2.0"],
+      ]),
+    }],
+  ])],
+  ["toggle-selection", new Map([
+    ["1.0.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-toggle-selection-1.0.6-6e45b1263f2017fa0acc7d89d78b15b8bf77da32/node_modules/toggle-selection/"),
+      packageDependencies: new Map([
+        ["toggle-selection", "1.0.6"],
+      ]),
+    }],
+  ])],
+  ["css-animation", new Map([
+    ["1.6.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-css-animation-1.6.1-162064a3b0d51f958b7ff37b3d6d4de18e17039e/node_modules/css-animation/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["component-classes", "1.2.6"],
+        ["css-animation", "1.6.1"],
+      ]),
+    }],
+  ])],
+  ["component-classes", new Map([
+    ["1.2.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-component-classes-1.2.6-c642394c3618a4d8b0b8919efccbbd930e5cd691/node_modules/component-classes/"),
+      packageDependencies: new Map([
+        ["component-indexof", "0.0.3"],
+        ["component-classes", "1.2.6"],
+      ]),
+    }],
+  ])],
+  ["component-indexof", new Map([
+    ["0.0.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-component-indexof-0.0.3-11d091312239eb8f32c8f25ae9cb002ffe8d3c24/node_modules/component-indexof/"),
+      packageDependencies: new Map([
+        ["component-indexof", "0.0.3"],
+      ]),
+    }],
+  ])],
+  ["dom-closest", new Map([
+    ["0.2.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-dom-closest-0.2.0-ebd9f91d1bf22e8d6f477876bbcd3ec90216c0cf/node_modules/dom-closest/"),
+      packageDependencies: new Map([
+        ["dom-matches", "2.0.0"],
+        ["dom-closest", "0.2.0"],
+      ]),
+    }],
+  ])],
+  ["dom-matches", new Map([
+    ["2.0.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-dom-matches-2.0.0-d2728b416a87533980eb089b848d253cf23a758c/node_modules/dom-matches/"),
+      packageDependencies: new Map([
+        ["dom-matches", "2.0.0"],
+      ]),
+    }],
+  ])],
+  ["enquire.js", new Map([
+    ["2.1.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-enquire-js-2.1.6-3e8780c9b8b835084c3f60e166dbc3c2a3c89814/node_modules/enquire.js/"),
+      packageDependencies: new Map([
+        ["enquire.js", "2.1.6"],
+      ]),
+    }],
+  ])],
+  ["moment", new Map([
+    ["2.24.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-moment-2.24.0-0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b/node_modules/moment/"),
+      packageDependencies: new Map([
+        ["moment", "2.24.0"],
+      ]),
+    }],
+  ])],
+  ["omit.js", new Map([
+    ["1.0.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-omit-js-1.0.2-91a14f0eba84066dfa015bf30e474c47f30bc858/node_modules/omit.js/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["omit.js", "1.0.2"],
+      ]),
+    }],
+  ])],
+  ["raf", new Map([
+    ["3.4.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-raf-3.4.1-0742e99a4a6552f445d73e3ee0328af0ff1ede39/node_modules/raf/"),
+      packageDependencies: new Map([
+        ["performance-now", "2.1.0"],
+        ["raf", "3.4.1"],
+      ]),
+    }],
+  ])],
+  ["performance-now", new Map([
+    ["2.1.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-performance-now-2.1.0-6309f4e0e5fa913ec1c69307ae364b4b377c9e7b/node_modules/performance-now/"),
+      packageDependencies: new Map([
+        ["performance-now", "2.1.0"],
+      ]),
+    }],
+  ])],
+  ["rc-animate", new Map([
+    ["2.10.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-animate-2.10.0-d2224cee4700cc9e9836700eb47af6b6e41a080c/node_modules/rc-animate/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["css-animation", "1.6.1"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-animate", "2.10.0"],
+      ]),
+    }],
+    ["3.0.0-rc.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-animate-3.0.0-rc.6-04288eefa118e0cae214536c8a903ffaac1bc3fb/node_modules/rc-animate/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["component-classes", "1.2.6"],
+        ["fbjs", "0.8.17"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-animate", "3.0.0-rc.6"],
+      ]),
+    }],
+  ])],
+  ["rc-util", new Map([
+    ["4.11.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-util-4.11.0-cf437dcff74ca08a8565ae14f0368acb3a650796/node_modules/rc-util/"),
+      packageDependencies: new Map([
+        ["add-dom-event-listener", "1.1.0"],
+        ["babel-runtime", "6.26.0"],
+        ["prop-types", "15.7.2"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["shallowequal", "0.2.2"],
+        ["rc-util", "4.11.0"],
+      ]),
+    }],
+  ])],
+  ["add-dom-event-listener", new Map([
+    ["1.1.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-add-dom-event-listener-1.1.0-6a92db3a0dd0abc254e095c0f1dc14acbbaae310/node_modules/add-dom-event-listener/"),
+      packageDependencies: new Map([
+        ["object-assign", "4.1.1"],
+        ["add-dom-event-listener", "1.1.0"],
+      ]),
+    }],
+  ])],
+  ["react-lifecycles-compat", new Map([
+    ["3.0.4", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-react-lifecycles-compat-3.0.4-4f1a273afdfc8f3488a8c516bfda78f872352362/node_modules/react-lifecycles-compat/"),
+      packageDependencies: new Map([
+        ["react-lifecycles-compat", "3.0.4"],
+      ]),
+    }],
+  ])],
+  ["shallowequal", new Map([
+    ["0.2.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-shallowequal-0.2.2-1e32fd5bcab6ad688a4812cb0cc04efc75c7014e/node_modules/shallowequal/"),
+      packageDependencies: new Map([
+        ["lodash.keys", "3.1.2"],
+        ["shallowequal", "0.2.2"],
+      ]),
+    }],
+    ["1.1.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-shallowequal-1.1.0-188d521de95b9087404fd4dcb68b13df0ae4e7f8/node_modules/shallowequal/"),
+      packageDependencies: new Map([
+        ["shallowequal", "1.1.0"],
+      ]),
+    }],
+  ])],
+  ["lodash.keys", new Map([
+    ["3.1.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-lodash-keys-3.1.2-4dbc0472b156be50a0b286855d1bd0b0c656098a/node_modules/lodash.keys/"),
+      packageDependencies: new Map([
+        ["lodash._getnative", "3.9.1"],
+        ["lodash.isarguments", "3.1.0"],
+        ["lodash.isarray", "3.0.4"],
+        ["lodash.keys", "3.1.2"],
+      ]),
+    }],
+  ])],
+  ["lodash._getnative", new Map([
+    ["3.9.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-lodash-getnative-3.9.1-570bc7dede46d61cdcde687d65d3eecbaa3aaff5/node_modules/lodash._getnative/"),
+      packageDependencies: new Map([
+        ["lodash._getnative", "3.9.1"],
+      ]),
+    }],
+  ])],
+  ["lodash.isarguments", new Map([
+    ["3.1.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-lodash-isarguments-3.1.0-2f573d85c6a24289ff00663b491c1d338ff3458a/node_modules/lodash.isarguments/"),
+      packageDependencies: new Map([
+        ["lodash.isarguments", "3.1.0"],
+      ]),
+    }],
+  ])],
+  ["lodash.isarray", new Map([
+    ["3.0.4", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-lodash-isarray-3.0.4-79e4eb88c36a8122af86f844aa9bcd851b5fbb55/node_modules/lodash.isarray/"),
+      packageDependencies: new Map([
+        ["lodash.isarray", "3.0.4"],
+      ]),
+    }],
+  ])],
+  ["rc-calendar", new Map([
+    ["9.15.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-calendar-9.15.5-21ab0cb2a5659d85fe6faead13d3ed764dd47c01/node_modules/rc-calendar/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["moment", "2.24.0"],
+        ["prop-types", "15.7.2"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-calendar", "9.15.5"],
+      ]),
+    }],
+  ])],
+  ["rc-trigger", new Map([
+    ["2.6.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-trigger-2.6.5-140a857cf28bd0fa01b9aecb1e26a50a700e9885/node_modules/rc-trigger/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-align", "2.4.5"],
+        ["rc-animate", "2.10.0"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-trigger", "2.6.5"],
+      ]),
+    }],
+    ["3.0.0-rc.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-trigger-3.0.0-rc.3-35842df1674d25315e1426a44882a4c97652258b/node_modules/rc-trigger/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-align", "2.4.5"],
+        ["rc-animate", "3.0.0-rc.6"],
+        ["rc-util", "4.11.0"],
+        ["rc-trigger", "3.0.0-rc.3"],
+      ]),
+    }],
+  ])],
+  ["rc-align", new Map([
+    ["2.4.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-align-2.4.5-c941a586f59d1017f23a428f0b468663fb7102ab/node_modules/rc-align/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["dom-align", "1.10.2"],
+        ["prop-types", "15.7.2"],
+        ["rc-util", "4.11.0"],
+        ["rc-align", "2.4.5"],
+      ]),
+    }],
+  ])],
+  ["dom-align", new Map([
+    ["1.10.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-dom-align-1.10.2-540ea1c9e20462bd11b9fc28c561dc8351ece4c6/node_modules/dom-align/"),
+      packageDependencies: new Map([
+        ["dom-align", "1.10.2"],
+      ]),
+    }],
+  ])],
+  ["rc-cascader", new Map([
+    ["0.17.4", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-cascader-0.17.4-bb38ba3ed0990bfaa5ee547467d85ecc0d152f96/node_modules/rc-cascader/"),
+      packageDependencies: new Map([
+        ["array-tree-filter", "2.1.0"],
+        ["prop-types", "15.7.2"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["shallow-equal", "1.2.0"],
+        ["warning", "4.0.3"],
+        ["rc-cascader", "0.17.4"],
+      ]),
+    }],
+  ])],
+  ["shallow-equal", new Map([
+    ["1.2.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-shallow-equal-1.2.0-fd828d2029ff4e19569db7e19e535e94e2d1f5cc/node_modules/shallow-equal/"),
+      packageDependencies: new Map([
+        ["shallow-equal", "1.2.0"],
+      ]),
+    }],
+  ])],
+  ["rc-checkbox", new Map([
+    ["2.1.7", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-checkbox-2.1.7-ae6785525cf35fa4c62d706c4a1ff7b2b1fcb821/node_modules/rc-checkbox/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-checkbox", "2.1.7"],
+      ]),
+    }],
+  ])],
+  ["rc-collapse", new Map([
+    ["1.11.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-collapse-1.11.6-9a70ac2bc2715e1ef7bae8e308bc0e844618d119/node_modules/rc-collapse/"),
+      packageDependencies: new Map([
+        ["classnames", "2.2.6"],
+        ["css-animation", "1.6.1"],
+        ["prop-types", "15.7.2"],
+        ["rc-animate", "2.10.0"],
+        ["react-is", "16.9.0"],
+        ["shallowequal", "1.1.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-collapse", "1.11.6"],
+      ]),
+    }],
+  ])],
+  ["rc-dialog", new Map([
+    ["7.5.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-dialog-7.5.5-67bf2657a239d29fdd21e06c9b13017dbb110a75/node_modules/rc-dialog/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["rc-animate", "2.10.0"],
+        ["rc-util", "4.11.0"],
+        ["rc-dialog", "7.5.5"],
+      ]),
+    }],
+  ])],
+  ["rc-drawer", new Map([
+    ["2.0.8", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-drawer-2.0.8-ba0500590804283308f77acc22fff35f395e979a/node_modules/rc-drawer/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-drawer", "2.0.8"],
+      ]),
+    }],
+  ])],
+  ["rc-dropdown", new Map([
+    ["2.4.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-dropdown-2.4.1-aaef6eb3a5152cdd9982895c2a78d9b5f046cdec/node_modules/rc-dropdown/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-trigger", "2.6.5"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-dropdown", "2.4.1"],
+      ]),
+    }],
+  ])],
+  ["rc-editor-mention", new Map([
+    ["1.1.13", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-editor-mention-1.1.13-9f1cab1065f86b01523840321790c2ab12ac5e8b/node_modules/rc-editor-mention/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["dom-scroll-into-view", "1.2.1"],
+        ["draft-js", "pnp:8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55"],
+        ["immutable", "3.7.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-animate", "2.10.0"],
+        ["rc-editor-core", "0.8.10"],
+        ["rc-editor-mention", "1.1.13"],
+      ]),
+    }],
+  ])],
+  ["dom-scroll-into-view", new Map([
+    ["1.2.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-dom-scroll-into-view-1.2.1-e8f36732dd089b0201a88d7815dc3f88e6d66c7e/node_modules/dom-scroll-into-view/"),
+      packageDependencies: new Map([
+        ["dom-scroll-into-view", "1.2.1"],
+      ]),
+    }],
+  ])],
+  ["draft-js", new Map([
+    ["pnp:8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55", {
+      packageLocation: path.resolve(__dirname, "./.pnp/externals/pnp-8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55/node_modules/draft-js/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["fbjs", "0.8.17"],
+        ["immutable", "3.7.6"],
+        ["object-assign", "4.1.1"],
+        ["draft-js", "pnp:8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55"],
+      ]),
+    }],
+    ["pnp:12bacde2ce6a7772102085aae25253f9170f86d2", {
+      packageLocation: path.resolve(__dirname, "./.pnp/externals/pnp-12bacde2ce6a7772102085aae25253f9170f86d2/node_modules/draft-js/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["fbjs", "0.8.17"],
+        ["immutable", "3.7.6"],
+        ["object-assign", "4.1.1"],
+        ["draft-js", "pnp:12bacde2ce6a7772102085aae25253f9170f86d2"],
+      ]),
+    }],
+  ])],
+  ["fbjs", new Map([
+    ["0.8.17", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-fbjs-0.8.17-c4d598ead6949112653d6588b01a5cdcd9f90fdd/node_modules/fbjs/"),
+      packageDependencies: new Map([
+        ["core-js", "1.2.7"],
+        ["isomorphic-fetch", "2.2.1"],
+        ["loose-envify", "1.4.0"],
+        ["object-assign", "4.1.1"],
+        ["promise", "7.3.1"],
+        ["setimmediate", "1.0.5"],
+        ["ua-parser-js", "0.7.20"],
+        ["fbjs", "0.8.17"],
+      ]),
+    }],
+  ])],
+  ["isomorphic-fetch", new Map([
+    ["2.2.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-isomorphic-fetch-2.2.1-611ae1acf14f5e81f729507472819fe9733558a9/node_modules/isomorphic-fetch/"),
+      packageDependencies: new Map([
+        ["node-fetch", "1.7.3"],
+        ["whatwg-fetch", "3.0.0"],
+        ["isomorphic-fetch", "2.2.1"],
+      ]),
+    }],
+  ])],
+  ["node-fetch", new Map([
+    ["1.7.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-node-fetch-1.7.3-980f6f72d85211a5347c6b2bc18c5b84c3eb47ef/node_modules/node-fetch/"),
+      packageDependencies: new Map([
+        ["encoding", "0.1.12"],
+        ["is-stream", "1.1.0"],
+        ["node-fetch", "1.7.3"],
+      ]),
+    }],
+  ])],
+  ["encoding", new Map([
+    ["0.1.12", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-encoding-0.1.12-538b66f3ee62cd1ab51ec323829d1f9480c74beb/node_modules/encoding/"),
+      packageDependencies: new Map([
+        ["iconv-lite", "0.4.24"],
+        ["encoding", "0.1.12"],
+      ]),
+    }],
+  ])],
+  ["whatwg-fetch", new Map([
+    ["3.0.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-whatwg-fetch-3.0.0-fc804e458cc460009b1a2b966bc8817d2578aefb/node_modules/whatwg-fetch/"),
+      packageDependencies: new Map([
+        ["whatwg-fetch", "3.0.0"],
+      ]),
+    }],
+  ])],
+  ["promise", new Map([
+    ["7.3.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-promise-7.3.1-064b72602b18f90f29192b8b1bc418ffd1ebd3bf/node_modules/promise/"),
+      packageDependencies: new Map([
+        ["asap", "2.0.6"],
+        ["promise", "7.3.1"],
+      ]),
+    }],
+  ])],
+  ["asap", new Map([
+    ["2.0.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-asap-2.0.6-e50347611d7e690943208bbdafebcbc2fb866d46/node_modules/asap/"),
+      packageDependencies: new Map([
+        ["asap", "2.0.6"],
+      ]),
+    }],
+  ])],
+  ["ua-parser-js", new Map([
+    ["0.7.20", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-ua-parser-js-0.7.20-7527178b82f6a62a0f243d1f94fd30e3e3c21098/node_modules/ua-parser-js/"),
+      packageDependencies: new Map([
+        ["ua-parser-js", "0.7.20"],
+      ]),
+    }],
+  ])],
+  ["immutable", new Map([
+    ["3.7.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-immutable-3.7.6-13b4d3cb12befa15482a26fe1b2ebae640071e4b/node_modules/immutable/"),
+      packageDependencies: new Map([
+        ["immutable", "3.7.6"],
+      ]),
+    }],
+    ["3.8.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-immutable-3.8.2-c2439951455bb39913daf281376f1530e104adf3/node_modules/immutable/"),
+      packageDependencies: new Map([
+        ["immutable", "3.8.2"],
+      ]),
+    }],
+  ])],
+  ["rc-editor-core", new Map([
+    ["0.8.10", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-editor-core-0.8.10-6f215bc5df9c33ffa9f6c5b30ca73a7dabe8ab7c/node_modules/rc-editor-core/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["draft-js", "pnp:12bacde2ce6a7772102085aae25253f9170f86d2"],
+        ["immutable", "3.8.2"],
+        ["lodash", "4.17.15"],
+        ["prop-types", "15.7.2"],
+        ["setimmediate", "1.0.5"],
+        ["rc-editor-core", "0.8.10"],
+      ]),
+    }],
+  ])],
+  ["rc-form", new Map([
+    ["2.4.8", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-form-2.4.8-79a1f124d4fa81dff2af2992e94aa3e58cad683c/node_modules/rc-form/"),
+      packageDependencies: new Map([
+        ["prop-types", "15.7.2"],
+        ["async-validator", "1.11.5"],
+        ["babel-runtime", "6.26.0"],
+        ["create-react-class", "15.6.3"],
+        ["dom-scroll-into-view", "1.2.1"],
+        ["hoist-non-react-statics", "3.3.0"],
+        ["lodash", "4.17.15"],
+        ["warning", "4.0.3"],
+        ["rc-form", "2.4.8"],
+      ]),
+    }],
+  ])],
+  ["async-validator", new Map([
+    ["1.11.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-async-validator-1.11.5-9d43cf49ef6bb76be5442388d19fb9a6e47597ea/node_modules/async-validator/"),
+      packageDependencies: new Map([
+        ["async-validator", "1.11.5"],
+      ]),
+    }],
+  ])],
+  ["create-react-class", new Map([
+    ["15.6.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-create-react-class-15.6.3-2d73237fb3f970ae6ebe011a9e66f46dbca80036/node_modules/create-react-class/"),
+      packageDependencies: new Map([
+        ["fbjs", "0.8.17"],
+        ["loose-envify", "1.4.0"],
+        ["object-assign", "4.1.1"],
+        ["create-react-class", "15.6.3"],
+      ]),
+    }],
+  ])],
+  ["rc-input-number", new Map([
+    ["4.4.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-input-number-4.4.5-81473d2885a6b312e486c4f2ba3f441c1ab88520/node_modules/rc-input-number/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rmc-feedback", "2.0.0"],
+        ["rc-util", "4.11.0"],
+        ["rc-input-number", "4.4.5"],
+      ]),
+    }],
+  ])],
+  ["rmc-feedback", new Map([
+    ["2.0.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rmc-feedback-2.0.0-cbc6cb3ae63c7a635eef0e25e4fbaf5ac366eeaa/node_modules/rmc-feedback/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["rmc-feedback", "2.0.0"],
+      ]),
+    }],
+  ])],
+  ["rc-mentions", new Map([
+    ["0.4.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-mentions-0.4.0-483552c088290dbcddd059a0846e9f207ecc3539/node_modules/rc-mentions/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["@ant-design/create-react-context", "pnp:7099467d41d73d19e208fa4b9aaf72215e68a090"],
+        ["classnames", "2.2.6"],
+        ["rc-menu", "7.4.23"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-mentions", "0.4.0"],
+      ]),
+    }],
+  ])],
+  ["rc-menu", new Map([
+    ["7.4.23", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-menu-7.4.23-e07d497864274076299d7d8a84d14fc86b6bd30d/node_modules/rc-menu/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["dom-scroll-into-view", "1.2.1"],
+        ["ismobilejs", "0.5.2"],
+        ["mini-store", "2.0.0"],
+        ["mutationobserver-shim", "0.3.3"],
+        ["prop-types", "15.7.2"],
+        ["rc-animate", "2.10.0"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-util", "4.11.0"],
+        ["resize-observer-polyfill", "1.5.1"],
+        ["rc-menu", "7.4.23"],
+      ]),
+    }],
+  ])],
+  ["ismobilejs", new Map([
+    ["0.5.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-ismobilejs-0.5.2-e81bacf6187c532ad8348355f4fecd6e6adfdce1/node_modules/ismobilejs/"),
+      packageDependencies: new Map([
+        ["ismobilejs", "0.5.2"],
+      ]),
+    }],
+  ])],
+  ["mini-store", new Map([
+    ["2.0.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-mini-store-2.0.0-0843c048d6942ce55e3e78b1b67fc063022b5488/node_modules/mini-store/"),
+      packageDependencies: new Map([
+        ["hoist-non-react-statics", "2.5.5"],
+        ["prop-types", "15.7.2"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["shallowequal", "1.1.0"],
+        ["mini-store", "2.0.0"],
+      ]),
+    }],
+  ])],
+  ["mutationobserver-shim", new Map([
+    ["0.3.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-mutationobserver-shim-0.3.3-65869630bc89d7bf8c9cd9cb82188cd955aacd2b/node_modules/mutationobserver-shim/"),
+      packageDependencies: new Map([
+        ["mutationobserver-shim", "0.3.3"],
+      ]),
+    }],
+  ])],
+  ["resize-observer-polyfill", new Map([
+    ["1.5.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-resize-observer-polyfill-1.5.1-0e9020dd3d21024458d4ebd27e23e40269810464/node_modules/resize-observer-polyfill/"),
+      packageDependencies: new Map([
+        ["resize-observer-polyfill", "1.5.1"],
+      ]),
+    }],
+  ])],
+  ["rc-notification", new Map([
+    ["3.3.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-notification-3.3.1-0baa3e70f8d40ab015ce8fa78c260c490fc7beb4/node_modules/rc-notification/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-animate", "2.10.0"],
+        ["rc-util", "4.11.0"],
+        ["rc-notification", "3.3.1"],
+      ]),
+    }],
+  ])],
+  ["rc-pagination", new Map([
+    ["1.20.5", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-pagination-1.20.5-b64395a702e9fc452e26d0e491ccf7d9345309f7/node_modules/rc-pagination/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-pagination", "1.20.5"],
+      ]),
+    }],
+  ])],
+  ["rc-progress", new Map([
+    ["2.5.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-progress-2.5.2-ab01ba4e5d2fa36fc9f6f058b10b720e7315560c/node_modules/rc-progress/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["prop-types", "15.7.2"],
+        ["rc-progress", "2.5.2"],
+      ]),
+    }],
+  ])],
+  ["rc-rate", new Map([
+    ["2.5.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-rate-2.5.0-72d4984a03d0a7a0e6779c7a79efcea27626abf6/node_modules/rc-rate/"),
+      packageDependencies: new Map([
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-rate", "2.5.0"],
+      ]),
+    }],
+  ])],
+  ["rc-select", new Map([
+    ["9.2.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-select-9.2.1-0fbf47a933c36e1e6ef76c88fab32f58029e6a01/node_modules/rc-select/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["component-classes", "1.2.6"],
+        ["dom-scroll-into-view", "1.2.1"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-animate", "2.10.0"],
+        ["rc-menu", "7.4.23"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["warning", "4.0.3"],
+        ["rc-select", "9.2.1"],
+      ]),
+    }],
+  ])],
+  ["rc-slider", new Map([
+    ["8.6.13", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-slider-8.6.13-88a8150c2dda6709f3f119135de11fba80af765b/node_modules/rc-slider/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-tooltip", "3.7.3"],
+        ["rc-util", "4.11.0"],
+        ["shallowequal", "1.1.0"],
+        ["warning", "4.0.3"],
+        ["rc-slider", "8.6.13"],
+      ]),
+    }],
+  ])],
+  ["rc-tooltip", new Map([
+    ["3.7.3", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-tooltip-3.7.3-280aec6afcaa44e8dff0480fbaff9e87fc00aecc/node_modules/rc-tooltip/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["prop-types", "15.7.2"],
+        ["rc-trigger", "2.6.5"],
+        ["rc-tooltip", "3.7.3"],
+      ]),
+    }],
+  ])],
+  ["rc-steps", new Map([
+    ["3.5.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-steps-3.5.0-36b2a7f1f49907b0d90363884b18623caf9fb600/node_modules/rc-steps/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["lodash", "4.17.15"],
+        ["prop-types", "15.7.2"],
+        ["rc-steps", "3.5.0"],
+      ]),
+    }],
+  ])],
+  ["rc-switch", new Map([
+    ["1.9.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-switch-1.9.0-ab2b878f2713c681358a453391976c9b95b290f7/node_modules/rc-switch/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-switch", "1.9.0"],
+      ]),
+    }],
+  ])],
+  ["rc-table", new Map([
+    ["6.7.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-table-6.7.0-8aca002f84a43a2d51a4fcda0f7a51694154286d/node_modules/rc-table/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["component-classes", "1.2.6"],
+        ["lodash", "4.17.15"],
+        ["mini-store", "2.0.0"],
+        ["prop-types", "15.7.2"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["shallowequal", "1.1.0"],
+        ["warning", "3.0.0"],
+        ["rc-table", "6.7.0"],
+      ]),
+    }],
+  ])],
+  ["rc-tabs", new Map([
+    ["9.6.6", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-tabs-9.6.6-1378aae0e4a04d6c3f2bd61bfcb7f28a7ef3807f/node_modules/rc-tabs/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["@ant-design/create-react-context", "pnp:b2b97106097a2b8ab572d9cc64a7d1d114015756"],
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["lodash", "4.17.15"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-hammerjs", "0.6.9"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["resize-observer-polyfill", "1.5.1"],
+        ["warning", "4.0.3"],
+        ["rc-tabs", "9.6.6"],
+      ]),
+    }],
+  ])],
+  ["rc-hammerjs", new Map([
+    ["0.6.9", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-hammerjs-0.6.9-9a4ddbda1b2ec8f9b9596091a6a989842a243907/node_modules/rc-hammerjs/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["babel-runtime", "6.26.0"],
+        ["hammerjs", "2.0.8"],
+        ["prop-types", "15.7.2"],
+        ["rc-hammerjs", "0.6.9"],
+      ]),
+    }],
+  ])],
+  ["hammerjs", new Map([
+    ["2.0.8", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-hammerjs-2.0.8-04ef77862cff2bb79d30f7692095930222bf60f1/node_modules/hammerjs/"),
+      packageDependencies: new Map([
+        ["hammerjs", "2.0.8"],
+      ]),
+    }],
+  ])],
+  ["rc-time-picker", new Map([
+    ["3.7.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-time-picker-3.7.2-fabe5501adf1374d31a2d3b47f1ba89fc2dc2467/node_modules/rc-time-picker/"),
+      packageDependencies: new Map([
+        ["classnames", "2.2.6"],
+        ["moment", "2.24.0"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-trigger", "2.6.5"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["rc-time-picker", "3.7.2"],
+      ]),
+    }],
+  ])],
+  ["rc-tree", new Map([
+    ["2.1.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-tree-2.1.2-c70546cf1081e1c27bffa314a966e2e4d06b3f2b/node_modules/rc-tree/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["@ant-design/create-react-context", "pnp:c4082800bdf47f09a504999332cc7b3a51a0fc04"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-animate", "2.10.0"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["warning", "4.0.3"],
+        ["rc-tree", "2.1.2"],
+      ]),
+    }],
+    ["2.0.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-tree-2.0.0-68fc4c9ab696943b279a143619e2ecf05918fb53/node_modules/rc-tree/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["rc-animate", "2.10.0"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["warning", "3.0.0"],
+        ["rc-tree", "2.0.0"],
+      ]),
+    }],
+  ])],
+  ["rc-tree-select", new Map([
+    ["2.9.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-tree-select-2.9.1-d076b8ce5bf432df3fdd8a6a01cdd9c93c8e7399/node_modules/rc-tree-select/"),
+      packageDependencies: new Map([
+        ["classnames", "2.2.6"],
+        ["dom-scroll-into-view", "1.2.1"],
+        ["prop-types", "15.7.2"],
+        ["raf", "3.4.1"],
+        ["rc-animate", "2.10.0"],
+        ["rc-tree", "2.0.0"],
+        ["rc-trigger", "3.0.0-rc.3"],
+        ["rc-util", "4.11.0"],
+        ["react-lifecycles-compat", "3.0.4"],
+        ["shallowequal", "1.1.0"],
+        ["warning", "4.0.3"],
+        ["rc-tree-select", "2.9.1"],
+      ]),
+    }],
+  ])],
+  ["rc-upload", new Map([
+    ["2.7.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-rc-upload-2.7.0-f279b758655eb5f99ebf82a5a2648d80d88e0ff4/node_modules/rc-upload/"),
+      packageDependencies: new Map([
+        ["babel-runtime", "6.26.0"],
+        ["classnames", "2.2.6"],
+        ["prop-types", "15.7.2"],
+        ["warning", "4.0.3"],
+        ["rc-upload", "2.7.0"],
+      ]),
+    }],
+  ])],
+  ["react-lazy-load", new Map([
+    ["3.0.13", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-react-lazy-load-3.0.13-3b0a92d336d43d3f0d73cbe6f35b17050b08b824/node_modules/react-lazy-load/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["eventlistener", "0.0.1"],
+        ["lodash.debounce", "4.0.8"],
+        ["lodash.throttle", "4.1.1"],
+        ["prop-types", "15.7.2"],
+        ["react-lazy-load", "3.0.13"],
+      ]),
+    }],
+  ])],
+  ["eventlistener", new Map([
+    ["0.0.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-eventlistener-0.0.1-ed2baabb852227af2bcf889152c72c63ca532eb8/node_modules/eventlistener/"),
+      packageDependencies: new Map([
+        ["eventlistener", "0.0.1"],
+      ]),
+    }],
+  ])],
+  ["lodash.debounce", new Map([
+    ["4.0.8", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-lodash-debounce-4.0.8-82d79bff30a67c4005ffd5e2515300ad9ca4d7af/node_modules/lodash.debounce/"),
+      packageDependencies: new Map([
+        ["lodash.debounce", "4.0.8"],
+      ]),
+    }],
+  ])],
+  ["lodash.throttle", new Map([
+    ["4.1.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-lodash-throttle-4.1.1-c23e91b710242ac70c37f1e1cda9274cc39bf2f4/node_modules/lodash.throttle/"),
+      packageDependencies: new Map([
+        ["lodash.throttle", "4.1.1"],
+      ]),
+    }],
+  ])],
+  ["react-slick", new Map([
+    ["0.25.2", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-react-slick-0.25.2-56331b67d47d8bcfe2dceb6acab1c8fd5bd1f6bc/node_modules/react-slick/"),
+      packageDependencies: new Map([
+        ["react", "16.9.0"],
+        ["react-dom", "16.9.0"],
+        ["classnames", "2.2.6"],
+        ["enquire.js", "2.1.6"],
+        ["json2mq", "0.2.0"],
+        ["lodash.debounce", "4.0.8"],
+        ["resize-observer-polyfill", "1.5.1"],
+        ["react-slick", "0.25.2"],
+      ]),
+    }],
+  ])],
+  ["json2mq", new Map([
+    ["0.2.0", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-json2mq-0.2.0-b637bd3ba9eabe122c83e9720483aeb10d2c904a/node_modules/json2mq/"),
+      packageDependencies: new Map([
+        ["string-convert", "0.2.1"],
+        ["json2mq", "0.2.0"],
+      ]),
+    }],
+  ])],
+  ["string-convert", new Map([
+    ["0.2.1", {
+      packageLocation: path.resolve(__dirname, "../../Library/Caches/Yarn/v4/npm-string-convert-0.2.1-6982cc3049fbb4cd85f8b24568b9d9bf39eeff97/node_modules/string-convert/"),
+      packageDependencies: new Map([
+        ["string-convert", "0.2.1"],
+      ]),
+    }],
+  ])],
   [null, new Map([
     [null, {
       packageLocation: path.resolve(__dirname, "./"),
       packageDependencies: new Map([
         ["react-dom", "16.9.0"],
+        ["react-redux", "7.1.1"],
+        ["redux", "4.0.4"],
         ["vue", "2.6.10"],
         ["vue-router", "3.1.2"],
         ["vuex", "3.1.1"],
@@ -7587,6 +8835,7 @@ let packageInformationStores = new Map([
         ["webpack", "4.39.3"],
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
+        ["antd", "3.22.2"],
       ]),
     }],
   ])],
@@ -7608,6 +8857,12 @@ let locatorsByLocations = new Map([
   ["./.pnp/externals/pnp-3efb2741e608616bf7267c6cf64eb2cd2f3e404b/node_modules/ajv-keywords/", blacklistedLocator],
   ["./.pnp/externals/pnp-37a5350bf2a3241db2b58ecc3cfadf49186d1bbd/node_modules/ajv-keywords/", blacklistedLocator],
   ["./.pnp/externals/pnp-98617499d4d50a8cd551a218fe8b73ef64f99afe/node_modules/ajv-keywords/", blacklistedLocator],
+  ["./.pnp/externals/pnp-8a73753cc25da4d54439df6b0a2b243b49601b82/node_modules/@ant-design/create-react-context/", blacklistedLocator],
+  ["./.pnp/externals/pnp-8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55/node_modules/draft-js/", blacklistedLocator],
+  ["./.pnp/externals/pnp-12bacde2ce6a7772102085aae25253f9170f86d2/node_modules/draft-js/", blacklistedLocator],
+  ["./.pnp/externals/pnp-7099467d41d73d19e208fa4b9aaf72215e68a090/node_modules/@ant-design/create-react-context/", blacklistedLocator],
+  ["./.pnp/externals/pnp-b2b97106097a2b8ab572d9cc64a7d1d114015756/node_modules/@ant-design/create-react-context/", blacklistedLocator],
+  ["./.pnp/externals/pnp-c4082800bdf47f09a504999332cc7b3a51a0fc04/node_modules/@ant-design/create-react-context/", blacklistedLocator],
   ["../../Library/Caches/Yarn/v4/npm-react-dom-16.9.0-5e65527a5e26f22ae3701131bcccaee9fb0d3962/node_modules/react-dom/", {"name":"react-dom","reference":"16.9.0"}],
   ["../../Library/Caches/Yarn/v4/npm-loose-envify-1.4.0-71ee51fa7be4caec1a63839f7e682d8132d30caf/node_modules/loose-envify/", {"name":"loose-envify","reference":"1.4.0"}],
   ["../../Library/Caches/Yarn/v4/npm-js-tokens-4.0.0-19203fb59991df98e3a287050d4647cdeaf32499/node_modules/js-tokens/", {"name":"js-tokens","reference":"4.0.0"}],
@@ -7615,6 +8870,15 @@ let locatorsByLocations = new Map([
   ["../../Library/Caches/Yarn/v4/npm-prop-types-15.7.2-52c41e75b8c87e72b9d9360e0206b99dcbffa6c5/node_modules/prop-types/", {"name":"prop-types","reference":"15.7.2"}],
   ["../../Library/Caches/Yarn/v4/npm-react-is-16.9.0-21ca9561399aad0ff1a7701c01683e8ca981edcb/node_modules/react-is/", {"name":"react-is","reference":"16.9.0"}],
   ["../../Library/Caches/Yarn/v4/npm-scheduler-0.15.0-6bfcf80ff850b280fed4aeecc6513bc0b4f17f8e/node_modules/scheduler/", {"name":"scheduler","reference":"0.15.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-react-redux-7.1.1-ce6eee1b734a7a76e0788b3309bf78ff6b34fa0a/node_modules/react-redux/", {"name":"react-redux","reference":"7.1.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132/node_modules/@babel/runtime/", {"name":"@babel/runtime","reference":"7.5.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-regenerator-runtime-0.13.3-7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5/node_modules/regenerator-runtime/", {"name":"regenerator-runtime","reference":"0.13.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-regenerator-runtime-0.11.1-be05ad7f9bf7d22e056f9726cee5017fbf19e2e9/node_modules/regenerator-runtime/", {"name":"regenerator-runtime","reference":"0.11.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-hoist-non-react-statics-3.3.0-b09178f0122184fb95acf525daaecb4d8f45958b/node_modules/hoist-non-react-statics/", {"name":"hoist-non-react-statics","reference":"3.3.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-hoist-non-react-statics-2.5.5-c5903cf409c0dfd908f388e619d86b9c1174cb47/node_modules/hoist-non-react-statics/", {"name":"hoist-non-react-statics","reference":"2.5.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6/node_modules/invariant/", {"name":"invariant","reference":"2.2.4"}],
+  ["../../Library/Caches/Yarn/v4/npm-redux-4.0.4-4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796/node_modules/redux/", {"name":"redux","reference":"4.0.4"}],
+  ["../../Library/Caches/Yarn/v4/npm-symbol-observable-1.2.0-c22688aed4eab3cdc2dfeacbb561660560a00804/node_modules/symbol-observable/", {"name":"symbol-observable","reference":"1.2.0"}],
   ["../../Library/Caches/Yarn/v4/npm-vue-2.6.10-a72b1a42a4d82a721ea438d1b6bf55e66195c637/node_modules/vue/", {"name":"vue","reference":"2.6.10"}],
   ["../../Library/Caches/Yarn/v4/npm-vue-router-3.1.2-2e0904703545dabdd42b2b7a2e617f02f99a1969/node_modules/vue-router/", {"name":"vue-router","reference":"3.1.2"}],
   ["../../Library/Caches/Yarn/v4/npm-vuex-3.1.1-0c264bfe30cdbccf96ab9db3177d211828a5910e/node_modules/vuex/", {"name":"vuex","reference":"3.1.1"}],
@@ -7762,7 +9026,6 @@ let locatorsByLocations = new Map([
   ["../../Library/Caches/Yarn/v4/npm-electron-to-chromium-1.3.241-859dc49ab7f90773ed698767372d384190f60cb1/node_modules/electron-to-chromium/", {"name":"electron-to-chromium","reference":"1.3.241"}],
   ["../../Library/Caches/Yarn/v4/npm-node-releases-1.1.28-503c3c70d0e4732b84e7aaa2925fbdde10482d4a/node_modules/node-releases/", {"name":"node-releases","reference":"1.1.28"}],
   ["../../Library/Caches/Yarn/v4/npm-core-js-compat-3.2.1-0cbdbc2e386e8e00d3b85dc81c848effec5b8150/node_modules/core-js-compat/", {"name":"core-js-compat","reference":"3.2.1"}],
-  ["../../Library/Caches/Yarn/v4/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6/node_modules/invariant/", {"name":"invariant","reference":"2.2.4"}],
   ["../../Library/Caches/Yarn/v4/npm-js-levenshtein-1.1.6-c6cee58eb3550372df8deb85fad5ce66ce01d59d/node_modules/js-levenshtein/", {"name":"js-levenshtein","reference":"1.1.6"}],
   ["../../Library/Caches/Yarn/v4/npm-babel-loader-8.0.6-e33bdb6f362b03f4bb141a0c21ab87c501b70dfb/node_modules/babel-loader/", {"name":"babel-loader","reference":"8.0.6"}],
   ["../../Library/Caches/Yarn/v4/npm-find-cache-dir-2.1.0-8d0f94cd13fe43c6c7c261a0d86115ca918c05f7/node_modules/find-cache-dir/", {"name":"find-cache-dir","reference":"2.1.0"}],
@@ -7876,14 +9139,11 @@ let locatorsByLocations = new Map([
   ["../../Library/Caches/Yarn/v4/npm-ts-pnp-1.1.2-be8e4bfce5d00f0f58e0666a82260c34a57af552/node_modules/ts-pnp/", {"name":"ts-pnp","reference":"1.1.2"}],
   ["../../Library/Caches/Yarn/v4/npm-react-16.9.0-40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa/node_modules/react/", {"name":"react","reference":"16.9.0"}],
   ["../../Library/Caches/Yarn/v4/npm-react-router-5.0.1-04ee77df1d1ab6cb8939f9f01ad5702dbadb8b0f/node_modules/react-router/", {"name":"react-router","reference":"5.0.1"}],
-  ["../../Library/Caches/Yarn/v4/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132/node_modules/@babel/runtime/", {"name":"@babel/runtime","reference":"7.5.5"}],
-  ["../../Library/Caches/Yarn/v4/npm-regenerator-runtime-0.13.3-7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5/node_modules/regenerator-runtime/", {"name":"regenerator-runtime","reference":"0.13.3"}],
   ["../../Library/Caches/Yarn/v4/npm-history-4.9.0-84587c2068039ead8af769e9d6a6860a14fa1bca/node_modules/history/", {"name":"history","reference":"4.9.0"}],
   ["../../Library/Caches/Yarn/v4/npm-resolve-pathname-2.2.0-7e9ae21ed815fd63ab189adeee64dc831eefa879/node_modules/resolve-pathname/", {"name":"resolve-pathname","reference":"2.2.0"}],
   ["../../Library/Caches/Yarn/v4/npm-tiny-invariant-1.0.6-b3f9b38835e36a41c843a3b0907a5a7b3755de73/node_modules/tiny-invariant/", {"name":"tiny-invariant","reference":"1.0.6"}],
   ["../../Library/Caches/Yarn/v4/npm-tiny-warning-1.0.3-94a30db453df4c643d0fd566060d60a875d84754/node_modules/tiny-warning/", {"name":"tiny-warning","reference":"1.0.3"}],
   ["../../Library/Caches/Yarn/v4/npm-value-equal-0.4.0-c5bdd2f54ee093c04839d71ce2e4758a6890abc7/node_modules/value-equal/", {"name":"value-equal","reference":"0.4.0"}],
-  ["../../Library/Caches/Yarn/v4/npm-hoist-non-react-statics-3.3.0-b09178f0122184fb95acf525daaecb4d8f45958b/node_modules/hoist-non-react-statics/", {"name":"hoist-non-react-statics","reference":"3.3.0"}],
   ["../../Library/Caches/Yarn/v4/npm-mini-create-react-context-0.3.2-79fc598f283dd623da8e088b05db8cddab250189/node_modules/mini-create-react-context/", {"name":"mini-create-react-context","reference":"0.3.2"}],
   ["../../Library/Caches/Yarn/v4/npm-gud-1.0.0-a489581b17e6a70beca9abe3ae57de7a499852c0/node_modules/gud/", {"name":"gud","reference":"1.0.0"}],
   ["../../Library/Caches/Yarn/v4/npm-path-to-regexp-1.7.0-59fde0f435badacba103a84e9d3bc64e96b9937d/node_modules/path-to-regexp/", {"name":"path-to-regexp","reference":"1.7.0"}],
@@ -8379,6 +9639,112 @@ let locatorsByLocations = new Map([
   ["../../Library/Caches/Yarn/v4/npm-ansi-colors-3.2.4-e3a3da4bfbae6c86a9c285625de124a234026fbf/node_modules/ansi-colors/", {"name":"ansi-colors","reference":"3.2.4"}],
   ["../../Library/Caches/Yarn/v4/npm-ws-6.2.1-442fdf0a47ed64f59b6a5d8ff130f4748ed524fb/node_modules/ws/", {"name":"ws","reference":"6.2.1"}],
   ["../../Library/Caches/Yarn/v4/npm-async-limiter-1.0.1-dd379e94f0db8310b08291f9d64c3209766617fd/node_modules/async-limiter/", {"name":"async-limiter","reference":"1.0.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-antd-3.22.2-ae8279d940decf062a0708880bc4340783b7b270/node_modules/antd/", {"name":"antd","reference":"3.22.2"}],
+  ["./.pnp/externals/pnp-8a73753cc25da4d54439df6b0a2b243b49601b82/node_modules/@ant-design/create-react-context/", {"name":"@ant-design/create-react-context","reference":"pnp:8a73753cc25da4d54439df6b0a2b243b49601b82"}],
+  ["./.pnp/externals/pnp-7099467d41d73d19e208fa4b9aaf72215e68a090/node_modules/@ant-design/create-react-context/", {"name":"@ant-design/create-react-context","reference":"pnp:7099467d41d73d19e208fa4b9aaf72215e68a090"}],
+  ["./.pnp/externals/pnp-b2b97106097a2b8ab572d9cc64a7d1d114015756/node_modules/@ant-design/create-react-context/", {"name":"@ant-design/create-react-context","reference":"pnp:b2b97106097a2b8ab572d9cc64a7d1d114015756"}],
+  ["./.pnp/externals/pnp-c4082800bdf47f09a504999332cc7b3a51a0fc04/node_modules/@ant-design/create-react-context/", {"name":"@ant-design/create-react-context","reference":"pnp:c4082800bdf47f09a504999332cc7b3a51a0fc04"}],
+  ["../../Library/Caches/Yarn/v4/npm-warning-4.0.3-16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3/node_modules/warning/", {"name":"warning","reference":"4.0.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-warning-3.0.0-32e5377cb572de4ab04753bdf8821c01ed605b7c/node_modules/warning/", {"name":"warning","reference":"3.0.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-@ant-design-icons-2.1.1-7b9c08dffd4f5d41db667d9dbe5e0107d0bd9a4a/node_modules/@ant-design/icons/", {"name":"@ant-design/icons","reference":"2.1.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-@ant-design-icons-react-2.0.1-17a2513571ab317aca2927e58cea25dd31e536fb/node_modules/@ant-design/icons-react/", {"name":"@ant-design/icons-react","reference":"2.0.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-@ant-design-colors-3.2.1-ad86cbf2d1a0039d01586aa73a7ea8a7ce0455a2/node_modules/@ant-design/colors/", {"name":"@ant-design/colors","reference":"3.2.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-tinycolor2-1.4.1-f4fad333447bc0b07d4dc8e9209d8f39a8ac77e8/node_modules/tinycolor2/", {"name":"tinycolor2","reference":"1.4.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-babel-runtime-6.26.0-965c7058668e82b55d7bfe04ff2337bc8b5647fe/node_modules/babel-runtime/", {"name":"babel-runtime","reference":"6.26.0"}],
+  ["./.pnp/unplugged/npm-core-js-2.6.9-6b4b214620c834152e179323727fc19741b084f2/node_modules/core-js/", {"name":"core-js","reference":"2.6.9"}],
+  ["../../Library/Caches/Yarn/v4/npm-core-js-1.2.7-652294c14651db28fa93bd2d5ff2983a4f08c636/node_modules/core-js/", {"name":"core-js","reference":"1.2.7"}],
+  ["../../Library/Caches/Yarn/v4/npm-@types-react-slick-0.23.4-c97e2a9e7e3d1933c68593b8e82752fab1e8ce53/node_modules/@types/react-slick/", {"name":"@types/react-slick","reference":"0.23.4"}],
+  ["../../Library/Caches/Yarn/v4/npm-@types-react-16.9.2-6d1765431a1ad1877979013906731aae373de268/node_modules/@types/react/", {"name":"@types/react","reference":"16.9.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-@types-prop-types-15.7.1-f1a11e7babb0c3cad68100be381d1e064c68f1f6/node_modules/@types/prop-types/", {"name":"@types/prop-types","reference":"15.7.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-csstype-2.6.6-c34f8226a94bbb10c32cc0d714afdf942291fc41/node_modules/csstype/", {"name":"csstype","reference":"2.6.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-array-tree-filter-2.1.0-873ac00fec83749f255ac8dd083814b4f6329190/node_modules/array-tree-filter/", {"name":"array-tree-filter","reference":"2.1.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-classnames-2.2.6-43935bffdd291f326dad0a205309b38d00f650ce/node_modules/classnames/", {"name":"classnames","reference":"2.2.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-copy-to-clipboard-3.2.0-d2724a3ccbfed89706fac8a894872c979ac74467/node_modules/copy-to-clipboard/", {"name":"copy-to-clipboard","reference":"3.2.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-toggle-selection-1.0.6-6e45b1263f2017fa0acc7d89d78b15b8bf77da32/node_modules/toggle-selection/", {"name":"toggle-selection","reference":"1.0.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-css-animation-1.6.1-162064a3b0d51f958b7ff37b3d6d4de18e17039e/node_modules/css-animation/", {"name":"css-animation","reference":"1.6.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-component-classes-1.2.6-c642394c3618a4d8b0b8919efccbbd930e5cd691/node_modules/component-classes/", {"name":"component-classes","reference":"1.2.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-component-indexof-0.0.3-11d091312239eb8f32c8f25ae9cb002ffe8d3c24/node_modules/component-indexof/", {"name":"component-indexof","reference":"0.0.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-dom-closest-0.2.0-ebd9f91d1bf22e8d6f477876bbcd3ec90216c0cf/node_modules/dom-closest/", {"name":"dom-closest","reference":"0.2.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-dom-matches-2.0.0-d2728b416a87533980eb089b848d253cf23a758c/node_modules/dom-matches/", {"name":"dom-matches","reference":"2.0.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-enquire-js-2.1.6-3e8780c9b8b835084c3f60e166dbc3c2a3c89814/node_modules/enquire.js/", {"name":"enquire.js","reference":"2.1.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-moment-2.24.0-0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b/node_modules/moment/", {"name":"moment","reference":"2.24.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-omit-js-1.0.2-91a14f0eba84066dfa015bf30e474c47f30bc858/node_modules/omit.js/", {"name":"omit.js","reference":"1.0.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-raf-3.4.1-0742e99a4a6552f445d73e3ee0328af0ff1ede39/node_modules/raf/", {"name":"raf","reference":"3.4.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-performance-now-2.1.0-6309f4e0e5fa913ec1c69307ae364b4b377c9e7b/node_modules/performance-now/", {"name":"performance-now","reference":"2.1.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-animate-2.10.0-d2224cee4700cc9e9836700eb47af6b6e41a080c/node_modules/rc-animate/", {"name":"rc-animate","reference":"2.10.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-animate-3.0.0-rc.6-04288eefa118e0cae214536c8a903ffaac1bc3fb/node_modules/rc-animate/", {"name":"rc-animate","reference":"3.0.0-rc.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-util-4.11.0-cf437dcff74ca08a8565ae14f0368acb3a650796/node_modules/rc-util/", {"name":"rc-util","reference":"4.11.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-add-dom-event-listener-1.1.0-6a92db3a0dd0abc254e095c0f1dc14acbbaae310/node_modules/add-dom-event-listener/", {"name":"add-dom-event-listener","reference":"1.1.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-react-lifecycles-compat-3.0.4-4f1a273afdfc8f3488a8c516bfda78f872352362/node_modules/react-lifecycles-compat/", {"name":"react-lifecycles-compat","reference":"3.0.4"}],
+  ["../../Library/Caches/Yarn/v4/npm-shallowequal-0.2.2-1e32fd5bcab6ad688a4812cb0cc04efc75c7014e/node_modules/shallowequal/", {"name":"shallowequal","reference":"0.2.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-shallowequal-1.1.0-188d521de95b9087404fd4dcb68b13df0ae4e7f8/node_modules/shallowequal/", {"name":"shallowequal","reference":"1.1.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-lodash-keys-3.1.2-4dbc0472b156be50a0b286855d1bd0b0c656098a/node_modules/lodash.keys/", {"name":"lodash.keys","reference":"3.1.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-lodash-getnative-3.9.1-570bc7dede46d61cdcde687d65d3eecbaa3aaff5/node_modules/lodash._getnative/", {"name":"lodash._getnative","reference":"3.9.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-lodash-isarguments-3.1.0-2f573d85c6a24289ff00663b491c1d338ff3458a/node_modules/lodash.isarguments/", {"name":"lodash.isarguments","reference":"3.1.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-lodash-isarray-3.0.4-79e4eb88c36a8122af86f844aa9bcd851b5fbb55/node_modules/lodash.isarray/", {"name":"lodash.isarray","reference":"3.0.4"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-calendar-9.15.5-21ab0cb2a5659d85fe6faead13d3ed764dd47c01/node_modules/rc-calendar/", {"name":"rc-calendar","reference":"9.15.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-trigger-2.6.5-140a857cf28bd0fa01b9aecb1e26a50a700e9885/node_modules/rc-trigger/", {"name":"rc-trigger","reference":"2.6.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-trigger-3.0.0-rc.3-35842df1674d25315e1426a44882a4c97652258b/node_modules/rc-trigger/", {"name":"rc-trigger","reference":"3.0.0-rc.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-align-2.4.5-c941a586f59d1017f23a428f0b468663fb7102ab/node_modules/rc-align/", {"name":"rc-align","reference":"2.4.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-dom-align-1.10.2-540ea1c9e20462bd11b9fc28c561dc8351ece4c6/node_modules/dom-align/", {"name":"dom-align","reference":"1.10.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-cascader-0.17.4-bb38ba3ed0990bfaa5ee547467d85ecc0d152f96/node_modules/rc-cascader/", {"name":"rc-cascader","reference":"0.17.4"}],
+  ["../../Library/Caches/Yarn/v4/npm-shallow-equal-1.2.0-fd828d2029ff4e19569db7e19e535e94e2d1f5cc/node_modules/shallow-equal/", {"name":"shallow-equal","reference":"1.2.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-checkbox-2.1.7-ae6785525cf35fa4c62d706c4a1ff7b2b1fcb821/node_modules/rc-checkbox/", {"name":"rc-checkbox","reference":"2.1.7"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-collapse-1.11.6-9a70ac2bc2715e1ef7bae8e308bc0e844618d119/node_modules/rc-collapse/", {"name":"rc-collapse","reference":"1.11.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-dialog-7.5.5-67bf2657a239d29fdd21e06c9b13017dbb110a75/node_modules/rc-dialog/", {"name":"rc-dialog","reference":"7.5.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-drawer-2.0.8-ba0500590804283308f77acc22fff35f395e979a/node_modules/rc-drawer/", {"name":"rc-drawer","reference":"2.0.8"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-dropdown-2.4.1-aaef6eb3a5152cdd9982895c2a78d9b5f046cdec/node_modules/rc-dropdown/", {"name":"rc-dropdown","reference":"2.4.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-editor-mention-1.1.13-9f1cab1065f86b01523840321790c2ab12ac5e8b/node_modules/rc-editor-mention/", {"name":"rc-editor-mention","reference":"1.1.13"}],
+  ["../../Library/Caches/Yarn/v4/npm-dom-scroll-into-view-1.2.1-e8f36732dd089b0201a88d7815dc3f88e6d66c7e/node_modules/dom-scroll-into-view/", {"name":"dom-scroll-into-view","reference":"1.2.1"}],
+  ["./.pnp/externals/pnp-8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55/node_modules/draft-js/", {"name":"draft-js","reference":"pnp:8b00ec8c993e5cccb8bbff8f3d7f9019cb35aa55"}],
+  ["./.pnp/externals/pnp-12bacde2ce6a7772102085aae25253f9170f86d2/node_modules/draft-js/", {"name":"draft-js","reference":"pnp:12bacde2ce6a7772102085aae25253f9170f86d2"}],
+  ["../../Library/Caches/Yarn/v4/npm-fbjs-0.8.17-c4d598ead6949112653d6588b01a5cdcd9f90fdd/node_modules/fbjs/", {"name":"fbjs","reference":"0.8.17"}],
+  ["../../Library/Caches/Yarn/v4/npm-isomorphic-fetch-2.2.1-611ae1acf14f5e81f729507472819fe9733558a9/node_modules/isomorphic-fetch/", {"name":"isomorphic-fetch","reference":"2.2.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-node-fetch-1.7.3-980f6f72d85211a5347c6b2bc18c5b84c3eb47ef/node_modules/node-fetch/", {"name":"node-fetch","reference":"1.7.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-encoding-0.1.12-538b66f3ee62cd1ab51ec323829d1f9480c74beb/node_modules/encoding/", {"name":"encoding","reference":"0.1.12"}],
+  ["../../Library/Caches/Yarn/v4/npm-whatwg-fetch-3.0.0-fc804e458cc460009b1a2b966bc8817d2578aefb/node_modules/whatwg-fetch/", {"name":"whatwg-fetch","reference":"3.0.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-promise-7.3.1-064b72602b18f90f29192b8b1bc418ffd1ebd3bf/node_modules/promise/", {"name":"promise","reference":"7.3.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-asap-2.0.6-e50347611d7e690943208bbdafebcbc2fb866d46/node_modules/asap/", {"name":"asap","reference":"2.0.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-ua-parser-js-0.7.20-7527178b82f6a62a0f243d1f94fd30e3e3c21098/node_modules/ua-parser-js/", {"name":"ua-parser-js","reference":"0.7.20"}],
+  ["../../Library/Caches/Yarn/v4/npm-immutable-3.7.6-13b4d3cb12befa15482a26fe1b2ebae640071e4b/node_modules/immutable/", {"name":"immutable","reference":"3.7.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-immutable-3.8.2-c2439951455bb39913daf281376f1530e104adf3/node_modules/immutable/", {"name":"immutable","reference":"3.8.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-editor-core-0.8.10-6f215bc5df9c33ffa9f6c5b30ca73a7dabe8ab7c/node_modules/rc-editor-core/", {"name":"rc-editor-core","reference":"0.8.10"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-form-2.4.8-79a1f124d4fa81dff2af2992e94aa3e58cad683c/node_modules/rc-form/", {"name":"rc-form","reference":"2.4.8"}],
+  ["../../Library/Caches/Yarn/v4/npm-async-validator-1.11.5-9d43cf49ef6bb76be5442388d19fb9a6e47597ea/node_modules/async-validator/", {"name":"async-validator","reference":"1.11.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-create-react-class-15.6.3-2d73237fb3f970ae6ebe011a9e66f46dbca80036/node_modules/create-react-class/", {"name":"create-react-class","reference":"15.6.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-input-number-4.4.5-81473d2885a6b312e486c4f2ba3f441c1ab88520/node_modules/rc-input-number/", {"name":"rc-input-number","reference":"4.4.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-rmc-feedback-2.0.0-cbc6cb3ae63c7a635eef0e25e4fbaf5ac366eeaa/node_modules/rmc-feedback/", {"name":"rmc-feedback","reference":"2.0.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-mentions-0.4.0-483552c088290dbcddd059a0846e9f207ecc3539/node_modules/rc-mentions/", {"name":"rc-mentions","reference":"0.4.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-menu-7.4.23-e07d497864274076299d7d8a84d14fc86b6bd30d/node_modules/rc-menu/", {"name":"rc-menu","reference":"7.4.23"}],
+  ["../../Library/Caches/Yarn/v4/npm-ismobilejs-0.5.2-e81bacf6187c532ad8348355f4fecd6e6adfdce1/node_modules/ismobilejs/", {"name":"ismobilejs","reference":"0.5.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-mini-store-2.0.0-0843c048d6942ce55e3e78b1b67fc063022b5488/node_modules/mini-store/", {"name":"mini-store","reference":"2.0.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-mutationobserver-shim-0.3.3-65869630bc89d7bf8c9cd9cb82188cd955aacd2b/node_modules/mutationobserver-shim/", {"name":"mutationobserver-shim","reference":"0.3.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-resize-observer-polyfill-1.5.1-0e9020dd3d21024458d4ebd27e23e40269810464/node_modules/resize-observer-polyfill/", {"name":"resize-observer-polyfill","reference":"1.5.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-notification-3.3.1-0baa3e70f8d40ab015ce8fa78c260c490fc7beb4/node_modules/rc-notification/", {"name":"rc-notification","reference":"3.3.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-pagination-1.20.5-b64395a702e9fc452e26d0e491ccf7d9345309f7/node_modules/rc-pagination/", {"name":"rc-pagination","reference":"1.20.5"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-progress-2.5.2-ab01ba4e5d2fa36fc9f6f058b10b720e7315560c/node_modules/rc-progress/", {"name":"rc-progress","reference":"2.5.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-rate-2.5.0-72d4984a03d0a7a0e6779c7a79efcea27626abf6/node_modules/rc-rate/", {"name":"rc-rate","reference":"2.5.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-select-9.2.1-0fbf47a933c36e1e6ef76c88fab32f58029e6a01/node_modules/rc-select/", {"name":"rc-select","reference":"9.2.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-slider-8.6.13-88a8150c2dda6709f3f119135de11fba80af765b/node_modules/rc-slider/", {"name":"rc-slider","reference":"8.6.13"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-tooltip-3.7.3-280aec6afcaa44e8dff0480fbaff9e87fc00aecc/node_modules/rc-tooltip/", {"name":"rc-tooltip","reference":"3.7.3"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-steps-3.5.0-36b2a7f1f49907b0d90363884b18623caf9fb600/node_modules/rc-steps/", {"name":"rc-steps","reference":"3.5.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-switch-1.9.0-ab2b878f2713c681358a453391976c9b95b290f7/node_modules/rc-switch/", {"name":"rc-switch","reference":"1.9.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-table-6.7.0-8aca002f84a43a2d51a4fcda0f7a51694154286d/node_modules/rc-table/", {"name":"rc-table","reference":"6.7.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-tabs-9.6.6-1378aae0e4a04d6c3f2bd61bfcb7f28a7ef3807f/node_modules/rc-tabs/", {"name":"rc-tabs","reference":"9.6.6"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-hammerjs-0.6.9-9a4ddbda1b2ec8f9b9596091a6a989842a243907/node_modules/rc-hammerjs/", {"name":"rc-hammerjs","reference":"0.6.9"}],
+  ["../../Library/Caches/Yarn/v4/npm-hammerjs-2.0.8-04ef77862cff2bb79d30f7692095930222bf60f1/node_modules/hammerjs/", {"name":"hammerjs","reference":"2.0.8"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-time-picker-3.7.2-fabe5501adf1374d31a2d3b47f1ba89fc2dc2467/node_modules/rc-time-picker/", {"name":"rc-time-picker","reference":"3.7.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-tree-2.1.2-c70546cf1081e1c27bffa314a966e2e4d06b3f2b/node_modules/rc-tree/", {"name":"rc-tree","reference":"2.1.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-tree-2.0.0-68fc4c9ab696943b279a143619e2ecf05918fb53/node_modules/rc-tree/", {"name":"rc-tree","reference":"2.0.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-tree-select-2.9.1-d076b8ce5bf432df3fdd8a6a01cdd9c93c8e7399/node_modules/rc-tree-select/", {"name":"rc-tree-select","reference":"2.9.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-rc-upload-2.7.0-f279b758655eb5f99ebf82a5a2648d80d88e0ff4/node_modules/rc-upload/", {"name":"rc-upload","reference":"2.7.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-react-lazy-load-3.0.13-3b0a92d336d43d3f0d73cbe6f35b17050b08b824/node_modules/react-lazy-load/", {"name":"react-lazy-load","reference":"3.0.13"}],
+  ["../../Library/Caches/Yarn/v4/npm-eventlistener-0.0.1-ed2baabb852227af2bcf889152c72c63ca532eb8/node_modules/eventlistener/", {"name":"eventlistener","reference":"0.0.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-lodash-debounce-4.0.8-82d79bff30a67c4005ffd5e2515300ad9ca4d7af/node_modules/lodash.debounce/", {"name":"lodash.debounce","reference":"4.0.8"}],
+  ["../../Library/Caches/Yarn/v4/npm-lodash-throttle-4.1.1-c23e91b710242ac70c37f1e1cda9274cc39bf2f4/node_modules/lodash.throttle/", {"name":"lodash.throttle","reference":"4.1.1"}],
+  ["../../Library/Caches/Yarn/v4/npm-react-slick-0.25.2-56331b67d47d8bcfe2dceb6acab1c8fd5bd1f6bc/node_modules/react-slick/", {"name":"react-slick","reference":"0.25.2"}],
+  ["../../Library/Caches/Yarn/v4/npm-json2mq-0.2.0-b637bd3ba9eabe122c83e9720483aeb10d2c904a/node_modules/json2mq/", {"name":"json2mq","reference":"0.2.0"}],
+  ["../../Library/Caches/Yarn/v4/npm-string-convert-0.2.1-6982cc3049fbb4cd85f8b24568b9d9bf39eeff97/node_modules/string-convert/", {"name":"string-convert","reference":"0.2.1"}],
   ["./", topLevelLocator],
 ]);
 exports.findPackageLocator = function findPackageLocator(location) {
@@ -8552,6 +9918,10 @@ exports.findPackageLocator = function findPackageLocator(location) {
     if (match = locatorsByLocations.get(relativeLocation.substr(0, 129)))
       return blacklistCheck(match);
 
+  if (relativeLocation.length >= 128 && relativeLocation[127] === '/')
+    if (match = locatorsByLocations.get(relativeLocation.substr(0, 128)))
+      return blacklistCheck(match);
+
   if (relativeLocation.length >= 127 && relativeLocation[126] === '/')
     if (match = locatorsByLocations.get(relativeLocation.substr(0, 127)))
       return blacklistCheck(match);
@@ -8664,8 +10034,16 @@ exports.findPackageLocator = function findPackageLocator(location) {
     if (match = locatorsByLocations.get(relativeLocation.substr(0, 99)))
       return blacklistCheck(match);
 
+  if (relativeLocation.length >= 97 && relativeLocation[96] === '/')
+    if (match = locatorsByLocations.get(relativeLocation.substr(0, 97)))
+      return blacklistCheck(match);
+
   if (relativeLocation.length >= 88 && relativeLocation[87] === '/')
     if (match = locatorsByLocations.get(relativeLocation.substr(0, 88)))
+      return blacklistCheck(match);
+
+  if (relativeLocation.length >= 84 && relativeLocation[83] === '/')
+    if (match = locatorsByLocations.get(relativeLocation.substr(0, 84)))
       return blacklistCheck(match);
 
   if (relativeLocation.length >= 2 && relativeLocation[1] === '/')
