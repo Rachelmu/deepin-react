@@ -96,7 +96,7 @@ function inherit(Parent, Child) {
     F.prototype = Parent.prototype
     Child.prototype = new F()
     Child.prototype.constructor = Child
-    Child.prototype.uber = Parent.prototype
+    Child.prototype.uber = Parent.prototype.constructor
 }
 ```
 
