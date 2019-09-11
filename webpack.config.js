@@ -63,7 +63,12 @@ const config = {
 		new VueLoaderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new webpack.NamedModulesPlugin()
-	]
+	],
+	devServer: {
+		port: 8080,
+		open: true,
+		hot: true
+	}
 }
 
 module.exports = config
