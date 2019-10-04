@@ -8,9 +8,7 @@ index为基本使用, 其他则为深入理解
 
 [伢羽大大的JS深入](https://github.com/mqyqingfeng/Blog)
 
-
-
-**哈哈哈哈嗝, 我想要 offer 啊啊啊啊啊啊**
+...
 
 ## React
 

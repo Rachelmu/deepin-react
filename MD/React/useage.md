@@ -145,9 +145,60 @@ class Comp extends Component {
 
 ## redux
 
+基本使用: 包括基本的几个文件, store.js, reducers.js, actions.js, actionType.js
 
+```js
+// store.js 简单的创建 store
+import { createStore } from 'redux'
+import rootReducer from './reducers.js'
+
+const store = createStore(rootReducer)
+
+export default store
+```
+
+reducers.js 创建 store 的必要条件
+
+```js
+import { combineReducer } from 'redux'
+
+const defaultStore = {
+    // ...
+}
+
+const reducer = (defaultStore, action) => {
+    // 判断actiontype, 进行操作
+    
+    return defaultStore
+}
+
+const rootReducer = combineReducers({ // 因为不可能把多个逻辑写在一个reducer里面,so可以拆分
+    reducer
+    // ...
+})
+
+export default rootReducer
+```
+
+actions.js 用于commit的action
+
+```js
 
 ```
 
-```
+
+
+
+
+
+
+
+
+## react-router
+
+
+
+
+
+## mobx
 
