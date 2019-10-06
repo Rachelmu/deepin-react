@@ -145,8 +145,6 @@ class Comp extends Component {
 
 ## redux
 
-
-
 ```
 
 ```

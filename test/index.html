@@ -6,27 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Document</title>
+	<script>
+		/**
+		 * 获取元素
+		 */
+		const $ = e => document.getElementById(e)
+		/** 
+		 * 打印函数
+		 */
+		const print = (...rest) => console.log(...rest)
+		/** 
+		 * 获取对象属性函数
+		 */
+	</script>
 </head>
 
 <body>
 	<script>
-		Function.prototype.myCall = function (context = window, ...rest) {
-			context.fn = this
-			context.fn(...rest)
-			delete context.fn
+		function test (a) {
+			if (a === 1) {
+				return 1
+			}
+			debugger
+			return test(a--)
 		}
-
-		var name = 'Jeden'
-
-		function co(aaa) {
-			console.log(this.name, aaa)
-		}
-
-		let obj = {
-			name: 'Zhan'
-		}
-
-		co.myCall(obj, '1234')
+		test(12)
 	</script>
 </body>
 

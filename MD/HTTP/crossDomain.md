@@ -35,16 +35,39 @@ jsonp({
 
 ### CORS
 
+浏览器拦截响应的原因就是服务器未设置一个头部, 所以需要服务端手动设置一个头部
 
+```js
+// 设置所有域名可访问
+res.header('Access-Control-Allow-Origin', '*')
+// 允许的头部
+res.header('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild')
+// 支持的复杂请求
+res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS')
+```
+
+当使用 cors 的时候, 请求分为`简单请求`和`复杂请求`
+
+简单请求
+
+> 同时满足**两个**条件
+>
+> 1. GET, POST, HEAD 方法之一
+> 2. content-type为text/plain, multipart/form-data, application/x-www-form-urlencoded之一
+
+复杂请求
+
+> 非简单请求均为复杂请求, 需要有一个预检方法, 该方法为 option 方法, 询问服务器支持的方法
 
 
 
 ### websocket
 
-
+websocket和http一样是基于TCP协议, 但是websocket只需要使用http建立链接, 之后就与http无关了, 所以可以使用websocket跨域
 
 
 
 ### nginx 反向代理
 
 > 因为同源策略是针对浏览器的, 服务器并没有这一限制
+
