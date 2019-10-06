@@ -147,5 +147,25 @@ class Comp extends Component {
 
 ```
 
+actions.js 用于commit的action
+
+```js
+
 ```
+
+
+
+
+
+
+
+
+
+## react-router
+
+
+
+
+
+## mobx
 
