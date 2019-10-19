@@ -128,6 +128,19 @@ docker rm 容器ID
 >
 > 构建三部曲: 编写dockerfile ----> docker build ----> docker run
 
+Dockerfile
+
+```dockerfile
+# 1. 每条指令都必须为大写字母后面要跟随至少一个参数
+# 2. 指令从上到下顺序执行
+# 3. 每条指令都会创建一个镜像层, 并对镜像进行提交
+
+FROM scratch # 基础镜像, 当前新镜像是基于哪个镜像的
+ADD centos-7.tar.gz # 将宿主机目录下的文件拷贝进镜像并且ADD命令会自动处理解压tar压缩包
+CMD ['/bin/bash'] # 指定一个容器启动时要运行的命令
+# ...
+```
+
 
 
 updating...
