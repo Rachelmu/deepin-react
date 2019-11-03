@@ -24,13 +24,9 @@
 <body>
 	<script>
 		function test (a) {
-			if (a === 1) {
-				return 1
-			}
-			debugger
-			return test(a--)
+			return --a
 		}
-		test(12)
+		print(test(a = 12))
 	</script>
 </body>
 
