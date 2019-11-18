@@ -8535,6 +8535,14 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
+  ["redux-thunk", new Map([
+    ["2.3.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v4/npm-redux-thunk-2.3.0-51c2c19a185ed5187aaa9a2d08b666d0d6467622/node_modules/redux-thunk/"),
+      packageDependencies: new Map([
+        ["redux-thunk", "2.3.0"],
+      ]),
+    }],
+  ])],
   [null, new Map([
     [null, {
       packageLocation: path.resolve(__dirname, "./"),
@@ -8567,6 +8575,7 @@ let packageInformationStores = new Map([
         ["webpack", "4.39.3"],
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
+        ["redux-thunk", "2.3.0"],
       ]),
     }],
   ])],
@@ -9449,6 +9458,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v4/npm-async-limiter-1.0.1-dd379e94f0db8310b08291f9d64c3209766617fd/node_modules/async-limiter/", {"name":"async-limiter","reference":"1.0.1"}],
   ["../../.cache/yarn/v4/npm-code-point-at-1.1.0-0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77/node_modules/code-point-at/", {"name":"code-point-at","reference":"1.1.0"}],
   ["../../.cache/yarn/v4/npm-number-is-nan-1.0.1-097b602b53422a522c1afb8790318336941a011d/node_modules/number-is-nan/", {"name":"number-is-nan","reference":"1.0.1"}],
+  ["../../.cache/yarn/v4/npm-redux-thunk-2.3.0-51c2c19a185ed5187aaa9a2d08b666d0d6467622/node_modules/redux-thunk/", {"name":"redux-thunk","reference":"2.3.0"}],
   ["./", topLevelLocator],
 ]);
 exports.findPackageLocator = function findPackageLocator(location) {

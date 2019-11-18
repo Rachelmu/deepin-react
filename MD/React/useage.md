@@ -145,13 +145,7 @@ class Comp extends Component {
 
 ## redux
 
-```
 
-actions.js 用于commit的action
-
-```js
-
-```
 
 
 

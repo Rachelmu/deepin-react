@@ -5,11 +5,9 @@ class Todo extends Component {
   
 
   render () {
-    console.log(store)
 
     return (
       <Fragment>
-
 
       </Fragment>
     )
