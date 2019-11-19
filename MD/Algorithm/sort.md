@@ -38,6 +38,8 @@ function bubbleSort(arr) {
 ## 选择排序
 
 > 每一次遍历都选择最小的放在已排序的后面
+>
+> 时间复杂度为 O(n^2)
 
 ```js
 function selectSort(arr) {

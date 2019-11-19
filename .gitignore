@@ -1,4 +1,8 @@
 .pnp
+node_modules
+.vscode
+.idea
+
 *.log
 test
 *.test.*
