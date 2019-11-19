@@ -10,7 +10,7 @@ function quickSort(array) {
   let pivot = array[array.length - 1]
   let left = array.filter((v, i) => v <= pivot && i != array.length -1)
   let right = array.filter(v => v > pivot)
-  return [...quickSort(left), pivot, ...quickSodxrt(right)]
+  return [...quickSort(left), pivot, ...quickSort(right)]
 }
 ```
 
@@ -50,6 +50,30 @@ function selectSort(arr) {
         }
         minIndex !== i && ([arr[i], arr[minIndex]] = [arr[minIndex], arr[i]])
     }
+    return arr
+}
+```
+
+
+
+## 插入排序
+
+> 把待排序元素插入到已排序序列中
+>
+> 时间复杂度 O(n^2)
+
+```js
+function insertionSort(arr) {
+    for (let i = 0, len = arr.length; i < len; i ++) {
+        let j = i
+        let target = arr[j]
+        while (j > 0 && arr[j-1] > target) {
+            arr[j] = arr[j-1]
+            j--
+        }
+        arr[j] = target
+    }
+    return arr
 }
 ```
 
