@@ -1,8 +1,12 @@
 import React, { Fragment } from "react"
-import { Layout, Menu, Icon } from 'antd';
+import { Layout, Menu, Icon } from 'antd'
+import BasicRouter from './route'
 
 import Todo from "./components/Todo"
 import Hooks from './components/Hooks'
+import LeftMenu from './components/LeftMenu'
+
+import './assets/App.styl'
 
 const { Header, Sider, Content } = Layout;
 
@@ -18,29 +22,11 @@ const App = () => {
 		<Fragment>
 			<Layout style={{ height: '100%' }}>
         <Sider trigger={null} collapsible collapsed={state.collapsed}>
-          <div className="logo" />
-          <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
-            <Menu.Item key="1">
-              <Icon type="user" />
-              <span>nav 1</span>
-            </Menu.Item>
-            <Menu.Item key="2">
-              <Icon type="video-camera" />
-              <span>nav 2</span>
-            </Menu.Item>
-            <Menu.Item key="3">
-              <Icon type="upload" />
-              <span>nav 3</span>
-            </Menu.Item>
-          </Menu>
+          <div className="logo" style={{color:'#fff', fontSize:'20px', marginTop: '20px', textAlign: 'center'}}> Jeden </div>
+          <LeftMenu />
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
-            <Icon
-              className="trigger"
-              type={state.collapsed ? 'menu-unfold' : 'menu-fold'}
-              onClick={toggle}
-            />
           </Header>
           <Content
             style={{
@@ -50,7 +36,7 @@ const App = () => {
               minHeight: 280,
             }}
           >
-            Content
+            <BasicRouter />
           </Content>
         </Layout>
       </Layout>

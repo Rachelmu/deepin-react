@@ -56,7 +56,7 @@ const config = {
 		]
 	},
 	resolve: {
-		extensions: ['.js', '.jsx'],
+		extensions: ['.js', '.jsx', '.styl'],
 		plugins: [PnpWebpackPlugin],
 		alias: {
 			'@': path.join(__dirname, 'src')
