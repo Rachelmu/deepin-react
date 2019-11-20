@@ -2,7 +2,8 @@ const path = require('path'),
 	webpack = require('webpack'),
 	PnpWebpackPlugin = require('pnp-webpack-plugin'),
 	HtmlWebpackPlugin = require('html-webpack-plugin'),
-	VueLoaderPlugin = require('vue-loader/lib/plugin')
+	VueLoaderPlugin = require('vue-loader/lib/plugin'),
+	MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const config = {
 	mode: 'development',
@@ -21,7 +22,7 @@ const config = {
 				{
 					test: /\.styl$/,
 					use: [
-						'style-loader',
+						MiniCssExtractPlugin.loader,
 						'css-loader',
 						'stylus-loader'
 					]
@@ -29,7 +30,7 @@ const config = {
 				{
 					test: /\.css$/,
 					use: [
-						'style-loader',
+						MiniCssExtractPlugin.loader,
 						'css-loader',
 					]
 				},
@@ -56,8 +57,19 @@ const config = {
 	},
 	resolve: {
 		extensions: ['.js', '.jsx'],
-		plugins: [PnpWebpackPlugin]
+		plugins: [PnpWebpackPlugin],
+		alias: {
+			'@': path.join(__dirname, 'src')
+		}
 	},
+
+	optimization: {
+    splitChunks: {
+      chunks: "all", // 所有的 chunks 代码公共的部分分离出来成为一个单独的文件
+    },
+  },
+
+
 	resolveLoader: {
 		plugins: [
 			PnpWebpackPlugin.moduleLoader(module)
@@ -69,7 +81,12 @@ const config = {
 		}),
 		new VueLoaderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NamedModulesPlugin()
+		new webpack.NamedModulesPlugin(),
+		// css plugin
+		new MiniCssExtractPlugin({
+      filename: "[name].css",
+      chunkFilename: "[id].css"
+    })
 	],
 	devServer: {
 		port: 8080,
