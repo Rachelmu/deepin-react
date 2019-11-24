@@ -1,27 +1,28 @@
 ## 目录
 
-1. let 和 const
-2. 函数
+1. 模板字符串
+2. let 和 const
+3. 函数
    1. rest参数
    2. 参数默认值
    3. 箭头函数
    4. 尾调用优化
-3. 对象的扩展
+4. 对象的扩展
    1. Object.is()
    2. Object.assign()
    3. Object.keys()
    4. Object.values()
    5. Object.entries()
-4. [解构赋值]()
-5. [Symbol]()
-6. [Set 和 Map](./set&map.md)
-7. [Proxy 代理]()
-8. [Reflect]()
-9. [Promise]()
-10. [迭代器]()
-11. [async]()
-12. [Class]()
-13. [ES6 Module]()
+5. [解构赋值]()
+6. [Symbol]()
+7. [Set 和 Map](./set&map.md)
+8. [Proxy 代理]()
+9. [Reflect]()
+10. [Promise]()
+11. [迭代器]()
+12. [async]()
+13. [Class]()
+14. [ES6 Module]()
 
 
 
