@@ -5,10 +5,10 @@ class Home extends Component {
 		super(props)
 	}
 
-	render () {
+	render() {
 		return (
 			<Fragment>
-				<div style={{ height: '200px', backgroundColor: '#00f' }}></div>
+				<div style={{ height: '200px', backgroundColor: '#00f' }}>w</div>
 			</Fragment>
 		)
 	}

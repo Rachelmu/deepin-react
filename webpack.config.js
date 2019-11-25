@@ -15,48 +15,48 @@ const config = {
 
 	module: {
 		rules: [
-				{
-					test: /\.js$/,
-					use: 'babel-loader'
-				},
-				{
-					test: /\.styl$/,
-					use: [
-						MiniCssExtractPlugin.loader,
-						'css-loader',
-						'stylus-loader'
-					]
-				},
-				{
-					test: /\.css$/,
-					use: [
-						MiniCssExtractPlugin.loader,
-						'css-loader',
-					]
-				},
-				{
-					test: /\.vue$/,
-					use: 'vue-loader'
-				},
-				{
-					test: /\.(jpg|jpeg|webp|png|gif)$/,
-					use: [
-							{
-									loader: 'url-loader',
-									options: {
-											limit: 10000,
-									},
-							}
-					],
+			{
+				test: /\.js$/,
+				use: 'babel-loader'
 			},
 			{
-					test: /.(eot|svg|ttf|woff|woff2)$/,
-					use: 'file-loader'
+				test: /\.styl$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader',
+					'stylus-loader'
+				]
+			},
+			{
+				test: /\.css$/,
+				use: [
+					MiniCssExtractPlugin.loader,
+					'css-loader',
+				]
+			},
+			{
+				test: /\.vue$/,
+				use: 'vue-loader'
+			},
+			{
+				test: /\.(jpg|jpeg|webp|png|gif)$/,
+				use: [
+					{
+						loader: 'url-loader',
+						options: {
+							limit: 10000,
+						},
+					}
+				],
+			},
+			{
+				test: /.(eot|svg|ttf|woff|woff2)$/,
+				use: 'file-loader'
 			}
 		]
 	},
 	resolve: {
-		extensions: ['.js', '.jsx', '.styl'],
+		extensions: ['.js', '.jsx', '.styl', '.vue'],
 		plugins: [PnpWebpackPlugin],
 		alias: {
 			'@': path.join(__dirname, 'src')
@@ -64,10 +64,10 @@ const config = {
 	},
 
 	optimization: {
-    splitChunks: {
-      chunks: "all", // 所有的 chunks 代码公共的部分分离出来成为一个单独的文件
-    },
-  },
+		splitChunks: {
+			chunks: "all", // 所有的 chunks 代码公共的部分分离出来成为一个单独的文件
+		},
+	},
 
 
 	resolveLoader: {
@@ -84,9 +84,9 @@ const config = {
 		new webpack.NamedModulesPlugin(),
 		// css plugin
 		new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    })
+			filename: "[name].css",
+			chunkFilename: "[id].css"
+		})
 	],
 	devServer: {
 		port: 8080,
