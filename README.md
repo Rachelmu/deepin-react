@@ -8,6 +8,8 @@ src文件夹 是 React 项目
 
 Vue文件夹 是 Vue 项目
 
+包含 Node 在 server 文件夹
+
 参考: 
 
 [伢羽大大的JS深入](https://github.com/mqyqingfeng/Blog)
