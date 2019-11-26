@@ -4,6 +4,10 @@
 
 index为基本使用或目录, 其他则为深入理解
 
+src文件夹 是 React 项目
+
+Vue文件夹 是 Vue 项目
+
 参考: 
 
 [伢羽大大的JS深入](https://github.com/mqyqingfeng/Blog)

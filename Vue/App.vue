@@ -47,7 +47,7 @@ export default {
       this.$router.push("/foo"); // 编程式导航, 利用js控制导航逻辑
     },
     toMine() {
-      this.$router.push("/mine/:123456"); // 路由传参
+      this.$router.push("/mine/123456"); // 路由传参
     },
 
     // 以下为 vuex
