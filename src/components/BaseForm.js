@@ -23,10 +23,10 @@ class HorizontalLoginForm extends React.Component {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        this.state.register && axios.post('http://localhost:8082/user', values).then(data => {
+        this.state.register && axios.post('http://localhost:3000/user/register', values).then(data => {
           console.log(data)
         })
-        this.state.login && axios.post('http://localhost:8082/login', values).then(data => {
+        this.state.login && axios.post('http://localhost:3000/user/login', values).then(data => {
           console.log(data)
         })
       }

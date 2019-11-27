@@ -1987,6 +1987,12 @@ let packageInformationStores = new Map([
         ["cookie", "0.4.0"],
       ]),
     }],
+    ["0.3.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-cookie-0.3.1-e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb-integrity/node_modules/cookie/"),
+      packageDependencies: new Map([
+        ["cookie", "0.3.1"],
+      ]),
+    }],
   ])],
   ["cookie-signature", new Map([
     ["1.0.6", {
@@ -2517,6 +2523,46 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-vuex-3.1.1-0c264bfe30cdbccf96ab9db3177d211828a5910e-integrity/node_modules/vuex/"),
       packageDependencies: new Map([
         ["vuex", "3.1.1"],
+      ]),
+    }],
+  ])],
+  ["cookie-parser", new Map([
+    ["1.4.4", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-cookie-parser-1.4.4-e6363de4ea98c3def9697b93421c09f30cf5d188-integrity/node_modules/cookie-parser/"),
+      packageDependencies: new Map([
+        ["cookie", "0.3.1"],
+        ["cookie-signature", "1.0.6"],
+        ["cookie-parser", "1.4.4"],
+      ]),
+    }],
+  ])],
+  ["morgan", new Map([
+    ["1.9.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-morgan-1.9.1-0a8d16734a1d9afbc824b99df87e738e58e2da59-integrity/node_modules/morgan/"),
+      packageDependencies: new Map([
+        ["basic-auth", "2.0.1"],
+        ["debug", "2.6.9"],
+        ["depd", "1.1.2"],
+        ["on-finished", "2.3.0"],
+        ["on-headers", "1.0.2"],
+        ["morgan", "1.9.1"],
+      ]),
+    }],
+  ])],
+  ["basic-auth", new Map([
+    ["2.0.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-basic-auth-2.0.1-b998279bf47ce38344b4f3cf916d4679bbf51e3a-integrity/node_modules/basic-auth/"),
+      packageDependencies: new Map([
+        ["safe-buffer", "5.1.2"],
+        ["basic-auth", "2.0.1"],
+      ]),
+    }],
+  ])],
+  ["on-headers", new Map([
+    ["1.0.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-on-headers-1.0.2-772b0ae6aaa525c399e489adfad90c403eb3c28f-integrity/node_modules/on-headers/"),
+      packageDependencies: new Map([
+        ["on-headers", "1.0.2"],
       ]),
     }],
   ])],
@@ -8329,14 +8375,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["on-headers", new Map([
-    ["1.0.2", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-on-headers-1.0.2-772b0ae6aaa525c399e489adfad90c403eb3c28f-integrity/node_modules/on-headers/"),
-      packageDependencies: new Map([
-        ["on-headers", "1.0.2"],
-      ]),
-    }],
-  ])],
   ["connect-history-api-fallback", new Map([
     ["1.6.0", {
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-connect-history-api-fallback-1.6.0-8b32089359308d111115d81cad3fceab888f97bc-integrity/node_modules/connect-history-api-fallback/"),
@@ -8957,6 +8995,10 @@ let packageInformationStores = new Map([
         ["vue", "2.6.10"],
         ["vue-router", "3.1.2"],
         ["vuex", "3.1.1"],
+        ["cookie-parser", "1.4.4"],
+        ["debug", "2.6.9"],
+        ["http-errors", "1.6.3"],
+        ["morgan", "1.9.1"],
         ["@babel/core", "7.5.5"],
         ["@babel/plugin-proposal-class-properties", "7.5.5"],
         ["@babel/plugin-proposal-decorators", "7.4.4"],
@@ -9197,6 +9239,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-safe-buffer-5.1.2-991ec69d296e0313747d59bdfd2b745c35f8828d-integrity/node_modules/safe-buffer/", {"name":"safe-buffer","reference":"5.1.2"}],
   ["../../.cache/yarn/v6/npm-safe-buffer-5.2.0-b74daec49b1148f88c64b68d49b1e815c1f2f519-integrity/node_modules/safe-buffer/", {"name":"safe-buffer","reference":"5.2.0"}],
   ["../../.cache/yarn/v6/npm-cookie-0.4.0-beb437e7022b3b6d49019d088665303ebe9c14ba-integrity/node_modules/cookie/", {"name":"cookie","reference":"0.4.0"}],
+  ["../../.cache/yarn/v6/npm-cookie-0.3.1-e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb-integrity/node_modules/cookie/", {"name":"cookie","reference":"0.3.1"}],
   ["../../.cache/yarn/v6/npm-cookie-signature-1.0.6-e303a882b342cc3ee8ca513a79999734dab3ae2c-integrity/node_modules/cookie-signature/", {"name":"cookie-signature","reference":"1.0.6"}],
   ["../../.cache/yarn/v6/npm-encodeurl-1.0.2-ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59-integrity/node_modules/encodeurl/", {"name":"encodeurl","reference":"1.0.2"}],
   ["../../.cache/yarn/v6/npm-escape-html-1.0.3-0258eae4d3d0c0974de1c169188ef0051d1d1988-integrity/node_modules/escape-html/", {"name":"escape-html","reference":"1.0.3"}],
@@ -9253,6 +9296,10 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-vue-2.6.10-a72b1a42a4d82a721ea438d1b6bf55e66195c637-integrity/node_modules/vue/", {"name":"vue","reference":"2.6.10"}],
   ["../../.cache/yarn/v6/npm-vue-router-3.1.2-2e0904703545dabdd42b2b7a2e617f02f99a1969-integrity/node_modules/vue-router/", {"name":"vue-router","reference":"3.1.2"}],
   ["../../.cache/yarn/v6/npm-vuex-3.1.1-0c264bfe30cdbccf96ab9db3177d211828a5910e-integrity/node_modules/vuex/", {"name":"vuex","reference":"3.1.1"}],
+  ["../../.cache/yarn/v6/npm-cookie-parser-1.4.4-e6363de4ea98c3def9697b93421c09f30cf5d188-integrity/node_modules/cookie-parser/", {"name":"cookie-parser","reference":"1.4.4"}],
+  ["../../.cache/yarn/v6/npm-morgan-1.9.1-0a8d16734a1d9afbc824b99df87e738e58e2da59-integrity/node_modules/morgan/", {"name":"morgan","reference":"1.9.1"}],
+  ["../../.cache/yarn/v6/npm-basic-auth-2.0.1-b998279bf47ce38344b4f3cf916d4679bbf51e3a-integrity/node_modules/basic-auth/", {"name":"basic-auth","reference":"2.0.1"}],
+  ["../../.cache/yarn/v6/npm-on-headers-1.0.2-772b0ae6aaa525c399e489adfad90c403eb3c28f-integrity/node_modules/on-headers/", {"name":"on-headers","reference":"1.0.2"}],
   ["../../.cache/yarn/v6/npm-@babel-core-7.5.5-17b2686ef0d6bc58f963dddd68ab669755582c30-integrity/node_modules/@babel/core/", {"name":"@babel/core","reference":"7.5.5"}],
   ["../../.cache/yarn/v6/npm-@babel-code-frame-7.5.5-bc0782f6d69f7b7d49531219699b988f669a8f9d-integrity/node_modules/@babel/code-frame/", {"name":"@babel/code-frame","reference":"7.5.5"}],
   ["../../.cache/yarn/v6/npm-@babel-highlight-7.5.0-56d11312bd9248fa619591d02472be6e8cb32540-integrity/node_modules/@babel/highlight/", {"name":"@babel/highlight","reference":"7.5.0"}],
@@ -9844,7 +9891,6 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-multicast-dns-service-types-1.1.0-899f11d9686e5e05cb91b35d5f0e63b773cfc901-integrity/node_modules/multicast-dns-service-types/", {"name":"multicast-dns-service-types","reference":"1.1.0"}],
   ["../../.cache/yarn/v6/npm-compression-1.7.4-95523eff170ca57c29a0ca41e6fe131f41e5bb8f-integrity/node_modules/compression/", {"name":"compression","reference":"1.7.4"}],
   ["../../.cache/yarn/v6/npm-compressible-2.0.17-6e8c108a16ad58384a977f3a482ca20bff2f38c1-integrity/node_modules/compressible/", {"name":"compressible","reference":"2.0.17"}],
-  ["../../.cache/yarn/v6/npm-on-headers-1.0.2-772b0ae6aaa525c399e489adfad90c403eb3c28f-integrity/node_modules/on-headers/", {"name":"on-headers","reference":"1.0.2"}],
   ["../../.cache/yarn/v6/npm-connect-history-api-fallback-1.6.0-8b32089359308d111115d81cad3fceab888f97bc-integrity/node_modules/connect-history-api-fallback/", {"name":"connect-history-api-fallback","reference":"1.6.0"}],
   ["../../.cache/yarn/v6/npm-del-4.1.1-9e8f117222ea44a31ff3a156c049b99052a9f0b4-integrity/node_modules/del/", {"name":"del","reference":"4.1.1"}],
   ["../../.cache/yarn/v6/npm-@types-glob-7.1.1-aa59a1c6e3fbc421e07ccd31a944c30eba521575-integrity/node_modules/@types/glob/", {"name":"@types/glob","reference":"7.1.1"}],

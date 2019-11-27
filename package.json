@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "start:vue": "webpack-dev-server --config=./vue.config.js"
+    "start:vue": "webpack-dev-server --config=./vue.config.js",
+    "server": "nodemon ./server/bin/www"
   },
   "keywords": [],
   "author": "",
@@ -43,9 +44,14 @@
   "dependencies": {
     "antd": "^3.25.2",
     "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
     "element-ui": "^2.12.0",
     "express": "^4.17.1",
+    "http-errors": "~1.6.3",
     "mongodb": "^3.3.4",
+    "morgan": "~1.9.1",
     "prop-types": "^15.7.2",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.3",
