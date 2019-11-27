@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import axios from 'axios'
 
-import LoginForm from '../components/Form'
+import Register from '../Register/Register'
+import Login from '../Login/Login'
 
 class Home extends Component {
 	constructor(props) {
@@ -9,15 +9,14 @@ class Home extends Component {
 	}
 
 	componentDidMount() {
-		axios.get('http://localhost:8082').then(data => {
-			console.log(data)
-		})
+
 	}
 
 	render() {
 		return (
 			<Fragment>
-				<LoginForm />
+				<Register />
+				<Login />
 			</Fragment>
 		)
 	}

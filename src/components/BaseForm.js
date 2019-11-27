@@ -7,6 +7,14 @@ function hasErrors(fieldsError) {
 }
 
 class HorizontalLoginForm extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      login: props.login,
+      register: props.register
+    }
+  }
   componentDidMount() {
     this.props.form.validateFields();
   }
@@ -15,7 +23,10 @@ class HorizontalLoginForm extends React.Component {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!err) {
-        axios.post('http://localhost:8082/user', values).then(data => {
+        this.state.register && axios.post('http://localhost:8082/user', values).then(data => {
+          console.log(data)
+        })
+        this.state.login && axios.post('http://localhost:8082/login', values).then(data => {
           console.log(data)
         })
       }
@@ -23,7 +34,8 @@ class HorizontalLoginForm extends React.Component {
   };
 
   render() {
-    const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form;
+    const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form
+    const { register, login } = this.props
 
     // Only show error after a field is touched.
     const usernameError = isFieldTouched('username') && getFieldError('username');
@@ -49,7 +61,7 @@ class HorizontalLoginForm extends React.Component {
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-            注册
+            {register ? '注册' : '登录'}
           </Button>
         </Form.Item>
       </Form>
@@ -57,6 +69,6 @@ class HorizontalLoginForm extends React.Component {
   }
 }
 
-const LoginForm = Form.create({ name: 'horizontal_login' })(HorizontalLoginForm);
+const BaseForm = Form.create({ name: 'horizontal_login' })(HorizontalLoginForm);
 
-export default LoginForm
+export default BaseForm

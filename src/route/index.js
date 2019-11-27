@@ -1,7 +1,7 @@
 import React from 'react'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-import Home from '../containers/Home'
+import Home from '../containers/Home/Home'
 
 const BasicRouter = () => (
 	<HashRouter>
