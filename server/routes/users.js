@@ -1,12 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const DBcurd = require('../db')
+const curd = require('../db');
 
-/* GET users listing. */
+// 封装一个 连接池函数
+
 
 router.post('/register', (req, res) => {
   console.log(req.body) // 这里已经获取到了 body, 可以进行数据库操作了
-  DBcurd(db => {
+
+  curd(db => {
     db.collection('demo').insertOne(req.body, (err, res) => {
       if (err) {
         console.log('出现错误', err)
