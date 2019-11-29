@@ -1,6 +1,8 @@
 import React from 'react'
-import { Form, Icon, Input, Button } from 'antd'
+import { Form, Icon, Input, Button, message } from 'antd'
 import axios from 'axios'
+
+import { userRegister, userLogin, wsApi } from '../api'
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -17,25 +19,40 @@ class HorizontalLoginForm extends React.Component {
   }
   componentDidMount() {
     this.props.form.validateFields();
+    const ws = new WebSocket(wsApi)
+
+    ws.addEventListener('open', event => {
+      console.log('connect success', event)
+      ws.send('hello server')
+    })
+
+    ws.addEventListener('message', msg => {
+      console.log(msg.data)
+    })
   }
 
   handleSubmit = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
+      if (!values.username || !values.password) {
+        message.warn('用户名或密码不能为空')
+        return
+      }
       if (!err) {
-        this.state.register && axios.post('http://localhost:3000/user/register', values).then(data => {
-          console.log(data)
+        axios.post(userRegister, values).then(data => {
+          if (data.data) {
+            message.success('注册成功')
+          }
         })
-        this.state.login && axios.post('http://localhost:3000/user/login', values).then(data => {
+        axios.post(userLogin, values).then(data => {
           console.log(data)
         })
       }
-    });
-  };
+    })
+  }
 
   render() {
     const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form
-    const { register, login } = this.props
 
     // Only show error after a field is touched.
     const usernameError = isFieldTouched('username') && getFieldError('username');
@@ -61,7 +78,12 @@ class HorizontalLoginForm extends React.Component {
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-            {register ? '注册' : '登录'}
+            注册
+          </Button>
+        </Form.Item>
+        <Form.Item>
+          <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
+            登录
           </Button>
         </Form.Item>
       </Form>

@@ -3,7 +3,7 @@ const express = require('express'),
   cookieParser = require('cookie-parser'),
   logger = require('morgan'),
   bodyParser = require('body-parser'),
-  http = require('http')
+  http = require('http'),
 
 
 const indexRouter = require('./routes/index')
@@ -11,7 +11,6 @@ const usersRouter = require('./routes/users')
 
 const app = express()
 
-// view engine setup
 
 // 设置 cors 跨域需要预检请求, 可以进行的方法, 可包含的头部
 app.all('*', function (req, res, next) {

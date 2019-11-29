@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react'
 
-import Register from '../Register/Register'
 import Login from '../Login/Login'
 
 class Home extends Component {
@@ -15,7 +14,6 @@ class Home extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Register />
 				<Login />
 			</Fragment>
 		)

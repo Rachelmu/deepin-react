@@ -1,28 +1,27 @@
 import React, { Fragment } from "react"
 import { Layout, Menu, Icon } from 'antd'
-import BasicRouter from './route'
 
-import Todo from "./components/Todo"
-import Hooks from './components/Hooks'
+import BasicRouter from './route'
 import LeftMenu from './components/LeftMenu'
+
 
 import './assets/App.styl'
 
 const { Header, Sider, Content } = Layout;
 
 const App = () => {
-	const state = {
+  const state = {
     collapsed: false
   }
 
   const toggle = () => {
     state.collapsed = !state.collapsed
   };
-	return (
-		<Fragment>
-			<Layout style={{ height: '100%' }}>
+  return (
+    <Fragment>
+      <Layout style={{ height: '100%' }}>
         <Sider trigger={null} collapsible collapsed={state.collapsed}>
-          <div className="logo" style={{color:'#fff', fontSize:'20px', marginTop: '20px', textAlign: 'center'}}> Jeden </div>
+          <div className="logo" style={{ color: '#fff', fontSize: '20px', marginTop: '20px', textAlign: 'center' }}> Jeden </div>
           <LeftMenu />
         </Sider>
         <Layout>
@@ -40,8 +39,8 @@ const App = () => {
           </Content>
         </Layout>
       </Layout>
-		</Fragment>
-	)
+    </Fragment>
+  )
 }
 
 export default App

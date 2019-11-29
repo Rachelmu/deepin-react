@@ -5,7 +5,7 @@ const curd = require('../db');
 // 封装一个 连接池函数
 
 
-router.post('/register', (req, res) => {
+router.post('/register', (req, response) => {
   console.log(req.body) // 这里已经获取到了 body, 可以进行数据库操作了
 
   curd(db => {
@@ -14,10 +14,10 @@ router.post('/register', (req, res) => {
         console.log('出现错误', err)
       } else {
         console.log('插入成功')
+        response.end('true')
       }
     })
   })
-  res.end('true')
 })
 
 router.post('/login', (req, res) => {
