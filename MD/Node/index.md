@@ -2,6 +2,8 @@
 
 1. [事件循环](./eventLoop.md)
 2. [MongoDB](./MongoDB.md)
+3. [模块化](./module.md)
+4. [异步 IO](asyncio.md)
 
 
 
@@ -10,6 +12,17 @@
 
 
 
+
+
+
+
+
+## Node 缺点
+
+1. 单线程缺点
+   1. 无法利用多核 cpu
+   2. 遇到错误退出
+   3. 大量计算占用 cpu 时导致无法继续异步 IO
 
 ## 遇到的问题
 
@@ -20,4 +33,3 @@
 5. 路由嵌套
 
 接下来, cookie, session 等
-
