@@ -3,12 +3,12 @@ const MongoClient = require('mongodb').MongoClient,
 
 const mongoUrl = 'mongodb://127.0.0.1:27017'
 
-let db
-
 
 const factory = {
   create: () => {
-    return MongoClient.connect(mongoUrl, { useUnifiedTopology: true })
+    return MongoClient.connect(mongoUrl, {
+      useUnifiedTopology: true
+    })
   },
   destroy: client => {
     client.close()
