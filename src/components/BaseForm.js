@@ -18,20 +18,20 @@ class HorizontalLoginForm extends React.Component {
     }
   }
   componentDidMount() {
-    this.props.form.validateFields();
-    const ws = new WebSocket(wsApi)
+    // this.props.form.validateFields();
+    // const ws = new WebSocket(wsApi)
 
-    ws.addEventListener('open', event => {
-      console.log('connect success', event)
-      ws.send('hello server')
-    })
+    // ws.addEventListener('open', event => {
+    //   console.log('connect success', event)
+    //   ws.send('hello server')
+    // })
 
-    ws.addEventListener('message', msg => {
-      console.log(msg.data)
-    })
+    // ws.addEventListener('message', msg => {
+    //   console.log(msg.data)
+    // })
   }
 
-  handleSubmit = e => {
+  registe = e => {
     e.preventDefault();
     this.props.form.validateFields((err, values) => {
       if (!values.username || !values.password) {
@@ -44,9 +44,6 @@ class HorizontalLoginForm extends React.Component {
             message.success('注册成功')
           }
         })
-        axios.post(userLogin, values).then(data => {
-          console.log(data)
-        })
       }
     })
   }
@@ -58,7 +55,7 @@ class HorizontalLoginForm extends React.Component {
     const usernameError = isFieldTouched('username') && getFieldError('username');
     const passwordError = isFieldTouched('password') && getFieldError('password');
     return (
-      <Form layout="inline" onSubmit={this.handleSubmit}>
+      <Form layout="inline" onSubmit={this.registe}>
         <Form.Item validateStatus={usernameError ? 'error' : ''} help={usernameError || ''}>
           {getFieldDecorator('username')(
             <Input
@@ -79,11 +76,6 @@ class HorizontalLoginForm extends React.Component {
         <Form.Item>
           <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
             注册
-          </Button>
-        </Form.Item>
-        <Form.Item>
-          <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-            登录
           </Button>
         </Form.Item>
       </Form>

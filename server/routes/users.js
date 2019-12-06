@@ -14,8 +14,10 @@ router.post('/register', (req, response) => {
         console.log('出现错误', err)
       } else {
         console.log('插入成功')
-        response.end('true')
       }
+      response.cookie('jeden', 'zhan')
+      response.end('true')
+
     })
   })
 })
@@ -28,6 +30,7 @@ router.post('/login', (req, res) => {
         console.log(result)
         res.end(JSON.stringify(result))
       }
+      res.cookie('jeden', 'zhan')
     })
   })
 })

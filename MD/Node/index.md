@@ -33,3 +33,36 @@
 5. 路由嵌套
 
 接下来, cookie, session 等
+
+---
+
+Node 如何处理 err
+
+我们平常所使用的try catch 因为只能捕捉同步代码而无效
+
+Node 的处理就是**把 error 当作回调函数的第一个参数传入, 如果为空则表示正常**
+
+---
+
+## 事件队列
+
+实现
+
+```js
+const EventEmitter = require('event').EventEmitter
+
+const proxy = new EventEmitter()
+let status = 'ready' // 状态初始设置
+
+const select = cb => {
+    proxy.once('selected', cb)
+    if (status = 'ready') {
+        status = 'pending'
+        db.select('SQL or Other', result => {
+            proxy.emit('selected', result)
+        	status = 'ready'
+        })
+    }
+}
+```
+
