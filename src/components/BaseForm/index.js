@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Icon, Input, Button, message } from 'antd'
 import axios from 'axios'
 
-import { userRegister, userLogin, wsApi } from '../api'
+import { userRegister, userLogin, wsApi } from '../../api'
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field]);
@@ -18,17 +18,7 @@ class HorizontalLoginForm extends React.Component {
     }
   }
   componentDidMount() {
-    // this.props.form.validateFields();
-    // const ws = new WebSocket(wsApi)
 
-    // ws.addEventListener('open', event => {
-    //   console.log('connect success', event)
-    //   ws.send('hello server')
-    // })
-
-    // ws.addEventListener('message', msg => {
-    //   console.log(msg.data)
-    // })
   }
 
   registe = e => {

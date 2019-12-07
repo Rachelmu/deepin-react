@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 
-import Login from '../Login/Login'
+import BaseForm from '@/components/BaseForm'
 
 class Home extends Component {
 	constructor(props) {
@@ -14,7 +14,7 @@ class Home extends Component {
 	render() {
 		return (
 			<Fragment>
-				<Login />
+				<BaseForm />
 			</Fragment>
 		)
 	}
