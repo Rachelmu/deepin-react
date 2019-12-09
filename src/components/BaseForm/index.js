@@ -1,11 +1,11 @@
 import React from 'react'
 import { Form, Icon, Input, Button, message } from 'antd'
-import axios from 'axios'
+import axios from '@/actions'
 
-import { userRegister, userLogin, wsApi } from '../../api'
+import { userRegister, userLogin, wsApi } from '@/api'
 
 function hasErrors(fieldsError) {
-  return Object.keys(fieldsError).some(field => fieldsError[field]);
+  return Object.keys(fieldsError).some(field => fieldsError[field])
 }
 
 class HorizontalLoginForm extends React.Component {
@@ -22,7 +22,7 @@ class HorizontalLoginForm extends React.Component {
   }
 
   registe = e => {
-    e.preventDefault();
+    e.preventDefault()
     this.props.form.validateFields((err, values) => {
       if (!values.username || !values.password) {
         message.warn('用户名或密码不能为空')
@@ -32,6 +32,7 @@ class HorizontalLoginForm extends React.Component {
         axios.post(userRegister, values).then(data => {
           if (data.data) {
             message.success('注册成功')
+            location.replace('/#' + '/home')
           }
         })
       }
@@ -42,8 +43,8 @@ class HorizontalLoginForm extends React.Component {
     const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form
 
     // Only show error after a field is touched.
-    const usernameError = isFieldTouched('username') && getFieldError('username');
-    const passwordError = isFieldTouched('password') && getFieldError('password');
+    const usernameError = isFieldTouched('username') && getFieldError('username')
+    const passwordError = isFieldTouched('password') && getFieldError('password')
     return (
       <Form layout="inline" onSubmit={this.registe}>
         <Form.Item validateStatus={usernameError ? 'error' : ''} help={usernameError || ''}>
@@ -69,10 +70,10 @@ class HorizontalLoginForm extends React.Component {
           </Button>
         </Form.Item>
       </Form>
-    );
+    )
   }
 }
 
-const BaseForm = Form.create({ name: 'horizontal_login' })(HorizontalLoginForm);
+const BaseForm = Form.create({ name: 'horizontal_login' })(HorizontalLoginForm)
 
 export default BaseForm

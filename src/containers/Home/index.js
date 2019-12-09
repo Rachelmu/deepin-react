@@ -14,7 +14,9 @@ class Home extends Component {
 	render() {
 		return (
 			<Fragment>
+				<p>基本表单</p>
 				<BaseForm />
+
 			</Fragment>
 		)
 	}

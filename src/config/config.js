@@ -2,43 +2,43 @@ export const MenuConfig = [
 	{
 		iconType: 'file',
 		title: '首页/表单',
-		route: '/home'
+		route: '/home/index'
 	},
 	{
 		iconType: 'filter',
 		title: '数据展示',
-		route: '/showdata'
+		route: '/home/showdata'
 	},
 	{
 		iconType: 'bell',
 		title: '上传',
-		route: '/upload',
+		route: '/home/upload',
 		children: [
 			{
 				iconType: "bell",
 				title: '文件上传',
-				route: '/uploadfile'
+				route: '/home/upload/uploadfile'
 			},
 			{
 				iconType: "bell",
 				title: '图片上传',
-				route: '/uploadpicture'
+				route: '/home/upload/uploadpicture'
 			}
 		]
 	},
 	{
 		iconType: 'crown',
 		title: 'Vue',
-		route: '/accident'
+		route: '/home/accident'
 	},
 	{
 		iconType: 'fork',
 		title: '浏览器',
-		route: '/check'
+		route: '/home/check'
 	},
 	{
 		iconType: 'setting',
 		title: '算法',
-		route: '/setting'
+		route: '/home/setting'
 	}
 ]

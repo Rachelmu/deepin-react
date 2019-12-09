@@ -1,17 +1,27 @@
 import React from 'react'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-import Home from '../containers/Home/Home'
+
+import Home from '../containers/Home'
+import ShowData from '../containers/Display'
+
+const routeConfig = [
+	{
+		path: '/home/index',
+		component: Home
+	},
+	{
+		path: '/home/showdata',
+		component: ShowData
+	}
+]
 
 const BasicRouter = () => (
 	<HashRouter>
 		<Switch>
-			<Route exact path="/" render={() =>
-				<Redirect to='/login'></Redirect>
-			}></Route>
-			<Route exact path='/login' component={Home} />
-			<Route exact path='/home' component={Home} />
-			<Route exact path='/manage' component={Home} />
+			{routeConfig.map(item => (
+				<Route exact path={item.path} component={item.component} key={item.path} />
+			))}
 		</Switch>
 	</HashRouter>
 )
