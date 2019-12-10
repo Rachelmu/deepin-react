@@ -1,5 +1,5 @@
 import React, { Fragment } from "react"
-import { Layout, Menu, Icon } from 'antd'
+import { Layout } from 'antd'
 
 import BasicRouter from './route'
 import LeftMenu from './components/LeftMenu'
@@ -14,9 +14,6 @@ const App = () => {
     collapsed: false
   }
 
-  const toggle = () => {
-    state.collapsed = !state.collapsed
-  };
   return (
     <Fragment>
       <Layout style={{ height: '100%' }}>
@@ -35,6 +32,7 @@ const App = () => {
               minHeight: 280,
             }}
           >
+            {/* 这里放匹配的容器 */}
             <BasicRouter />
           </Content>
         </Layout>

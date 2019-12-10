@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { Menu, Icon } from 'antd'
 
-import { MenuConfig } from '../config/config'
+import { MenuConfig } from '../config'
 
 const { SubMenu } = Menu
 
@@ -18,11 +18,11 @@ const LeftMenu = () => {
 					<SubMenu
 						title={
 							<span>
-                <Icon type={item.iconType} />
-                <span route={item.route}>{item.title}</span>
-              </span>
+								<Icon type={item.iconType} />
+								<span route={item.route}>{item.title}</span>
+							</span>
 						}
-						key={ item.title }
+						key={item.title}
 						onClick={() => switchMenu(item.route)}
 					>
 						{
@@ -32,9 +32,9 @@ const LeftMenu = () => {
 				)
 			}
 			return (
-				<Menu.Item title={ item.title } key={ item.title } onClick={() => switchMenu(item.route)}>
-					<Icon type={item.iconType}/>
-					<span route={item.route}>{ item.title }</span>
+				<Menu.Item title={item.title} key={item.title} onClick={() => switchMenu(item.route)}>
+					<Icon type={item.iconType} />
+					<span route={item.route}>{item.title}</span>
 				</Menu.Item>
 			)
 		})

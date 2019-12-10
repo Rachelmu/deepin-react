@@ -1,26 +1,14 @@
 import React from 'react'
-import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 
-
-import Home from '../containers/Home'
-import ShowData from '../containers/Display'
-
-const routeConfig = [
-	{
-		path: '/home/index',
-		component: Home
-	},
-	{
-		path: '/home/showdata',
-		component: ShowData
-	}
-]
+import { MenuConfig } from '../config'
+import containers from '../containers'
 
 const BasicRouter = () => (
 	<HashRouter>
 		<Switch>
-			{routeConfig.map(item => (
-				<Route exact path={item.path} component={item.component} key={item.path} />
+			{MenuConfig.map(item => (
+				<Route exact path={item.route} component={containers[item.container]} key={item.route} />
 			))}
 		</Switch>
 	</HashRouter>

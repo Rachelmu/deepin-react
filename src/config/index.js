@@ -2,12 +2,14 @@ export const MenuConfig = [
 	{
 		iconType: 'file',
 		title: '首页/表单',
-		route: '/home/index'
+		route: '/home/index',
+		container: 'Home'
 	},
 	{
 		iconType: 'filter',
 		title: '数据展示',
-		route: '/home/showdata'
+		route: '/home/showdata',
+		container: 'Display'
 	},
 	{
 		iconType: 'bell',
