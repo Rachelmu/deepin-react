@@ -32,7 +32,7 @@ class HorizontalLoginForm extends React.Component {
         axios.post(userRegister, values).then(data => {
           if (data.data) {
             message.success('注册成功')
-            location.replace('/#' + '/home')
+            location.replace('/#/home/index')
           }
         })
       }
