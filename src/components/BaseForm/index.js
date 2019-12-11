@@ -17,9 +17,6 @@ class HorizontalLoginForm extends React.Component {
       register: props.register
     }
   }
-  componentDidMount() {
-
-  }
 
   registe = e => {
     e.preventDefault()
