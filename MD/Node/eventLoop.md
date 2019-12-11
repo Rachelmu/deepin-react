@@ -76,7 +76,7 @@ class EventEmitter {
 
 #### I/O
 
-> 除了会执行 close 事件, 定时器和 setImmediate 回调
+> 执行 I/O
 
 #### Poll
 
@@ -90,3 +90,32 @@ class EventEmitter {
 #### closeCallback
 
 >  执行 close 事件
+
+举例
+
+```js
+const fs = require('fs')
+
+function someReadFileAction(callback) {
+    // 假设读取文件需要 95 毫秒
+    fs.readFile('/path/to/file', callback)
+}
+
+const timeOut = Date.now()
+
+setTimeout(() => {
+    const delay = Date.now() - timeOut
+    console.log(`已经等待了 ${delay}秒`)
+}, 100)
+
+someReadFileAction(() => {
+  const startCallback = Date.now();
+
+  // do something that will take 10ms...
+  while (Date.now() - startCallback < 10) {
+    // do nothing
+  }
+})
+```
+
+定时器加入 timer 队列, 然后执行读取文件操作, 需要 95 毫秒, 这个操作完成后, 会立即执行回调, 需要 10 毫秒, 然后检查定时器是否超时, 如果超时就会去执行定时器回调, 这时已经过去了 105 毫秒, 所以定时器不是准确的

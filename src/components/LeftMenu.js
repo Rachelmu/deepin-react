@@ -32,7 +32,7 @@ const LeftMenu = () => {
 				)
 			}
 			return (
-				<Menu.Item title={item.title} key={item.title} onClick={() => switchMenu(item.route)}>
+				<Menu.Item title={item.title} key={item.route} onClick={() => switchMenu(item.route)}>
 					<Icon type={item.iconType} />
 					<span route={item.route}>{item.title}</span>
 				</Menu.Item>
@@ -41,7 +41,7 @@ const LeftMenu = () => {
 	}
 
 	return (
-		<Menu theme="dark" mode="inline" defaultSelectedKeys={['1']} className='left-menu'>
+		<Menu theme="dark" mode="inline" defaultSelectedKeys={['/home/index']} className='left-menu'>
 			{
 				renderMenu(MenuConfig)
 			}
