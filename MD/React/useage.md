@@ -71,6 +71,8 @@ class Comp extends Component {
 }
 ```
 
+![img](../../assets/React/new-life-circle.webp)
+
 ### Function
 
 如果不考虑 hooks 的话, 函数组件和 class 组件相比是没有 **生命周期函数, 自身状态(state), this**

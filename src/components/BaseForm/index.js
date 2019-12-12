@@ -46,7 +46,7 @@ class HorizontalLoginForm extends React.Component {
 
   render() {
     const { getFieldDecorator, getFieldsError, getFieldError, isFieldTouched } = this.props.form
-
+    const { login, register } = this.props
     // Only show error after a field is touched.
     const usernameError = isFieldTouched('username') && getFieldError('username')
     const passwordError = isFieldTouched('password') && getFieldError('password')
@@ -71,7 +71,9 @@ class HorizontalLoginForm extends React.Component {
         </Form.Item>
         <Form.Item>
           <Button type="primary" htmlType="submit" disabled={hasErrors(getFieldsError())}>
-            注册
+            {login && '登录'}
+            {register && '注册'}
+            {!login && !register && '提交'}
           </Button>
         </Form.Item>
       </Form>
