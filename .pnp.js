@@ -3365,40 +3365,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["react-redux", new Map([
-    ["7.1.3", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-react-redux-7.1.3-717a3d7bbe3a1b2d535c94885ce04cdc5a33fc79-integrity/node_modules/react-redux/"),
-      packageDependencies: new Map([
-        ["react", "16.9.0"],
-        ["redux", "4.0.4"],
-        ["@babel/runtime", "7.5.5"],
-        ["hoist-non-react-statics", "3.3.0"],
-        ["invariant", "2.2.4"],
-        ["loose-envify", "1.4.0"],
-        ["prop-types", "15.7.2"],
-        ["react-is", "16.9.0"],
-        ["react-redux", "7.1.3"],
-      ]),
-    }],
-  ])],
-  ["@babel/runtime", new Map([
-    ["7.5.5", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132-integrity/node_modules/@babel/runtime/"),
-      packageDependencies: new Map([
-        ["regenerator-runtime", "0.13.3"],
-        ["@babel/runtime", "7.5.5"],
-      ]),
-    }],
-  ])],
-  ["invariant", new Map([
-    ["2.2.4", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6-integrity/node_modules/invariant/"),
-      packageDependencies: new Map([
-        ["loose-envify", "1.4.0"],
-        ["invariant", "2.2.4"],
-      ]),
-    }],
-  ])],
   ["react-router-dom", new Map([
     ["5.1.2", {
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-react-router-dom-5.1.2-06701b834352f44d37fbb6311f870f84c76b9c18-integrity/node_modules/react-router-dom/"),
@@ -3412,6 +3378,15 @@ let packageInformationStores = new Map([
         ["tiny-invariant", "1.0.6"],
         ["tiny-warning", "1.0.3"],
         ["react-router-dom", "5.1.2"],
+      ]),
+    }],
+  ])],
+  ["@babel/runtime", new Map([
+    ["7.5.5", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132-integrity/node_modules/@babel/runtime/"),
+      packageDependencies: new Map([
+        ["regenerator-runtime", "0.13.3"],
+        ["@babel/runtime", "7.5.5"],
       ]),
     }],
   ])],
@@ -3532,32 +3507,6 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-isarray-1.0.0-bb935d48582cba168c06834957a54a3e07124f11-integrity/node_modules/isarray/"),
       packageDependencies: new Map([
         ["isarray", "1.0.0"],
-      ]),
-    }],
-  ])],
-  ["redux", new Map([
-    ["4.0.4", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-redux-4.0.4-4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796-integrity/node_modules/redux/"),
-      packageDependencies: new Map([
-        ["loose-envify", "1.4.0"],
-        ["symbol-observable", "1.2.0"],
-        ["redux", "4.0.4"],
-      ]),
-    }],
-  ])],
-  ["symbol-observable", new Map([
-    ["1.2.0", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-symbol-observable-1.2.0-c22688aed4eab3cdc2dfeacbb561660560a00804-integrity/node_modules/symbol-observable/"),
-      packageDependencies: new Map([
-        ["symbol-observable", "1.2.0"],
-      ]),
-    }],
-  ])],
-  ["redux-thunk", new Map([
-    ["2.3.0", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-redux-thunk-2.3.0-51c2c19a185ed5187aaa9a2d08b666d0d6467622-integrity/node_modules/redux-thunk/"),
-      packageDependencies: new Map([
-        ["redux-thunk", "2.3.0"],
       ]),
     }],
   ])],
@@ -4817,6 +4766,15 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
+  ["invariant", new Map([
+    ["2.2.4", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6-integrity/node_modules/invariant/"),
+      packageDependencies: new Map([
+        ["loose-envify", "1.4.0"],
+        ["invariant", "2.2.4"],
+      ]),
+    }],
+  ])],
   ["js-levenshtein", new Map([
     ["1.1.6", {
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-js-levenshtein-1.1.6-c6cee58eb3550372df8deb85fad5ce66ce01d59d-integrity/node_modules/js-levenshtein/"),
@@ -5744,6 +5702,27 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-5.15.0-3ef34ac4965169698eff6df72f18c2a735e8e7f8-integrity/node_modules/mobx/"),
       packageDependencies: new Map([
         ["mobx", "5.15.0"],
+      ]),
+    }],
+  ])],
+  ["mobx-react", new Map([
+    ["6.1.4", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-react-6.1.4-818e7991c321c05bd9b8156d94be17dad165501e-integrity/node_modules/mobx-react/"),
+      packageDependencies: new Map([
+        ["mobx", "5.15.0"],
+        ["react", "16.9.0"],
+        ["mobx-react-lite", "1.5.1"],
+        ["mobx-react", "6.1.4"],
+      ]),
+    }],
+  ])],
+  ["mobx-react-lite", new Map([
+    ["1.5.1", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-react-lite-1.5.1-8eac90985b4d2bee475dd90a0d4d903be578f154-integrity/node_modules/mobx-react-lite/"),
+      packageDependencies: new Map([
+        ["mobx", "5.15.0"],
+        ["react", "16.9.0"],
+        ["mobx-react-lite", "1.5.1"],
       ]),
     }],
   ])],
@@ -9507,27 +9486,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["mobx-react", new Map([
-    ["6.1.4", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-react-6.1.4-818e7991c321c05bd9b8156d94be17dad165501e-integrity/node_modules/mobx-react/"),
-      packageDependencies: new Map([
-        ["mobx", "5.15.0"],
-        ["react", "16.9.0"],
-        ["mobx-react-lite", "1.5.1"],
-        ["mobx-react", "6.1.4"],
-      ]),
-    }],
-  ])],
-  ["mobx-react-lite", new Map([
-    ["1.5.1", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-react-lite-1.5.1-8eac90985b4d2bee475dd90a0d4d903be578f154-integrity/node_modules/mobx-react-lite/"),
-      packageDependencies: new Map([
-        ["mobx", "5.15.0"],
-        ["react", "16.9.0"],
-        ["mobx-react-lite", "1.5.1"],
-      ]),
-    }],
-  ])],
   [null, new Map([
     [null, {
       packageLocation: path.resolve(__dirname, "./"),
@@ -9545,10 +9503,7 @@ let packageInformationStores = new Map([
         ["morgan", "1.9.1"],
         ["prop-types", "15.7.2"],
         ["react-dom", "16.9.0"],
-        ["react-redux", "7.1.3"],
         ["react-router-dom", "5.1.2"],
-        ["redux", "4.0.4"],
-        ["redux-thunk", "2.3.0"],
         ["vue", "2.6.10"],
         ["vue-router", "3.1.2"],
         ["vuex", "3.1.1"],
@@ -9563,6 +9518,7 @@ let packageInformationStores = new Map([
         ["html-webpack-plugin", "3.2.0"],
         ["mini-css-extract-plugin", "0.8.0"],
         ["mobx", "5.15.0"],
+        ["mobx-react", "6.1.4"],
         ["pnp-webpack-plugin", "1.5.0"],
         ["react", "16.9.0"],
         ["react-router", "5.0.1"],
@@ -9574,7 +9530,6 @@ let packageInformationStores = new Map([
         ["webpack", "4.39.3"],
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
-        ["mobx-react", "6.1.4"],
       ]),
     }],
   ])],
@@ -9944,10 +9899,8 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-on-headers-1.0.2-772b0ae6aaa525c399e489adfad90c403eb3c28f-integrity/node_modules/on-headers/", {"name":"on-headers","reference":"1.0.2"}],
   ["../../.cache/yarn/v6/npm-react-dom-16.9.0-5e65527a5e26f22ae3701131bcccaee9fb0d3962-integrity/node_modules/react-dom/", {"name":"react-dom","reference":"16.9.0"}],
   ["../../.cache/yarn/v6/npm-scheduler-0.15.0-6bfcf80ff850b280fed4aeecc6513bc0b4f17f8e-integrity/node_modules/scheduler/", {"name":"scheduler","reference":"0.15.0"}],
-  ["../../.cache/yarn/v6/npm-react-redux-7.1.3-717a3d7bbe3a1b2d535c94885ce04cdc5a33fc79-integrity/node_modules/react-redux/", {"name":"react-redux","reference":"7.1.3"}],
-  ["../../.cache/yarn/v6/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132-integrity/node_modules/@babel/runtime/", {"name":"@babel/runtime","reference":"7.5.5"}],
-  ["../../.cache/yarn/v6/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6-integrity/node_modules/invariant/", {"name":"invariant","reference":"2.2.4"}],
   ["../../.cache/yarn/v6/npm-react-router-dom-5.1.2-06701b834352f44d37fbb6311f870f84c76b9c18-integrity/node_modules/react-router-dom/", {"name":"react-router-dom","reference":"5.1.2"}],
+  ["../../.cache/yarn/v6/npm-@babel-runtime-7.5.5-74fba56d35efbeca444091c7850ccd494fd2f132-integrity/node_modules/@babel/runtime/", {"name":"@babel/runtime","reference":"7.5.5"}],
   ["../../.cache/yarn/v6/npm-history-4.9.0-84587c2068039ead8af769e9d6a6860a14fa1bca-integrity/node_modules/history/", {"name":"history","reference":"4.9.0"}],
   ["../../.cache/yarn/v6/npm-resolve-pathname-2.2.0-7e9ae21ed815fd63ab189adeee64dc831eefa879-integrity/node_modules/resolve-pathname/", {"name":"resolve-pathname","reference":"2.2.0"}],
   ["../../.cache/yarn/v6/npm-tiny-invariant-1.0.6-b3f9b38835e36a41c843a3b0907a5a7b3755de73-integrity/node_modules/tiny-invariant/", {"name":"tiny-invariant","reference":"1.0.6"}],
@@ -9959,9 +9912,6 @@ let locatorsByLocations = new Map([
   ["./.pnp/externals/pnp-04dc2174975579cf8c5db89bf8381000b32f45fa/node_modules/mini-create-react-context/", {"name":"mini-create-react-context","reference":"pnp:04dc2174975579cf8c5db89bf8381000b32f45fa"}],
   ["../../.cache/yarn/v6/npm-isarray-0.0.1-8a18acfca9a8f4177e09abfc6038939b05d1eedf-integrity/node_modules/isarray/", {"name":"isarray","reference":"0.0.1"}],
   ["../../.cache/yarn/v6/npm-isarray-1.0.0-bb935d48582cba168c06834957a54a3e07124f11-integrity/node_modules/isarray/", {"name":"isarray","reference":"1.0.0"}],
-  ["../../.cache/yarn/v6/npm-redux-4.0.4-4ee1aeb164b63d6a1bcc57ae4aa0b6e6fa7a3796-integrity/node_modules/redux/", {"name":"redux","reference":"4.0.4"}],
-  ["../../.cache/yarn/v6/npm-symbol-observable-1.2.0-c22688aed4eab3cdc2dfeacbb561660560a00804-integrity/node_modules/symbol-observable/", {"name":"symbol-observable","reference":"1.2.0"}],
-  ["../../.cache/yarn/v6/npm-redux-thunk-2.3.0-51c2c19a185ed5187aaa9a2d08b666d0d6467622-integrity/node_modules/redux-thunk/", {"name":"redux-thunk","reference":"2.3.0"}],
   ["../../.cache/yarn/v6/npm-vue-2.6.10-a72b1a42a4d82a721ea438d1b6bf55e66195c637-integrity/node_modules/vue/", {"name":"vue","reference":"2.6.10"}],
   ["../../.cache/yarn/v6/npm-vue-router-3.1.2-2e0904703545dabdd42b2b7a2e617f02f99a1969-integrity/node_modules/vue-router/", {"name":"vue-router","reference":"3.1.2"}],
   ["../../.cache/yarn/v6/npm-vuex-3.1.1-0c264bfe30cdbccf96ab9db3177d211828a5910e-integrity/node_modules/vuex/", {"name":"vuex","reference":"3.1.1"}],
@@ -10081,6 +10031,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-electron-to-chromium-1.3.241-859dc49ab7f90773ed698767372d384190f60cb1-integrity/node_modules/electron-to-chromium/", {"name":"electron-to-chromium","reference":"1.3.241"}],
   ["../../.cache/yarn/v6/npm-node-releases-1.1.28-503c3c70d0e4732b84e7aaa2925fbdde10482d4a-integrity/node_modules/node-releases/", {"name":"node-releases","reference":"1.1.28"}],
   ["../../.cache/yarn/v6/npm-core-js-compat-3.2.1-0cbdbc2e386e8e00d3b85dc81c848effec5b8150-integrity/node_modules/core-js-compat/", {"name":"core-js-compat","reference":"3.2.1"}],
+  ["../../.cache/yarn/v6/npm-invariant-2.2.4-610f3c92c9359ce1db616e538008d23ff35158e6-integrity/node_modules/invariant/", {"name":"invariant","reference":"2.2.4"}],
   ["../../.cache/yarn/v6/npm-js-levenshtein-1.1.6-c6cee58eb3550372df8deb85fad5ce66ce01d59d-integrity/node_modules/js-levenshtein/", {"name":"js-levenshtein","reference":"1.1.6"}],
   ["../../.cache/yarn/v6/npm-babel-loader-8.0.6-e33bdb6f362b03f4bb141a0c21ab87c501b70dfb-integrity/node_modules/babel-loader/", {"name":"babel-loader","reference":"8.0.6"}],
   ["../../.cache/yarn/v6/npm-find-cache-dir-2.1.0-8d0f94cd13fe43c6c7c261a0d86115ca918c05f7-integrity/node_modules/find-cache-dir/", {"name":"find-cache-dir","reference":"2.1.0"}],
@@ -10183,6 +10134,8 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-webpack-sources-1.4.3-eedd8ec0b928fbf1cbfe994e22d2d890f330a933-integrity/node_modules/webpack-sources/", {"name":"webpack-sources","reference":"1.4.3"}],
   ["../../.cache/yarn/v6/npm-source-list-map-2.0.1-3993bd873bfc48479cca9ea3a547835c7c154b34-integrity/node_modules/source-list-map/", {"name":"source-list-map","reference":"2.0.1"}],
   ["../../.cache/yarn/v6/npm-mobx-5.15.0-3ef34ac4965169698eff6df72f18c2a735e8e7f8-integrity/node_modules/mobx/", {"name":"mobx","reference":"5.15.0"}],
+  ["../../.cache/yarn/v6/npm-mobx-react-6.1.4-818e7991c321c05bd9b8156d94be17dad165501e-integrity/node_modules/mobx-react/", {"name":"mobx-react","reference":"6.1.4"}],
+  ["../../.cache/yarn/v6/npm-mobx-react-lite-1.5.1-8eac90985b4d2bee475dd90a0d4d903be578f154-integrity/node_modules/mobx-react-lite/", {"name":"mobx-react-lite","reference":"1.5.1"}],
   ["../../.cache/yarn/v6/npm-pnp-webpack-plugin-1.5.0-62a1cd3068f46d564bb33c56eb250e4d586676eb-integrity/node_modules/pnp-webpack-plugin/", {"name":"pnp-webpack-plugin","reference":"1.5.0"}],
   ["../../.cache/yarn/v6/npm-ts-pnp-1.1.2-be8e4bfce5d00f0f58e0666a82260c34a57af552-integrity/node_modules/ts-pnp/", {"name":"ts-pnp","reference":"1.1.2"}],
   ["../../.cache/yarn/v6/npm-react-16.9.0-40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa-integrity/node_modules/react/", {"name":"react","reference":"16.9.0"}],
@@ -10566,8 +10519,6 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-async-limiter-1.0.1-dd379e94f0db8310b08291f9d64c3209766617fd-integrity/node_modules/async-limiter/", {"name":"async-limiter","reference":"1.0.1"}],
   ["../../.cache/yarn/v6/npm-code-point-at-1.1.0-0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77-integrity/node_modules/code-point-at/", {"name":"code-point-at","reference":"1.1.0"}],
   ["../../.cache/yarn/v6/npm-number-is-nan-1.0.1-097b602b53422a522c1afb8790318336941a011d-integrity/node_modules/number-is-nan/", {"name":"number-is-nan","reference":"1.0.1"}],
-  ["../../.cache/yarn/v6/npm-mobx-react-6.1.4-818e7991c321c05bd9b8156d94be17dad165501e-integrity/node_modules/mobx-react/", {"name":"mobx-react","reference":"6.1.4"}],
-  ["../../.cache/yarn/v6/npm-mobx-react-lite-1.5.1-8eac90985b4d2bee475dd90a0d4d903be578f154-integrity/node_modules/mobx-react-lite/", {"name":"mobx-react-lite","reference":"1.5.1"}],
   ["./", topLevelLocator],
 ]);
 exports.findPackageLocator = function findPackageLocator(location) {
