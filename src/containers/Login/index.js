@@ -16,11 +16,11 @@ class Login extends Component {
       <Fragment>
         <div className='login-container'>
           <Tabs defaultActiveKey="1" size='large'>
-            <TabPane tab="注册" key="1" className='child-tab'>
-              <BaseForm />
+            <TabPane tab="登录" key="1" className='child-tab'>
+              <BaseForm login={true} />
             </TabPane>
-            <TabPane tab="登录" key="2" className='child-tab'>
-              <BaseForm />
+            <TabPane tab="注册" key="2" className='child-tab'>
+              <BaseForm register={true} />
             </TabPane>
           </Tabs>
         </div>

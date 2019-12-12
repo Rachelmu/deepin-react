@@ -23,14 +23,16 @@ router.post('/register', (req, response) => {
 })
 
 router.post('/login', (req, res) => {
-  console.log(req.body) // 这里已经获取到了 body, 可以进行数据库操作了
+  console.log('req.body', req.body) // 这里已经获取到了 body, 可以进行数据库操作了
   curd(db => {
     db.collection('demo').find(req.body).toArray((err, result) => {
-      if (!err) {
-        console.log(result)
-        res.end(JSON.stringify(result))
+      if (!err && result.length !== 0) {
+
+        res.end(JSON.stringify({
+          status: 1,
+          loginStatus: true
+        }))
       }
-      res.cookie('jeden', 'zhan')
     })
   })
 })

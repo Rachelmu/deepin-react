@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Icon, Input, Button, message } from 'antd'
-import axios from '@/actions'
 
+import axios from '@/actions'
 import { userRegister, userLogin, wsApi } from '@/api'
 
 function hasErrors(fieldsError) {
@@ -26,9 +26,17 @@ class HorizontalLoginForm extends React.Component {
         return
       }
       if (!err) {
-        axios.post(userRegister, values).then(data => {
+        this.props.register && axios.post(userRegister, values).then(data => {
           if (data.data) {
             message.success('注册成功')
+            this.props.changeLoginStatus()
+          }
+        })
+
+        this.props.login && axios.post(userLogin, values).then(data => {
+          if (data.data) {
+            console.log(data)
+            message.success('登录成功')
             location.replace('/#/home/index')
           }
         })
@@ -72,5 +80,23 @@ class HorizontalLoginForm extends React.Component {
 }
 
 const BaseForm = Form.create({ name: 'horizontal_login' })(HorizontalLoginForm)
+
+// const mapStateToProps = (state) => {
+//   console.log('allState', state)
+//   return {
+//     loginStatus: state.loginStatus
+//   }
+// }
+
+// const mapDispatchToProps = (dispatch, ownProps) => {
+//   return {
+//     changeLoginStatus() {
+//       dispatch({
+//         type: 'USER_LOGIN',
+//         data: true
+//       })
+//     }
+//   }
+// }
 
 export default BaseForm

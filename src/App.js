@@ -3,8 +3,7 @@ import { Layout } from 'antd'
 
 import BasicRouter from './route'
 import LeftMenu from './components/LeftMenu'
-
-
+import HeadMine from './components/HeadMine'
 import './assets/App.styl'
 
 const { Header, Sider, Content } = Layout;
@@ -23,6 +22,9 @@ const App = () => {
         </Sider>
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
+            <div className='head-mine'>
+              <HeadMine />
+            </div>
           </Header>
           <Content
             style={{

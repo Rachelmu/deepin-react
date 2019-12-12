@@ -1,13 +1,11 @@
 // import App from './App'
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Switch, Route, HashRouter, Redirect } from 'react-router-dom'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
 
 import 'antd/dist/antd.css';
 
 import App from './App.js'
-import store from './redux'
 import Login from './containers/Login'
 
 // 基本路由, 匹配 login
@@ -26,9 +24,7 @@ const BaseRouter = () => (
 
 ReactDOM.render(
 	<Fragment>
-		<Provider store={store}>
-			<BaseRouter style={{ height: '100%' }} />
-		</Provider>
+		<BaseRouter style={{ height: '100%' }} />
 	</Fragment>,
 	document.getElementById('app')
 )
