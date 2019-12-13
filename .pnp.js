@@ -9486,6 +9486,15 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
+  ["webpack-merge", new Map([
+    ["4.2.2", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-webpack-merge-4.2.2-a27c52ea783d1398afd2087f547d7b9d2f43634d-integrity/node_modules/webpack-merge/"),
+      packageDependencies: new Map([
+        ["lodash", "4.17.15"],
+        ["webpack-merge", "4.2.2"],
+      ]),
+    }],
+  ])],
   [null, new Map([
     [null, {
       packageLocation: path.resolve(__dirname, "./"),
@@ -9530,6 +9539,7 @@ let packageInformationStores = new Map([
         ["webpack", "4.39.3"],
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
+        ["webpack-merge", "4.2.2"],
       ]),
     }],
   ])],
@@ -10519,6 +10529,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-async-limiter-1.0.1-dd379e94f0db8310b08291f9d64c3209766617fd-integrity/node_modules/async-limiter/", {"name":"async-limiter","reference":"1.0.1"}],
   ["../../.cache/yarn/v6/npm-code-point-at-1.1.0-0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77-integrity/node_modules/code-point-at/", {"name":"code-point-at","reference":"1.1.0"}],
   ["../../.cache/yarn/v6/npm-number-is-nan-1.0.1-097b602b53422a522c1afb8790318336941a011d-integrity/node_modules/number-is-nan/", {"name":"number-is-nan","reference":"1.0.1"}],
+  ["../../.cache/yarn/v6/npm-webpack-merge-4.2.2-a27c52ea783d1398afd2087f547d7b9d2f43634d-integrity/node_modules/webpack-merge/", {"name":"webpack-merge","reference":"4.2.2"}],
   ["./", topLevelLocator],
 ]);
 exports.findPackageLocator = function findPackageLocator(location) {
