@@ -4,6 +4,8 @@ import { Form, Icon, Input, Button, message } from 'antd'
 import axios from '@/actions'
 import { userRegister, userLogin, wsApi } from '@/api'
 
+import store from '@/store'
+
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field])
 }
@@ -16,6 +18,14 @@ class HorizontalLoginForm extends React.Component {
       login: props.login,
       register: props.register
     }
+  }
+
+  componentDidMount() {
+    const { setFieldsValue } = this.props.form
+    setFieldsValue({
+      username: '111',
+      password: '111'
+    })
   }
 
   registe = e => {
@@ -35,9 +45,9 @@ class HorizontalLoginForm extends React.Component {
 
         this.props.login && axios.post(userLogin, values).then(data => {
           if (data.data) {
-            console.log(data)
             message.success('登录成功')
             location.replace('/#/home/index')
+            store.changeLoginStatus(true)
           }
         })
       }

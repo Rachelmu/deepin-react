@@ -1,14 +1,18 @@
 import React from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import { MenuConfig } from '../config'
+import store from '../store'
 import containers from '../containers'
 
 const BasicRouter = () => (
 	<HashRouter>
 		<Switch>
 			{MenuConfig.map(item => (
-				<Route exact path={item.route} component={containers[item.container]} key={item.route} />
+				<Route exact path={item.route} render={() => {
+					const Comp = containers[item.container]
+					return store.loginStatus ? <Comp /> : <Redirect to='/login' />
+				}} key={item.route} />
 			))}
 		</Switch>
 	</HashRouter>
