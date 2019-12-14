@@ -22,7 +22,7 @@ class HorizontalLoginForm extends React.Component {
 
   componentDidMount() {
     const { setFieldsValue } = this.props.form
-    setFieldsValue({
+    this.props.login && setFieldsValue({
       username: '111',
       password: '111'
     })
@@ -38,8 +38,7 @@ class HorizontalLoginForm extends React.Component {
       if (!err) {
         this.props.register && axios.post(userRegister, values).then(data => {
           if (data.data) {
-            message.success('注册成功')
-            this.props.changeLoginStatus()
+            message.success('注册成功, 可以登录')
           }
         })
 

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Popover, Button } from 'antd'
+import { Popover, Button, Modal } from 'antd'
 
 import './style'
 
@@ -8,7 +8,7 @@ class HeadMine extends Component {
     super(props)
 
     this.state = {
-
+      visible: false,
     }
   }
 
@@ -20,10 +20,30 @@ class HeadMine extends Component {
 
   }
 
+  showModal = () => {
+    this.setState({
+      visible: true
+    })
+  }
+
+  handleCancel = () => {
+    this.setState({
+      visible: false
+    })
+  }
+
   render() {
     return (
       <Fragment>
-        <span onClick={this.logout} className='logout'>Logout</span>
+        <span onClick={this.showModal} className='logout'>安全退出</span>
+        <Modal
+          title="确定要安全退出吗"
+          visible={this.state.visible}
+          onOk={this.logout}
+          onCancel={this.handleCancel}
+        >
+          <p>将删除本地缓存用户数据</p>
+        </Modal>
         <Popover placement="bottomRight" title={'text'} content={'content'} trigger="click">
           <Button>
             Jeden

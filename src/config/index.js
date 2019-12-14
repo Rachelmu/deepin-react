@@ -19,12 +19,14 @@ export const MenuConfig = [
 			{
 				iconType: "bell",
 				title: '文件上传',
-				route: '/home/upload/uploadfile'
+				route: '/home/upload/uploadfile',
+				container: 'UploadFile'
 			},
 			{
 				iconType: "bell",
 				title: '图片上传',
-				route: '/home/upload/uploadpicture'
+				route: '/home/upload/uploadpicture',
+				container: 'UploadFile'
 			}
 		]
 	},

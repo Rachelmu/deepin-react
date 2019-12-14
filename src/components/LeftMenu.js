@@ -23,7 +23,6 @@ const LeftMenu = () => {
 							</span>
 						}
 						key={item.title}
-						onClick={() => switchMenu(item.route)}
 					>
 						{
 							renderMenu(item.children)
