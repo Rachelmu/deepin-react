@@ -1,8 +1,12 @@
+排序的稳定性代表两个相等的元素是否可能互换位置
+
 ## 快排
 
 > 找到一个点, 大于的分为一组, 小于的分为一组, 递归处理, 最后连接起来
 >
 > 时间复杂度为 O(nlogn)
+>
+> 不稳定
 
 ```js
 function quickSort(array) {
@@ -21,6 +25,8 @@ function quickSort(array) {
 > 比较, 换位置
 >
 > 时间复杂度为 O(n^2)
+>
+> 稳定
 
 ```js
 function bubbleSort(arr) {
@@ -40,6 +46,8 @@ function bubbleSort(arr) {
 > 每一次遍历都选择最小的放在已排序的后面
 >
 > 时间复杂度为 O(n^2)
+>
+> 不稳定
 
 ```js
 function selectSort(arr) {
@@ -61,6 +69,8 @@ function selectSort(arr) {
 > 把待排序元素插入到已排序序列中
 >
 > 时间复杂度 O(n^2)
+>
+> 稳定
 
 ```js
 function insertionSort(arr) {

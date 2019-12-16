@@ -5,6 +5,8 @@
 ## 基本
 
 1. [使用](./useage.md)
+2. [生命周期](./LifeCircle.md)
+3. [Context](./context.md)
 
 
 

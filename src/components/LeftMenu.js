@@ -40,7 +40,7 @@ const LeftMenu = () => {
 	}
 
 	return (
-		<Menu theme="dark" mode="inline" defaultSelectedKeys={['/home/index']} className='left-menu'>
+		<Menu theme="dark" mode="inline" defaultSelectedKeys={[location.hash.replace('#', '')]} className='left-menu'>
 			{
 				renderMenu(MenuConfig)
 			}

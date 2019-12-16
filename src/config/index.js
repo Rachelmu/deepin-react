@@ -7,9 +7,9 @@ export const MenuConfig = [
 	},
 	{
 		iconType: 'filter',
-		title: '数据展示',
-		route: '/home/showdata',
-		container: 'Display'
+		title: '生命周期',
+		route: '/home/lifecircle',
+		container: 'LifeCircle'
 	},
 	{
 		iconType: 'bell',

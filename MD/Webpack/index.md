@@ -76,3 +76,11 @@ const config = {
 }
 ```
 
+
+
+### webpack 打包优化
+
+1. noParse 不解析, 比如 lodash, jq, underscore 一般不依赖其他库
+2. exclude 减少 loader 文件
+3. happypack
+4. dllPlugin

@@ -38,6 +38,10 @@ const Example = props => {
 
 基本使用
 
+> 执行动机: 每一次组件更新的时候执行
+>
+> 而且接受第二个参数, 是一个数组, 只接受数组内部的数据更新才执行
+
 ```jsx
 // import ...
 import { useState, useEffect } from 'react'
@@ -47,7 +51,11 @@ const Example = props => {
     
     useEffect(() => {
         document.title = `You Click Me ${count} Times`
-    })
+        // 而且在内部, 还可以返回一个函数来取消副作用
+        return () => {
+            console.log('取消副作用')
+        }
+    }, [count]) // 只有 count 变化的时候才执行
     
     return (
     	<Fragment>
@@ -56,5 +64,11 @@ const Example = props => {
         </Fragment>
     )
 }
+```
+
+## useContext
+
+```js
+const context = useContext()
 ```
 

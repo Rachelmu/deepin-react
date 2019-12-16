@@ -5,7 +5,7 @@ class Store {
 
   }
 
-  @observable loginStatus = false
+  @observable loginStatus = true
 
   @action changeLoginStatus(option) {
     this.loginStatus = option
