@@ -5,7 +5,6 @@ const express = require('express'),
   bodyParser = require('body-parser'),
   http = require('http')
 
-
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
 
@@ -35,9 +34,12 @@ app.use(bodyParser.urlencoded())
 app.use('/', indexRouter)
 app.use('/user', usersRouter)
 
-// catch 404 and forward to error handler
+///////////////////////
 
+// 设置静态文件目录
+app.use(express.static(path.join(__dirname, 'public')));
 
+////////////////////
 // error handler
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
