@@ -22,7 +22,7 @@ delete foo.fn
 Function.prototype.myCall = function (context=window, ...rest) {
     context.fn = this
     context.fn(...rest)
-    delete context.fn 
+    delete context.fn
 }
 ```
 

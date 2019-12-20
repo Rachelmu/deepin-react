@@ -1,4 +1,4 @@
-排序的稳定性代表两个相等的元素是否可能互换位置
+排序的稳定性代表两个相等的元素相对顺序是否可能变化
 
 ## 快排
 
@@ -7,8 +7,11 @@
 > 时间复杂度为 O(nlogn)
 >
 > 不稳定
+>
+> 和数据状况有关系, 很可能打偏了, 或者两个规模差太远这时候时间复杂度就会变得很差, 甚至为 O(n^2)
 
 ```js
+// 经典快排
 function quickSort(array) {
   if (array.length < 2) return array
   let pivot = array[array.length - 1]
@@ -18,7 +21,7 @@ function quickSort(array) {
 }
 ```
 
-
+还有随机快排, 长期期望为 O(nlogn), 最常用的
 
 ## 冒泡排序
 
@@ -30,9 +33,9 @@ function quickSort(array) {
 
 ```js
 function bubbleSort(arr) {
-    for (let i = 0, len = arr.length; i < len; i ++) {
-        for (let j = 0; j = len - 1; j ++) {
-            arr[j] > arr[j+1] && ([arr[j], arr[j+1]] = [arr[j+1], arr[j]])
+    for (let end = arr.length; end > 0; end --) {
+        for (let i = 0; i < end; i ++) {
+            arr[i] > arr[i+1] && ([arr[i], arr[i+1]] = [arr[i+1], arr[i]])
         }
     }
     return arr
@@ -52,7 +55,8 @@ function bubbleSort(arr) {
 ```js
 function selectSort(arr) {
     for (let i = 0, len = arr.length; i < len - 1; i ++) {
-        let minIndex = i
+       不过设计导出的规范是有带你类似的
+ let minIndex = i
         for (let j = 0, j < len; j ++) {
             array[minIndex] > array[j] && (minIndex = j)
         }
@@ -86,4 +90,12 @@ function insertionSort(arr) {
     return arr
 }
 ```
+
+
+
+## 桶排序
+
+> 不是基于比较的排序
+
+一个数出现多少次, 然后从低到高, 依次扔出来
 
