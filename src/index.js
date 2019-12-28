@@ -7,6 +7,7 @@ import 'antd/dist/antd.css';
 
 import App from './App.js'
 import Login from './containers/Login'
+import Profile from './containers/Profile'
 
 // 基本路由, 匹配 login
 const BaseRouter = () => (
@@ -18,6 +19,7 @@ const BaseRouter = () => (
 			<Route path='/login' component={Login} />
 			{/* 别 TM 的用 exact */}
 			<Route path='/home' component={App} />
+			<Route path='/profile' component={Profile} />
 		</Switch>
 	</HashRouter>
 )

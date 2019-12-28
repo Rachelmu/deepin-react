@@ -55,8 +55,7 @@ function bubbleSort(arr) {
 ```js
 function selectSort(arr) {
     for (let i = 0, len = arr.length; i < len - 1; i ++) {
-       不过设计导出的规范是有带你类似的
- let minIndex = i
+ 		let minIndex = i
         for (let j = 0, j < len; j ++) {
             array[minIndex] > array[j] && (minIndex = j)
         }

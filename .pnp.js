@@ -1725,7 +1725,6 @@ let packageInformationStores = new Map([
       packageDependencies: new Map([
         ["babel-runtime", "6.26.0"],
         ["classnames", "2.2.6"],
-        ["moment", "2.24.0"],
         ["prop-types", "15.7.2"],
         ["rc-trigger", "2.6.5"],
         ["rc-util", "4.11.0"],
@@ -2458,7 +2457,6 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-rc-time-picker-3.7.2-fabe5501adf1374d31a2d3b47f1ba89fc2dc2467-integrity/node_modules/rc-time-picker/"),
       packageDependencies: new Map([
         ["classnames", "2.2.6"],
-        ["moment", "2.24.0"],
         ["prop-types", "15.7.2"],
         ["raf", "3.4.1"],
         ["rc-trigger", "2.6.5"],
@@ -9652,6 +9650,7 @@ let packageInformationStores = new Map([
         ["@babel/plugin-transform-react-jsx", "7.3.0"],
         ["@babel/plugin-transform-runtime", "7.7.6"],
         ["@babel/preset-env", "7.5.5"],
+        ["@babel/runtime", "7.7.6"],
         ["babel-loader", "8.0.6"],
         ["css-loader", "3.2.0"],
         ["file-loader", "4.3.0"],
@@ -9671,7 +9670,7 @@ let packageInformationStores = new Map([
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
         ["webpack-merge", "4.2.2"],
-        ["@babel/runtime", "7.7.6"],
+        ["moment", "2.24.0"],
       ]),
     }],
   ])],

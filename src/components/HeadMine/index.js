@@ -32,6 +32,10 @@ class HeadMine extends Component {
     })
   }
 
+  redictToProfile() {
+    location.replace('/#/profile')
+  }
+
   render() {
     return (
       <Fragment>
@@ -44,7 +48,11 @@ class HeadMine extends Component {
         >
           <p>将删除本地缓存用户数据</p>
         </Modal>
-        <Popover placement="bottomRight" title={'text'} content={'content'} trigger="click">
+        <Popover placement="bottomRight" title={'Hello Jeden'} content={
+          <Button onClick={this.redictToProfile}>
+            进入我的设置
+          </Button>
+        } trigger="click">
           <Button>
             Jeden
           </Button>
