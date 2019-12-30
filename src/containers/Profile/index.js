@@ -1,5 +1,9 @@
 import React, { Component, Fragment } from 'react'
 
+import Img from '../../assets/img/testhead.jpg'
+
+import './style'
+
 class Profile extends Component {
   constructor(props) {
     super(props)
@@ -13,7 +17,14 @@ class Profile extends Component {
   render() {
     return (
       <Fragment>
-        <img src="/src/assets/img/testhead.jpg" alt="" />
+        <div className="container">
+          <div className="head-img">
+            <img src={Img} alt="" />
+            <p>Jeden</p>
+          </div>
+
+
+        </div>
       </Fragment>
     )
   }
