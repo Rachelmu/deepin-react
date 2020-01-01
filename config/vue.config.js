@@ -1,6 +1,6 @@
-const baseConfig = require('./webpack.config')
+const baseConfig = require('./webpack.dev.js')
 
-const src = '../Vue/index.js'
+const src = './Vue/index.js'
 
 baseConfig.entry = src
 

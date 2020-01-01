@@ -12,6 +12,7 @@
       <!-- 事件带括号不带均可, 带括号可以传参 -->
       <el-button @click="increaseCount">count-1</el-button>
       <el-button @click="keep">keepCount</el-button>
+      <el-button @click="cre">keepCount</el-button>
     </p>
     <router-view></router-view>
     <hr />
@@ -64,6 +65,9 @@ export default {
     },
     showMessageFromChild(data) {
       this.childMessage = data;
+    },
+    cre() {
+      this.$store.dispatch("cre", { b: 12345678 });
     }
   },
   computed: {

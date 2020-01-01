@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./config/webpack.dev.js",
     "build": "webpack --config ./config/webpack.prod.js",
-    "start:vue": "webpack-dev-server --config=./vue.config.js",
-    "server": "nodemon ./server/bin/www"
+    "start:vue": "webpack-dev-server --config=./config/vue.config.js"
   },
   "keywords": [],
   "author": "",
