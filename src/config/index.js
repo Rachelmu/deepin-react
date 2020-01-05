@@ -42,7 +42,7 @@ export const MenuConfig = [
 	},
 	{
 		iconType: 'setting',
-		title: '算法',
+		title: '设置',
 		route: '/home/setting'
 	}
 ]

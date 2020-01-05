@@ -17,10 +17,11 @@ class Profile extends Component {
   render() {
     return (
       <Fragment>
+        <header>我的</header>
         <div className="container">
           <div className="head-img">
             <img src={Img} alt="" />
-            <p>Jeden</p>
+            <span>用户名:</span><span>Jeden</span>
           </div>
 
 

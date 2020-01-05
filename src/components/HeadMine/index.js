@@ -49,9 +49,7 @@ class HeadMine extends Component {
           <p>将删除本地缓存用户数据</p>
         </Modal>
         <Popover placement="bottomRight" title={'Hello Jeden'} content={
-          <Button onClick={this.redictToProfile}>
-            进入我的设置
-          </Button>
+          '啦啦啦'
         } trigger="click">
           <Button>
             Jeden

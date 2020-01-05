@@ -5,6 +5,10 @@ const path = require('path'),
   VueLoaderPlugin = require('vue-loader/lib/plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+const isDevelopment = process.env.NODE_ENV === 'development'
+
+console.log(isDevelopment)
+
 const config = {
   mode: 'development',
   entry: './src/index.js',
@@ -25,7 +29,7 @@ const config = {
       {
         test: /\.styl$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
           'stylus-loader'
         ]
@@ -33,7 +37,7 @@ const config = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
         ]
       },

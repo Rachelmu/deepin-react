@@ -45,7 +45,7 @@ const getNextArr = (str:string):Array<number> => {
     let i:number = 2, cn:number = 0
     while (i < next.length) {
         if (str[i - 1] === str[cn]) {
-            next[++i] = ++cn
+            next[i++] = ++cn
         } else if (cn > 0) {
             cn = next[cn]
         } else {
