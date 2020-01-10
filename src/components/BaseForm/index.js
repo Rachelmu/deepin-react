@@ -2,7 +2,7 @@ import React from 'react'
 import { Form, Icon, Input, Button, message } from 'antd'
 
 import axios from '@/actions'
-import { userRegister, userLogin, wsApi } from '@/api'
+import { userRegister, userLogin } from '@/api'
 
 import store from '@/store'
 

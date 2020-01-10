@@ -3,10 +3,11 @@ import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import { MenuConfig } from '../config'
 import store from '../store'
-import containers from '../containers'
+import * as containers from '../containers'
+
 
 const route = (r) => {
-	const Component = r.container && containers[r.container]
+	const Component = r.container && containers[r.container]()
 	return (
 		<Route
 			key={r.route || r.key}
@@ -15,7 +16,7 @@ const route = (r) => {
 			render={props => {
 				const reg = /\?\S*/g
 				// 匹配?及其以后字符串
-				const queryParams = window.location.hash.match(reg)
+				const queryParams = location.hash.match(reg)
 				// 去除?的参数
 				const { params } = props.match
 				Object.keys(params).forEach(key => {

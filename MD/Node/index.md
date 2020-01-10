@@ -66,3 +66,20 @@ const select = cb => {
 }
 ```
 
+### 设置跨域
+
+```js
+// 设置 cors 跨域需要预检请求, 可以进行的方法, 可包含的头部
+app.all('*', function (req, res, next) {
+   res.header("Access-Control-Allow-Origin", "*")
+   res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS")
+   res.header('Access-Control-Allow-Headers', 'Content-Type')
+   res.header('Access-Control-Allow-Credentials', true)
+   if (req.method === 'OPTIONS') {
+     return res.send(http.STATUS_CODES['200'])
+   }
+
+   next()
+})
+```
+

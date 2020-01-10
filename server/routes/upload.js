@@ -1,8 +1,6 @@
 const express = require('express'),
   router = express.Router()
 
-
-
 router.post('/upload', function (req, res) {
   var form = new formidable.IncomingForm()
   console.log('about to parse');

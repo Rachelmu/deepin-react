@@ -1,10 +1,5 @@
-import Home from './Home'
-import LifeCircle from './LifeCircle'
-import UploadFile from './UploadFile'
+export const Home = () => require('./Home').default
 
+export const LifeCircle = () => require('./LifeCircle').default
 
-export default {
-  Home,
-  LifeCircle,
-  UploadFile
-}
+export const UploadFile = () => require('./UploadFile').default

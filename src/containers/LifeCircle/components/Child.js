@@ -9,18 +9,20 @@ class Child extends Component {
   }
 
   static getDerivedStateFromProps(props) {
-    console.log(props)
-
-    return null
+    console.log('props from father', props)
+    let newProps = { ...props }
+    newProps.count += 10
+    return newProps
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(nextProps, nextState)
-    return false
+    console.log('nextProps & nextState', nextProps, nextState)
+    return true
   }
 
   getSnapshotBeforeUpdate(prevProps, prevState) {
     console.log('prevProps', prevProps)
+    return 1
   }
 
   componentDidUpdate(prevProps, prevState, snapShot) {

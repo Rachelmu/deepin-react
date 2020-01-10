@@ -48,7 +48,7 @@ componentWillUnmount ---> 卸载
 
 上一个返回 true 以后, 进入这个流程, 同样可以拿到下一个 props 和 state
 
-## componentDidUpdate(prevProps,prevState)
+## componentDidUpdate(prevProps, prevState)
 
 可以拿到**之前的 state 和 props**
 
@@ -75,6 +75,7 @@ componentWillUnmount ---> 卸载
 
 - 禁止访问 this.props
 - 旨在用下一个 props 更新现在的 state
+- 每一次更新都会调用
 
 ## getSnapShotBeforeUpdate(prevProps, prevState)
 
@@ -86,6 +87,6 @@ componentWillUnmount ---> 卸载
 
 ## 总结
 
-**在stack reconciler下，DOM的更新是同步的，也就是说，在virtual DOM的比对过程中，发现一个instance有更新，会立即执行DOM操作**。
+**在stack reconciler下, DOM的更新是同步的也就是说, 在virtual DOM的比对过程中, 发现一个instance有更新, 会立即执行DOM操作**
 
 因为 fiber 架构, 组件更新的时候是会被 优先级高的 打断的, 这就导致 componentWillUpdate 中对比的数据

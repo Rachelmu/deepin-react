@@ -7,6 +7,7 @@
 1. [使用](./useage.md)
 2. [生命周期](./LifeCircle.md)
 3. [Context](./context.md)
+4. [组件类型](./组件类型.md)
 
 
 

@@ -6,6 +6,7 @@ const action = axios.create({
   baseURL: baseApi,
   timeout: 1000,
   port: 3000,
+  withCredentials: true,
   headers: {
 
   }

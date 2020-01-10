@@ -3,12 +3,6 @@ const router = express.Router()
 const formidable = require('formidable')
 const fs = require('fs')
 
-
-/* GET home page. */
-// router.get('/', function (req, res, next) {
-//   res.send('index');
-// });
-
 router.post('/upload', function (req, res) {
   var form = new formidable.IncomingForm()
   console.log('about to parse');

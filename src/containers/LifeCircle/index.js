@@ -30,12 +30,25 @@ class LifeCircle extends Component {
     })
   }
 
+  componentWillUpdate() {
+    console.log('component will update')
+  }
+
+  componentDidUpdate() {
+    console.log('component did update')
+
+  }
+
+
 
   render() {
     return (
       <Fragment>
         <Child count={this.state.count} />
 
+        <p>{this.state.count}</p>
+        <p>{this.state.count}</p>
+        <p>{this.state.count + 1}</p>
         <Button onClick={this.addCount}>
           Add Count
         </Button>
