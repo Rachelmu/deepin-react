@@ -59,8 +59,6 @@ res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS')
 
 > 非简单请求均为复杂请求, 需要有一个预检方法, 该方法为 option 方法, 询问服务器支持的方法
 
-
-
 ### websocket
 
 websocket和http一样是基于TCP协议, 但是websocket只需要使用http建立链接, 之后就与http无关了, 所以可以使用websocket跨域
