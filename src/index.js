@@ -3,11 +3,7 @@ import React, { Fragment } from 'react'
 import { Switch, Route, HashRouter, Redirect } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 
-import 'antd/dist/antd.css';
-
-import App from './App.js'
-import Login from './containers/Login'
-import Profile from './containers/Profile'
+import 'antd/dist/antd.css'
 
 // 基本路由, 匹配 login
 const BaseRouter = () => (
@@ -16,10 +12,9 @@ const BaseRouter = () => (
 			<Route exact path="/" render={() =>
 				<Redirect to='/login'></Redirect>
 			}></Route>
-			<Route path='/login' component={Login} />
+			<Route path='/login' component={(() => require('./containers/Login').default)()} />
 			{/* 别 TM 的用 exact */}
-			<Route path='/home' component={App} />
-			<Route path='/profile' component={Profile} />
+			<Route path='/home' component={(() => require('./App').default)()} />
 		</Switch>
 	</HashRouter>
 )

@@ -18,7 +18,13 @@
 7. [Set 和 Map](./set&map.md)
 8. [Proxy 代理]()
 9. [Reflect]()
-10. [Promise]()
+10. [Promise](./Promise.md)
+    1. Promise.all
+    2. Promise.race
+    3. Promise.allSettled
+    4. Promise.any
+    5. Promise.resolve
+    6. Promise.reject
 11. [迭代器]()
 12. [async]()
 13. [Class]()

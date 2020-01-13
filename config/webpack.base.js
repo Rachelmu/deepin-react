@@ -14,7 +14,8 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js'
   },
 
   module: {
@@ -75,8 +76,6 @@ const config = {
       chunks: "all", // 所有的 chunks 代码公共的部分分离出来成为一个单独的文件
     },
   },
-
-
   resolveLoader: {
     plugins: [
       PnpWebpackPlugin.moduleLoader(module)
