@@ -31,7 +31,8 @@ jsonp({
 })
 ```
 
-
+- jsonp 只支持 get 请求
+- jsonp 本质是一种代码注入, 并不安全
 
 ### CORS
 
