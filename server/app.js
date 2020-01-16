@@ -13,7 +13,7 @@ const usersRouter = require('./routes/users')
 const app = express()
 
 const corsOption = {
-  origin: '*',
+  origin: 'http://localhost:8080',
   credentials: true,
   maxAge: '172800'
 }
