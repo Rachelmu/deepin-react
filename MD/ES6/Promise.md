@@ -36,6 +36,22 @@ Promise 有三个状态, pending, resolve, reject
 
 ```js
 let pro = Promise.all([Promise.resolve(1), Promise.resolve(2)])
+
+// 自己实现
+Promise.myAll = arr => {
+    let result = []
+    arr.forEach(item => {
+        if (!(item instanceof Promise)) {
+            item = Promise.resolve(item)
+        }
+        item.then(v => {
+        	result.push(v)
+    	}, e => {
+            return Promise.reject(e)
+        })
+    })
+    return Promise.resolve(result)
+}
 ```
 
 ### Promise.race
@@ -46,6 +62,14 @@ let pro = Promise.all([Promise.resolve(1), Promise.resolve(2)])
 
 ```js
 let pro = Promise.race([Promise.resolve(1)])
+
+// 自己实现
+Promise.myRace = (arr, time) => new Promise((resolve, reject) => {
+    setTimeOut(() => {
+        resolve()
+    }, time)
+    arr.forEach(pro => pro.then(v => resolve(v), e => reject(e)))
+})
 ```
 
 ### Promise.allSettled(2020引入)
@@ -62,6 +86,28 @@ pro.then(v => {
         {status: 'rejected', reason: 2}
     ]
 })
+
+// 自己写
+Promise.myAllSettled = arr => {
+    let result = []
+    arr.foreach(item => {
+        if (!(item instanceof Promise)) {
+            item = Promise.resolve(item)
+        }
+        item.then(v => {
+            result.push({
+                status: 'fullfilled',
+                value: v
+            })
+        }, e => {
+            result.push({
+                status: 'rejected',
+                reason: e
+            })
+        })
+    })
+    return Promise.resolve(result)
+}
 ```
 
 ### Promise.any(提案)
@@ -69,3 +115,4 @@ pro.then(v => {
 > 等到第一个变为 fullfilled
 
 Promise.any()`跟`Promise.race()`方法很像, 只有一点不同, 就是不会因为某个 Promise 变成`rejected状态而结束.
+
