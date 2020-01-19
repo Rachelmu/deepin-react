@@ -27,7 +27,7 @@ Node 则提供异步 IO 回调, 还有 child_process, 来更高效的利用 cpu
 
 ---
 
-Node 自身是多线程的, 除了用户代码无法并行执行, Node 内部的 IO 是可以并行的
+Node 自身是多线程的, 除了用户代码无法并行执行, Node 内部的 IO 是可以并行的`libuv`
 
 ---
 
