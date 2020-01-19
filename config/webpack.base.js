@@ -3,7 +3,8 @@ const path = require('path'),
   PnpWebpackPlugin = require('pnp-webpack-plugin'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   VueLoaderPlugin = require('vue-loader/lib/plugin'),
-  MiniCssExtractPlugin = require('mini-css-extract-plugin')
+  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+  UnusedModulesPlugin = require('../plugin/unUsedPlugin')
 
 const isDevelopment = process.env.NODE_ENV === 'development'
 
@@ -92,6 +93,14 @@ const config = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
+    }),
+    new UnusedModulesPlugin({
+      sourceDir: path.resolve(__dirname, '../src'),
+      compilationExclude: compilation => /html-webpack-plugin/.test(compilation.name),
+      output: path.join(__dirname, '../tmp/unusedModules.json'),
+      exclude: [
+        /\.spec\.js$/
+      ]
     })
   ]
 }
