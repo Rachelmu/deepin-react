@@ -6,6 +6,5 @@
   "containers/Profile/index.js",
   "containers/Profile/style/index.styl",
   "hooks/index.js",
-  "utils/httpUtils.js",
   "utils/index.js"
 ]

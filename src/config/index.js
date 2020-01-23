@@ -26,7 +26,7 @@ export const MenuConfig = [
 				iconType: "bell",
 				title: '图片上传',
 				route: '/home/upload/uploadpicture',
-				container: 'UploadFile'
+				container: 'UploadPic'
 			}
 		]
 	},

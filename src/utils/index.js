@@ -1,3 +1,4 @@
+
 export const getDataByPath = (obj, url) => {
   if (!obj) return obj
   const keys = url.split('.'),
