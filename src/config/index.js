@@ -41,6 +41,12 @@ export const MenuConfig = [
 		route: '/home/check'
 	},
 	{
+		iconType: 'fork',
+		title: 'hooks',
+		route: '/home/hooks',
+		container: 'HooksExp'
+	},
+	{
 		iconType: 'setting',
 		title: '设置',
 		route: '/home/setting'

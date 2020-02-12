@@ -25,12 +25,25 @@ import React, { createContext } from 'react'
 const NameContext = createContext('jeden') // 参数是默认值
 
 const App = props => (
-    <NameContext.Provider name='jeden2'>
+    <NameContext.Provider value='jeden2'>
     	<Wrapper />
         这样, props 可以一直一直一直传递下去
     </NameContext.Provider>
 )
+
+class Wrapper {
+    static contextType = NameContext
+    constructor (props) {
+        super(props)
+    }
+
+	componentDidMount() {
+        console.log(this.context) // jeden2
+    }
+}
 ```
+
+
 
 但是这样会让组件复用性变得很差.... 需要谨慎使用 !!!
 

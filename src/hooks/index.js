@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react'
+import React, { Fragment, useState, useEffect, useContext, useLayoutEffect, useMemo } from 'react'
 
-const Example = props => {
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    document.title = `You Click Me ${count} Times`
-  })
-
-  return (
-    <Fragment>
-      <p>{count}</p>
-      <button onclick={() => { setCount(count + 1) }}>AddCount</button>
-    </Fragment>
-  )
+export const useStateExp = props => {
+    const [a, setA] = useState(0)
+    
+    return (
+        <Fragment>
+        	<button onClick={() => setA(a + 1)}>
+            	{a}
+            </button>
+        </Fragment>
+    )
 }
 
-export default Example
+export const useEffectExp = props => {
+
+}
+
+

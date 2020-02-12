@@ -2,7 +2,6 @@
   "assets/img/testhead.jpg",
   "components/ErrorBoundary/index.js",
   "components/Overview/index.js",
-  "containers/Hooks/index.js",
   "containers/Profile/index.js",
   "containers/Profile/style/index.styl",
   "hooks/index.js",
