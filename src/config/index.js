@@ -1,15 +1,14 @@
 export const MenuConfig = [
 	{
 		iconType: 'file',
-		title: '首页/表单',
+		title: '首页',
 		route: '/home/index',
 		container: 'Home'
 	},
 	{
 		iconType: 'filter',
 		title: '生命周期',
-		route: '/home/lifecircle',
-		container: 'LifeCircle'
+		route: '/home/lifecircle'
 	},
 	{
 		iconType: 'bell',
@@ -44,7 +43,6 @@ export const MenuConfig = [
 		iconType: 'fork',
 		title: 'hooks',
 		route: '/home/hooks',
-		container: 'HooksExp'
 	},
 	{
 		iconType: 'setting',

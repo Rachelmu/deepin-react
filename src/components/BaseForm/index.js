@@ -92,22 +92,4 @@ class HorizontalLoginForm extends React.Component {
 
 const BaseForm = Form.create({ name: 'horizontal_login' })(HorizontalLoginForm)
 
-// const mapStateToProps = (state) => {
-//   console.log('allState', state)
-//   return {
-//     loginStatus: state.loginStatus
-//   }
-// }
-
-// const mapDispatchToProps = (dispatch, ownProps) => {
-//   return {
-//     changeLoginStatus() {
-//       dispatch({
-//         type: 'USER_LOGIN',
-//         data: true
-//       })
-//     }
-//   }
-// }
-
 export default BaseForm

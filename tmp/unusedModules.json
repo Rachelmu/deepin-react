@@ -4,6 +4,5 @@
   "components/Overview/index.js",
   "containers/Profile/index.js",
   "containers/Profile/style/index.styl",
-  "hooks/index.js",
   "utils/index.js"
 ]

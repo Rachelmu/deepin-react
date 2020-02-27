@@ -1,63 +1,43 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import { Popover, Button, Modal } from 'antd'
 
 import './style'
 
-class HeadMine extends Component {
-  constructor(props) {
-    super(props)
+const HeadMine = props => {
+  const [visible, setVisiable] = useState(false)
 
-    this.state = {
-      visible: false,
-    }
+  const showModel = () => {
+    setVisiable(true)
   }
 
-  logout = () => {
+  const handleCancel = () => {
+    setVisiable(false)
+  }
+
+  const logout = () => {
     location.replace('/#/login')
   }
 
-  componentDidMount() {
-
-  }
-
-  showModal = () => {
-    this.setState({
-      visible: true
-    })
-  }
-
-  handleCancel = () => {
-    this.setState({
-      visible: false
-    })
-  }
-
-  redictToProfile() {
-    location.replace('/#/profile')
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <span onClick={this.showModal} className='logout'>安全退出</span>
-        <Modal
-          title="确定要安全退出吗"
-          visible={this.state.visible}
-          onOk={this.logout}
-          onCancel={this.handleCancel}
-        >
-          <p>将删除本地缓存用户数据</p>
-        </Modal>
-        <Popover placement="bottomRight" title={'Hello Jeden'} content={
-          '啦啦啦'
-        } trigger="click">
-          <Button>
-            Jeden
+  return (
+    <Fragment>
+      <span onClick={showModel} className='logout'>安全退出</span>
+      <Modal
+        title="确定要安全退出吗"
+        visible={visible}
+        onOk={logout}
+        onCancel={handleCancel}
+      >
+        <p>将删除本地缓存用户数据</p>
+      </Modal>
+      <Popover placement="bottomRight" title={'Hello Jeden'} content={
+        '啦啦啦'
+      } trigger="click">
+        <Button>
+          Jeden
           </Button>
-        </Popover>
-      </Fragment>
-    )
-  }
+      </Popover>
+    </Fragment>
+  )
 }
 
 export default HeadMine

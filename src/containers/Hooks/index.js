@@ -78,18 +78,22 @@ const UseReducerExp = props => {
 }
 
 // useCallback
-const UseCallBackExp = props => {
+const set = new Set()
+
+const UseCallbackExp = props => {
   const [a, setA] = useState(0)
   const [b, setB] = useState(999)
+
   const callback = useCallback(() => {
-    console.log(`a:${a} and b:${b} changed`)
-  }, [a, b])
+    console.log(a)
+  }, [a])
+  set.add(callback)
 
   return (
     <Fragment>
-      <button onClick={() => { setA(a + 1); callback() }}>a: {a}</button>
-      <button onClick={() => { setB(b - 1); callback() }}>b: {b}</button>
-      <button onClick={() => { callback() }}> none</button>
+      a:{a}, size:{set.size}
+      <button onClick={() => setA(a + 1)}>set a</button>
+      <button onClick={() => setB(b - 1)}>set b</button>
     </Fragment>
   )
 }
@@ -127,6 +131,31 @@ const UseRefExp = props => {
   )
 }
 
+// without memo
+const WithoutMemo = props => {
+  const [a, setA] = useState(0)
+  const [b, setB] = useState(999)
+
+  const expensive = () => {
+    console.log('computed')
+    let sum = 0
+    for (let i = 0; i < a * 100; i++) {
+      sum += i
+    }
+    return sum
+  }
+
+  return (
+    <Fragment>
+      <p>{a}-{b}-{expensive()}</p>
+      <button onClick={() => { setA(a + 1) }}>set a</button>
+      <button onClick={() => { setB(b - 1) }}>set b</button>
+    </Fragment>
+  )
+}
+
+
+
 
 const HooksExp = props => (
   <Fragment>
@@ -138,11 +167,13 @@ const HooksExp = props => (
     <hr />
     <UseReducerExp />
     <hr />
-    <UseCallBackExp />
+    <UseCallbackExp />
     <hr />
     <UseMemoExp />
     <hr />
     <UseRefExp />
+    <hr />
+    <WithoutMemo />
   </Fragment>
 )
 
