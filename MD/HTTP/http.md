@@ -30,7 +30,7 @@ URI = URL + URN  (范围)
 
 | 字段          | 意思                                                         |
 | ------------- | ------------------------------------------------------------ |
-| Cache-Control | no-cache:客户端或者此数据不允许缓存<br />no-store:缓存应该尽快从存储器删除文档所有痕迹<br />max-age:缓存持续时间<br />min-fresh:至少在未来n秒内缓存保持新鲜 |
+| Cache-Control | no-cache:客户端或者此数据不允许缓存<br />no-store:缓存应该尽快从存储器删除文档所有痕迹<br />max-age:缓存持续时间<br />public: 允许代理服务器和客户端缓存<br />private: 只允许客户端缓存<br />min-fresh:至少在未来n秒内缓存保持新鲜 |
 | Connection    | close: 完成此次传输后断开连接<br />keepalive: 表示完成后不要断开,等待后续请求<br />Keep-Alive: 表示持续连接时间 |
 | Date          | 消息发送的时间                                               |
 

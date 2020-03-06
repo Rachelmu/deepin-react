@@ -4,7 +4,7 @@ import { Form, Icon, Input, Button, message } from 'antd'
 import axios from '@/actions'
 import { userRegister, userLogin } from '@/api'
 
-import store from '@/store'
+import useLogin from '@/hooks/useLogin'
 
 function hasErrors(fieldsError) {
   return Object.keys(fieldsError).some(field => fieldsError[field])
@@ -46,7 +46,7 @@ class HorizontalLoginForm extends React.Component {
           if (data.data) {
             message.success('登录成功')
             location.replace('/#/home/index')
-            store.changeLoginStatus(true)
+            useLogin(true)
           }
         })
       }

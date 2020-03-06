@@ -5827,35 +5827,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["mobx", new Map([
-    ["5.15.0", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-5.15.0-3ef34ac4965169698eff6df72f18c2a735e8e7f8-integrity/node_modules/mobx/"),
-      packageDependencies: new Map([
-        ["mobx", "5.15.0"],
-      ]),
-    }],
-  ])],
-  ["mobx-react", new Map([
-    ["6.1.4", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-react-6.1.4-818e7991c321c05bd9b8156d94be17dad165501e-integrity/node_modules/mobx-react/"),
-      packageDependencies: new Map([
-        ["mobx", "5.15.0"],
-        ["react", "16.9.0"],
-        ["mobx-react-lite", "1.5.1"],
-        ["mobx-react", "6.1.4"],
-      ]),
-    }],
-  ])],
-  ["mobx-react-lite", new Map([
-    ["1.5.1", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-mobx-react-lite-1.5.1-8eac90985b4d2bee475dd90a0d4d903be578f154-integrity/node_modules/mobx-react-lite/"),
-      packageDependencies: new Map([
-        ["mobx", "5.15.0"],
-        ["react", "16.9.0"],
-        ["mobx-react-lite", "1.5.1"],
-      ]),
-    }],
-  ])],
   ["pnp-webpack-plugin", new Map([
     ["1.5.0", {
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-pnp-webpack-plugin-1.5.0-62a1cd3068f46d564bb33c56eb250e4d586676eb-integrity/node_modules/pnp-webpack-plugin/"),
@@ -6018,6 +5989,19 @@ let packageInformationStores = new Map([
       packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-when-3.6.4-473b517ec159e2b85005497a13983f095412e34e-integrity/node_modules/when/"),
       packageDependencies: new Map([
         ["when", "3.6.4"],
+      ]),
+    }],
+  ])],
+  ["url-loader", new Map([
+    ["3.0.0", {
+      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-url-loader-3.0.0-9f1f11b371acf6e51ed15a50db635e02eec18368-integrity/node_modules/url-loader/"),
+      packageDependencies: new Map([
+        ["webpack", "4.39.3"],
+        ["file-loader", "4.3.0"],
+        ["loader-utils", "1.2.3"],
+        ["mime", "2.4.4"],
+        ["schema-utils", "2.5.0"],
+        ["url-loader", "3.0.0"],
       ]),
     }],
   ])],
@@ -9625,19 +9609,6 @@ let packageInformationStores = new Map([
       ]),
     }],
   ])],
-  ["url-loader", new Map([
-    ["3.0.0", {
-      packageLocation: path.resolve(__dirname, "../../.cache/yarn/v6/npm-url-loader-3.0.0-9f1f11b371acf6e51ed15a50db635e02eec18368-integrity/node_modules/url-loader/"),
-      packageDependencies: new Map([
-        ["webpack", "4.39.3"],
-        ["file-loader", "4.3.0"],
-        ["loader-utils", "1.2.3"],
-        ["mime", "2.4.4"],
-        ["schema-utils", "2.5.0"],
-        ["url-loader", "3.0.0"],
-      ]),
-    }],
-  ])],
   [null, new Map([
     [null, {
       packageLocation: path.resolve(__dirname, "./"),
@@ -9672,21 +9643,19 @@ let packageInformationStores = new Map([
         ["file-loader", "4.3.0"],
         ["html-webpack-plugin", "3.2.0"],
         ["mini-css-extract-plugin", "0.8.0"],
-        ["mobx", "5.15.0"],
-        ["mobx-react", "6.1.4"],
         ["pnp-webpack-plugin", "1.5.0"],
         ["react", "16.9.0"],
         ["react-router", "5.0.1"],
         ["style-loader", "1.0.0"],
         ["stylus", "0.54.7"],
         ["stylus-loader", "3.0.2"],
+        ["url-loader", "3.0.0"],
         ["vue-loader", "15.7.1"],
         ["vue-template-compiler", "2.6.10"],
         ["webpack", "4.39.3"],
         ["webpack-cli", "3.3.7"],
         ["webpack-dev-server", "3.8.0"],
         ["webpack-merge", "4.2.2"],
-        ["url-loader", "3.0.0"],
       ]),
     }],
   ])],
@@ -10303,9 +10272,6 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-ajv-errors-1.0.1-f35986aceb91afadec4102fbd85014950cefa64d-integrity/node_modules/ajv-errors/", {"name":"ajv-errors","reference":"1.0.1"}],
   ["../../.cache/yarn/v6/npm-webpack-sources-1.4.3-eedd8ec0b928fbf1cbfe994e22d2d890f330a933-integrity/node_modules/webpack-sources/", {"name":"webpack-sources","reference":"1.4.3"}],
   ["../../.cache/yarn/v6/npm-source-list-map-2.0.1-3993bd873bfc48479cca9ea3a547835c7c154b34-integrity/node_modules/source-list-map/", {"name":"source-list-map","reference":"2.0.1"}],
-  ["../../.cache/yarn/v6/npm-mobx-5.15.0-3ef34ac4965169698eff6df72f18c2a735e8e7f8-integrity/node_modules/mobx/", {"name":"mobx","reference":"5.15.0"}],
-  ["../../.cache/yarn/v6/npm-mobx-react-6.1.4-818e7991c321c05bd9b8156d94be17dad165501e-integrity/node_modules/mobx-react/", {"name":"mobx-react","reference":"6.1.4"}],
-  ["../../.cache/yarn/v6/npm-mobx-react-lite-1.5.1-8eac90985b4d2bee475dd90a0d4d903be578f154-integrity/node_modules/mobx-react-lite/", {"name":"mobx-react-lite","reference":"1.5.1"}],
   ["../../.cache/yarn/v6/npm-pnp-webpack-plugin-1.5.0-62a1cd3068f46d564bb33c56eb250e4d586676eb-integrity/node_modules/pnp-webpack-plugin/", {"name":"pnp-webpack-plugin","reference":"1.5.0"}],
   ["../../.cache/yarn/v6/npm-ts-pnp-1.1.2-be8e4bfce5d00f0f58e0666a82260c34a57af552-integrity/node_modules/ts-pnp/", {"name":"ts-pnp","reference":"1.1.2"}],
   ["../../.cache/yarn/v6/npm-react-16.9.0-40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa-integrity/node_modules/react/", {"name":"react","reference":"16.9.0"}],
@@ -10323,6 +10289,7 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-stylus-loader-3.0.2-27a706420b05a38e038e7cacb153578d450513c6-integrity/node_modules/stylus-loader/", {"name":"stylus-loader","reference":"3.0.2"}],
   ["../../.cache/yarn/v6/npm-lodash-clonedeep-4.5.0-e23f3f9c4f8fbdde872529c1071857a086e5ccef-integrity/node_modules/lodash.clonedeep/", {"name":"lodash.clonedeep","reference":"4.5.0"}],
   ["../../.cache/yarn/v6/npm-when-3.6.4-473b517ec159e2b85005497a13983f095412e34e-integrity/node_modules/when/", {"name":"when","reference":"3.6.4"}],
+  ["../../.cache/yarn/v6/npm-url-loader-3.0.0-9f1f11b371acf6e51ed15a50db635e02eec18368-integrity/node_modules/url-loader/", {"name":"url-loader","reference":"3.0.0"}],
   ["../../.cache/yarn/v6/npm-vue-loader-15.7.1-6ccacd4122aa80f69baaac08ff295a62e3aefcfd-integrity/node_modules/vue-loader/", {"name":"vue-loader","reference":"15.7.1"}],
   ["../../.cache/yarn/v6/npm-@vue-component-compiler-utils-3.0.0-d16fa26b836c06df5baaeb45f3d80afc47e35634-integrity/node_modules/@vue/component-compiler-utils/", {"name":"@vue/component-compiler-utils","reference":"3.0.0"}],
   ["../../.cache/yarn/v6/npm-consolidate-0.15.1-21ab043235c71a07d45d9aad98593b0dba56bab7-integrity/node_modules/consolidate/", {"name":"consolidate","reference":"0.15.1"}],
@@ -10690,7 +10657,6 @@ let locatorsByLocations = new Map([
   ["../../.cache/yarn/v6/npm-code-point-at-1.1.0-0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77-integrity/node_modules/code-point-at/", {"name":"code-point-at","reference":"1.1.0"}],
   ["../../.cache/yarn/v6/npm-number-is-nan-1.0.1-097b602b53422a522c1afb8790318336941a011d-integrity/node_modules/number-is-nan/", {"name":"number-is-nan","reference":"1.0.1"}],
   ["../../.cache/yarn/v6/npm-webpack-merge-4.2.2-a27c52ea783d1398afd2087f547d7b9d2f43634d-integrity/node_modules/webpack-merge/", {"name":"webpack-merge","reference":"4.2.2"}],
-  ["../../.cache/yarn/v6/npm-url-loader-3.0.0-9f1f11b371acf6e51ed15a50db635e02eec18368-integrity/node_modules/url-loader/", {"name":"url-loader","reference":"3.0.0"}],
   ["./", topLevelLocator],
 ]);
 exports.findPackageLocator = function findPackageLocator(location) {
@@ -11623,7 +11589,7 @@ exports.setup = function setup() {
       return originalFindPath.call(Module, request, paths, isMain);
     }
 
-    for (const path of paths) {
+    for (const path of paths || []) {
       let resolution;
 
       try {
