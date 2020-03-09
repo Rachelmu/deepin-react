@@ -71,7 +71,7 @@ componentWillUnmount ---> 卸载
 - getSnapShotBeforeUpdate(prevProps, prevState)
   - 替代 componentWillUpdate
 
-## static getDrivedStateFromProps(nextProps, nextState)
+## static getDrivedStateFromProps(nextProps, prevState)
 
 - 禁止访问 this.props
 - 旨在用下一个 props 更新现在的 state
