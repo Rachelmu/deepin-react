@@ -7,7 +7,7 @@ const path = require('path')
 模块导出
 
 ```js
-exports = function (text) {
+module.exports = function (text) {
 	console.log(text)
 }
 ```

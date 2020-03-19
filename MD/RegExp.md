@@ -70,3 +70,8 @@ let reg = /./img
 
 
 还有 js 的一些字符串方法也可接受正则表达式为参数, 这样就异常强大
+
+- split 分割字符串为数组
+- replace 替换元素, 默认一个
+- search 查找
+- match 匹配

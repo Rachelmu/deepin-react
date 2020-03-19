@@ -81,12 +81,11 @@ Function.prototype.myBind = function (context, ...rest) {
 然后压轴的来了, bind 可以用作构造函数
 
 ```js
-Function.prototype.myBind = function (_this, ...args) {
-    if (typeof this !== 'function') throw new Error('error')
-    let F = function () {}
-    let targetMethod = this
-    let result = function (...innerArgs) {
-        return targetMethod.apply(this instanceof F ? this : _this, [...args, ...innerArgs])
+Function.prototype.myBind = function (context, ...args) {
+    let F = function () {},
+    	targetMethod = this,
+    	result = function (...innerArgs) {
+        	return targetMethod.apply(this instanceof result ? this : context, [...args, ...innerArgs])
     }
     F.prototype = this.prototype
     result.prototype = new F() // 有点类似改良的组合继承
