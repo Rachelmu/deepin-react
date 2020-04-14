@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  position: fixed;
+  top: 20vh;
+  left: 20vh;
+  height: 100px;
+  width: 200px;
+  padding: .5rem;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, .3);
+  border-radius: 20px;
+  transition: all .5s;
+}
+
+.exp {
+  color: #1296db;
+}
+
+.describtion {
+  position: absolute;
+}
+
+.title {
+  color: #fff;
+}
+
+.sub-desc {
+  list-style: none;
+  color: #fff;
+  font-size: .5rem;
+}
+
+.next-step {
+  background-color: #1296db;
+  border: none;
+  margin-top: .5rem;
+  padding: .3rem 2rem;
+  color: #fff;
+  outline: none;
+}
+
+.next-step:active {
+  background-color: #1296aa;
+}
