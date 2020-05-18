@@ -38,20 +38,19 @@ Promise 有三个状态, pending, resolve, reject
 let pro = Promise.all([Promise.resolve(1), Promise.resolve(2)])
 
 // 自己实现
-Promise.myAll = arr => {
+Promise.myAll = arr => new Promise((resolve, reject) => {
     let result = []
     arr.forEach(item => {
-        if (!(item instanceof Promise)) {
-            item = Promise.resolve(item)
-        }
+        if (!item instanceof Promise) item = Promise.resolve(item)
         item.then(v => {
-        	result.push(v)
-    	}, e => {
-            return Promise.reject(e)
+            result.push(v)
+            if (arr.length === result.length) resolve(result)
+        }, e => {
+            reject(e)
         })
     })
-    return Promise.resolve(result)
-}
+    
+})
 ```
 
 ### Promise.race
@@ -88,12 +87,9 @@ pro.then(v => {
 })
 
 // 自己写
-Promise.myAllSettled = arr => {
-    let result = []
-    arr.foreach(item => {
-        if (!(item instanceof Promise)) {
-            item = Promise.resolve(item)
-        }
+Promise.myAllSettled = arr => new Promise((resolve, reject) => {
+    arr.forEach(item => {
+        if (!item instanceof Promise) item = Promise.resolve(item)
         item.then(v => {
             result.push({
                 status: 'fullfilled',
@@ -106,8 +102,8 @@ Promise.myAllSettled = arr => {
             })
         })
     })
-    return Promise.resolve(result)
-}
+    
+})
 ```
 
 ### Promise.any(提案)
