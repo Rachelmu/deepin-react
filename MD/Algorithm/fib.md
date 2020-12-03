@@ -20,10 +20,11 @@ const helper = (memo, num) => {
   return memo[n]
 }
 
-const fib = num => {
+const fib = n => {
   if (n < 0) return 0
   const memo = Array(n - 1).fill(0)
-  return helper(memo, num)
+  return helper(memo, n)
 }
 
 ```
+

@@ -90,3 +90,4 @@ componentWillUnmount ---> 卸载
 **在stack reconciler下, DOM的更新是同步的也就是说, 在virtual DOM的比对过程中, 发现一个instance有更新, 会立即执行DOM操作**
 
 因为 fiber 架构, 组件更新的时候是会被 优先级高的 打断的, 这就导致 componentWillUpdate 中对比的数据
+

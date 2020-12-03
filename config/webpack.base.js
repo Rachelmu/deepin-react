@@ -1,75 +1,77 @@
-const path = require('path'),
-  webpack = require('webpack'),
-  PnpWebpackPlugin = require('pnp-webpack-plugin'),
-  HtmlWebpackPlugin = require('html-webpack-plugin'),
-  VueLoaderPlugin = require('vue-loader/lib/plugin'),
-  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
-  UnusedModulesPlugin = require('../plugin/unUsedPlugin')
+/*
+ * @Description:
+ * @Author: zhangzhenyang
+ * @Date: 2020-09-14 20:24:41
+ * @LastEditTime: 2020-10-21 11:39:44
+ * @LastEditors: zhangzhenyang
+ */
+const path = require("path"),
+  webpack = require("webpack"),
+  PnpWebpackPlugin = require("pnp-webpack-plugin"),
+  HtmlWebpackPlugin = require("html-webpack-plugin"),
+  VueLoaderPlugin = require("vue-loader/lib/plugin"),
+  MiniCssExtractPlugin = require("mini-css-extract-plugin"),
+  UnusedModulesPlugin = require("../plugin/unUsedPlugin");
 
-const isDevelopment = process.env.NODE_ENV === 'development'
+const isDevelopment = process.env.NODE_ENV === "development";
 
-console.log(isDevelopment)
+console.log(isDevelopment);
 
 const config = {
-  mode: 'development',
-  entry: './src/index.js',
+  mode: isDevelopment ? "development" : "production",
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, '../dist'),
-    filename: '[name].bundle.js',
-    chunkFilename: '[name].bundle.js'
+    path: path.resolve(__dirname, "../dist"),
+    filename: "[name].bundle.js",
+    chunkFilename: "[name].bundle.js",
   },
 
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: [
-          path.resolve(__dirname, 'node_modules')
-        ],
-        use: 'babel-loader'
+        exclude: [path.resolve(__dirname, "node_modules")],
+        use: "babel-loader",
       },
       {
         test: /\.styl$/,
         use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-          'stylus-loader'
-        ]
+          isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
+          "stylus-loader",
+        ],
       },
       {
         test: /\.css$/,
-        use: [
-          isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
-          'css-loader',
-        ]
+        use: [isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.vue$/,
-        use: 'vue-loader'
+        use: "vue-loader",
       },
       {
         test: /\.(jpg|jpeg|webp|png|gif)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: {
               limit: 10000,
             },
-          }
+          },
         ],
       },
       {
         test: /.(eot|svg|ttf|woff|woff2)$/,
-        use: 'file-loader'
-      }
-    ]
+        use: "file-loader",
+      },
+    ],
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.styl', '.vue'],
+    extensions: [".js", ".jsx", ".styl", ".vue"],
     plugins: [PnpWebpackPlugin],
     alias: {
-      '@': path.join(__dirname, '../src')
-    }
+      "@": path.join(__dirname, "../src"),
+    },
   },
 
   optimization: {
@@ -78,13 +80,11 @@ const config = {
     },
   },
   resolveLoader: {
-    plugins: [
-      PnpWebpackPlugin.moduleLoader(module)
-    ]
+    plugins: [PnpWebpackPlugin.moduleLoader(module)],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html'
+      template: "./index.html",
     }),
     new VueLoaderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
@@ -92,17 +92,15 @@ const config = {
     // css plugin
     new MiniCssExtractPlugin({
       filename: "[name].css",
-      chunkFilename: "[id].css"
+      chunkFilename: "[id].css",
     }),
     new UnusedModulesPlugin({
-      sourceDir: path.resolve(__dirname, '../src'),
+      sourceDir: path.resolve(__dirname, "../src"),
       compilationExclude: compilation => /html-webpack-plugin/.test(compilation.name),
-      output: path.join(__dirname, '../tmp/unusedModules.json'),
-      exclude: [
-        /\.spec\.js$/
-      ]
-    })
-  ]
-}
+      output: path.join(__dirname, "../tmp/unusedModules.json"),
+      exclude: [/\.spec\.js$/],
+    }),
+  ],
+};
 
-module.exports = config
+module.exports = config;
