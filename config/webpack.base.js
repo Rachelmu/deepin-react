@@ -2,8 +2,8 @@
  * @Description:
  * @Author: zhangzhenyang
  * @Date: 2020-09-14 20:24:41
- * @LastEditTime: 2020-10-21 11:39:44
- * @LastEditors: zhangzhenyang
+ * @LastEditTime: 2021-02-01 10:46:19
+ * @LastEditors: Please set LastEditors
  */
 const path = require("path"),
   webpack = require("webpack"),
@@ -23,7 +23,7 @@ const config = {
   output: {
     path: path.resolve(__dirname, "../dist"),
     filename: "[name].bundle.js",
-    chunkFilename: "[name].bundle.js",
+    chunkFilename: "[name].chunk.js",
   },
 
   module: {

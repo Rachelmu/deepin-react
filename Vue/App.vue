@@ -2,8 +2,8 @@
  * @Description: 
  * @Author: zhangzhenyang
  * @Date: 2020-09-14 20:24:41
- * @LastEditTime: 2020-10-15 11:27:27
- * @LastEditors: zhangzhenyang
+ * @LastEditTime: 2021-01-09 15:00:47
+ * @LastEditors: Please set LastEditors
 -->
 <template>
   <div class="App">
@@ -33,6 +33,11 @@
     {{childMessage}}
     <Child2 @listenChildEvent="showMessageFromChild"></Child2>
     <hr /> -->
+    <Child1>
+      <div slot="sec">11111</div>
+      <div slot="min">22222</div>
+      <div slot="hour">33333</div>
+    </Child1>
   </div>
 </template>
 <script>

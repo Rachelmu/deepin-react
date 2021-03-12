@@ -34,5 +34,3 @@ toString(new Date()) // [object Date]
 toString(function () {}) // [object Function]
 toString(() => {}) // [object Function]
 ```
-
-感叹一句, nb !

@@ -16,6 +16,10 @@ class Child extends Component {
     console.log("i am updated");
     return false;
   }
+
+  componentDidMount() {
+    console.log("");
+  }
   componentDidUpdate() {
     console.log("updated");
   }

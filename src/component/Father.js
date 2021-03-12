@@ -9,6 +9,7 @@
 import React, { PureComponent } from "react";
 
 import Child from "./Child";
+import Child2 from "./Child2";
 
 class Father extends PureComponent {
   constructor(props) {
@@ -23,12 +24,17 @@ class Father extends PureComponent {
       num: this.state.num + 1,
     });
   };
+
+  componentDidMount() {
+    console.log("father did mount");
+  }
   render() {
     return (
       <div>
         {this.state.num}
         <button onClick={this.handleClick}>click me</button>
         <Child />
+        <Child2 />
       </div>
     );
   }

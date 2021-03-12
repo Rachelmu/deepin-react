@@ -231,3 +231,37 @@ text-overflow: ellipsis;
 - 媒体查询
 - flex布局
 
+
+
+CSS书写规范顺序
+
+
+
+```css
+.css {
+	/*位置属性, position, z-index, float, display*/
+  position: relative;
+  z-index: 10;
+  display: block;
+  
+  /*大小属性, width, height, padding, margin*/
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  
+  /*文字属性, color, font, line-height, text-align*/
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+ 	/*背景颜色, background, border*/
+	background-color: #f00;
+  border: 1px solid #00f;
+  
+  /*其他*/
+  animation: animation ease-in 1s;
+  transition: all 1s;
+}
+```
+
