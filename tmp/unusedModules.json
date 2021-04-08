@@ -1,4 +1,9 @@
 [
   ".DS_Store",
+  "App.js",
+  "component/Child.js",
+  "component/Child2.js",
+  "component/Father.js",
+  "component/Loading.js",
   "redux/index.js"
 ]

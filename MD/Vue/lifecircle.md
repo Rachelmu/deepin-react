@@ -18,5 +18,15 @@
   - 组件被销毁
 
 
+- 初始化阶段: beforeCreate, created, beforeMount, mounted
+- 更新阶段: beforeUpdate, updated
+- 销毁阶段: beforeDestroy, destroyed
+
+
+- created 数据准备就绪, 适合数据获取, 赋值等数据操作
+- mounted $el生成, 可以获取dom, 子组件挂载
+- update 数据已用于dom
+- destroy 取消定时器, 事件监听操作
+
 
 使用v-if判断是否获取数据, 如果获取了数据才去渲染子组件, 这样子组件就能获取到异步的prop值了

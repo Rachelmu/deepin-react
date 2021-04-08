@@ -5,7 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development webpack-dev-server --config ./config/webpack.dev.js",
+    "start": "NODE_ENV=development webpack-dev-server --sourcemap --config ./config/webpack.dev.js",
     "build": "NODE_ENV=production webpack --config ./config/webpack.prod.js",
     "publish": "sh ./bin/push.sh",
     "start:vue": "NODE_ENV=development webpack-dev-server --config=./config/vue.config.js"
@@ -60,6 +60,7 @@
     "react-dom": "^16.9.0",
     "react-router-dom": "^5.1.2",
     "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.2",
     "vuex": "^3.1.1"

@@ -20,3 +20,41 @@ const findIndex = (arr, target) => {
 }
 ```
 
+## 二叉搜索树查找
+
+```js
+const find = (head, t) => {
+    while (head) {
+        if (head.val > t) {
+            head = head.left
+        } else if (head.val < t) {
+            head = head.right
+        } else {
+            return head
+        }
+    }
+    return null
+}
+
+const findMax = head => {
+    while (head) {
+        head = head.right
+    }
+    return head
+}
+
+const treeInsert = (head, t) => {
+    if (!head) {
+        head = new TreeNode(t)
+    } else if (x < head.val) {
+        head.left = treeInsert(head.left, t)
+    } else if (x > head.val) {
+        head.right = treeInsert(head.right, t)
+    }
+    return head
+}
+
+const treeDelete = (head, t) => {
+    
+}
+```

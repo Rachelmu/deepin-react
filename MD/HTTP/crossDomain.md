@@ -12,13 +12,13 @@ jsonp简单版本的实现
 
 ```js
 function jsonp(req) {
+  const { url, callback } = req
   let script = document.creteElement('script') // 创建script标签
-  let url = req.url + '?callback=' + req.callback.name // 拼接参数
+  let url = url + '?callback=' + callback.name // 拼接参数
   script.url = url // 设置url属性
   document.getElementsByTagName('head')[0].appendChild(script) // 加入script标签
 }
 ```
-
 使用
 
 ```js

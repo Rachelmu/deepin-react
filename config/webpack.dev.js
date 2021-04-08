@@ -8,7 +8,8 @@ const devConfig = {
     port: 8080,
     open: true,
     hot: true
-  }
+  },
+  devtool: '#sourcemap'
 }
 
 module.exports = smart(base, devConfig)

@@ -94,12 +94,12 @@ const config = {
       filename: "[name].css",
       chunkFilename: "[id].css",
     }),
-    new UnusedModulesPlugin({
-      sourceDir: path.resolve(__dirname, "../src"),
-      compilationExclude: compilation => /html-webpack-plugin/.test(compilation.name),
-      output: path.join(__dirname, "../tmp/unusedModules.json"),
-      exclude: [/\.spec\.js$/],
-    }),
+    // new UnusedModulesPlugin({
+    //   sourceDir: path.resolve(__dirname, "../src"),
+    //   compilationExclude: compilation => /html-webpack-plugin/.test(compilation.name),
+    //   output: path.join(__dirname, "../tmp/unusedModules.json"),
+    //   exclude: [/\.spec\.js$/],
+    // }),
   ],
 };
 

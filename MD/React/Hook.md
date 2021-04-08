@@ -1,5 +1,8 @@
 ## Hooks
 
+
+一句话: 让函数组件可以使用react的特性
+
 是什么: React 16.8 提供的可以让函数组件拥有自己状态, 也可以独立使用的一组 api
 
 为什么: `在 hooks 之前, React 没有提供将可复用性行为附加到组件的途径, 比如我们用的 redux, 需要使用 react-redux 提供的 provider 来连接组件和 store, React 需要为共享状态逻辑提供更好的原生途径`
@@ -48,6 +51,7 @@ const UseEffectExp = props => {
     console.log('aChanged', a)
     return () => {
         // 返回的函数里面写清除副作用的操作
+        // 每次重新执行effect都会清除
     }
   }, [a]) // 第二个参数是数组, 表示数组内部数据变化才会触发回调函数
 
@@ -59,6 +63,11 @@ const UseEffectExp = props => {
     </Fragment>
   )
 ```
+
+useEffect 是 componentDidMount, componentDidUpdate, componentWillUnmount三个函数的组合
+如果第二个参数是[]空数组, effect就相当于didMount和willUnmounth
+
+一个函数组件可以执行多次useEffect, react会按顺序执行
 
 ### useContext
 
@@ -254,3 +263,7 @@ const UseCallbackExp = props => {
 ```
 
 useCallback使用场景: 子组件接受一个函数 props, 如果父组件更新, 因为子组件 props 依赖父组件的 state, 也会更新, 这样可以使用 callback, callback 确保 函数不变, 子组件也不会触发更新
+
+函数组件可以完全替代class
+函数组件颗粒度更小
+hook数据发生改变可以引起组件重新渲染
