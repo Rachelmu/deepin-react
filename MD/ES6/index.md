@@ -29,6 +29,24 @@
 12. [async]()
 13. [Class]()
 14. [ES6 Module]()
+15. [数组]
+    1.  ### Array.from()
+    将一个类数组转化为数组
+Array.of()
+
+主要用来弥补 Array 的不足, Array 的话, 一个数字参数传入代表数组长度, 一组则转为数组
+Array.find(), Array.findIndex()
+
+参数是一个回调函数, 回调函数返回 true 则返回该元素
+entries()`，`keys()`和`values() 
+
+用来遍历数组, 第一个可以遍历 key 和 value, 第二个可以遍历 key, 第三个则是 value
+include()
+
+包括某个元素, NaN也可以正确识别
+sort()
+
+小于10的数组用插入排序, 大于10则是快排
 
 
 
@@ -113,29 +131,7 @@ symbol.description() 获取symbol的描述, 就是创建 symbol 的参数
 
 ## 数组的扩展
 
-### Array.from()
 
-将一个类数组转化为数组
-
-### Array.of()
-
-主要用来弥补 Array 的不足, Array 的话, 一个数字参数传入代表数组长度, 一组则转为数组
-
-### Array.find(), Array.findIndex()
-
-参数是一个回调函数, 回调函数返回 true 则返回该元素
-
-### entries()`，`keys()`和`values() 
-
-用来遍历数组, 第一个可以遍历 key 和 value, 第二个可以遍历 key, 第三个则是 value
-
-### include()
-
-包括某个元素, NaN也可以正确识别
-
-### sort()
-
-小于10的数组用插入排序, 大于10则是快排
 
 
 
