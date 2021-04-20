@@ -95,3 +95,47 @@ const config = {
 3. happypack
 4. dllPlugin
 5. dev模式和product模式分开
+
+
+## webpack概念
+- 0配置
+- 配置文件
+- entry
+- output
+- mode
+- loader
+- plugin
+- chunk 代码片段
+- module 模块
+- bundle 输出的资源文件
+
+bundle/chunk/module关系
+- module被处理后变成chunk, eval('文件内容就是chunk')
+- chunks可以对应多个模块
+- 一个bundle对应一个chunks
+
+## webpack 前端项目工程化
+
+- pc or mobile
+  - 移动端 spa
+    - ssr
+  - pc mpa
+  - 兼容性 需要兼容的浏览器和版本
+- 多人 or 单人
+  - 代码规范
+    - prettier
+    - eslint
+- 技术栈
+  - vue
+  - react
+  - 样式预处理器
+  - 是否TS or babel-es6+
+  - 模板引擎
+    - ejs
+    - pug
+  - 第三方字体(版权问题)普惠体
+- 工具类
+  - 安装依赖包
+    - 切换国内源
+    - 工程内创建.npmrc (registry=https://registry.npm.taobao.org)
+- 提交规范

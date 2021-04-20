@@ -54,42 +54,46 @@ tags: [CSS, HTML]
 
 1.  -220pxflawidth: 包裹元素左右 padding
 2. 内部三个元素均 float left
-3. 左边设置 margin-left: 100% 跳到和 center 一行, 设置相对定位到包裹元素的 padding 部位
+3. 左边设置 margin-left: -100% 跳到和 center 一行, 设置相对定位到包裹元素的 padding 部位
 4. 右边设置 margin-left: 本身宽度, 跳到和 center 一行, 也设置相对定位到包裹元素的 padding 部位
 
 ```html
 <style>
-    .container {
-        padding-left: 220px;
-        padding-right: 220px;
-    }
-
-    .left {
+    .left,
+      .right,
+      .center {
         float: left;
+      }
+
+      .left,
+      .right {
         width: 200px;
         height: 400px;
-        background: red;
+        background-color: #00f;
+      }
+
+      .container {
+        padding-left: 220px;
+        padding-right: 220px;
+      }
+
+      .left {
         margin-left: -100%;
         position: relative;
         left: -220px;
-    }
+      }
 
-    .center {
-        float: left;
+      .center {
         width: 100%;
         height: 500px;
         background: yellow;
-    }
+      }
 
-    .right {
-        float: left;
-        width: 200px;
-        height: 400px;
-        background: blue;
+      .right {
         margin-left: -200px;
         position: relative;
         right: -220px;
-    }
+      }
 </style>
 
 <div class="container">

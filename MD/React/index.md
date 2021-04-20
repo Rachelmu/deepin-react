@@ -41,3 +41,15 @@ React 17升级
 - onScroll不再冒泡
 - useEffect 17异步执行, 16是同步的, 17使用useLayoutEffect同步执行
 - memo和PureComponent很像
+
+## HOC
+不要在render里面写高阶组件
+
+
+## React官方文档
+
+- 类似纯函数一样不要修改props
+- 数据是自上而下的
+- 使用e.preventDefault来阻止默认行为
+- 
+

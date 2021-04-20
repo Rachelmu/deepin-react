@@ -24,3 +24,4 @@ MVVM
 3. parent mounted
 
 创建自上而下, 挂载自下而上
+

@@ -265,3 +265,12 @@ CSS书写规范顺序
 }
 ```
 
+
+
+居中元素
+
+- text-align
+- flex align-items:center
+- margin: 0 auto
+- top, left transform: translate(``-50%``, ``-50%``);
+- flex

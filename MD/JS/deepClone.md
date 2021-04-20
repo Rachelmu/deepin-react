@@ -44,3 +44,20 @@ const deepClone = obj => {
 }
 ```
 
+考虑循环引用
+> 使用map保存访问过的对象, 如果复制过了, 就直接取值
+```js
+function deepClone(obj, hash = new WeakMap()) {
+  if (!isObject(obj)) return obj
+  if (hash.has(obj)) return hash.get(obj)
+  const target = Array.isArray(obj) ? [] : {}
+  hash.set(obj, target)
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      if (isObject(obj[key])) target[key] = deepClone(obj[key])
+      else target[key] = obj[key]
+    }
+  }
+  return target
+}
+```

@@ -6,7 +6,7 @@
  * @Description: In User Settings Edit
  * @FilePath: /deepin-react/src/App.js
  */
-import React, { Component, Fragment, lazy, Suspense, useState } from "react";
+import React, { Component, createContext, Fragment, lazy, Suspense, useState, useEffect } from "react";
 
 import Loading from "./component/Loading";
 import Step from "../module/Step";
@@ -14,16 +14,17 @@ import Step from "../module/Step";
 import { CheckedBox } from "antd";
 
 const Father = lazy(() => import("./component/Father.js"));
+const ThemeContext = createContext({ theme: 'red' })
+const ThemeProvider = ThemeContext.Provider
+const ThemeConsumer = ThemeContext.Consumer
 
 const App = () => {
   const [state, setState] = useState(0);
   return (
     <Fragment>
-      Hello
-      {/* <Step /> */}
-      <Suspense fallback={<span>loading</span>}>
-        <Father />
-      </Suspense>
+      <ThemeProvider value="">
+
+      </ThemeProvider>
     </Fragment>
   );
 };
