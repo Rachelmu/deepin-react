@@ -45,7 +45,7 @@ const getNextArr = (str:string):Array<number> => {
     next.length = str.length
     next[0] = -1; next[1] = 0
     let i:number = 2, cn:number = 0
-    while (i < next.length) {
+    while (i < str.length) {
         if (str[i - 1] === str[cn]) {
             next[i++] = ++cn
         } else if (cn > 0) {
@@ -62,7 +62,7 @@ const getIndexOf = (str1:string, str2:string):number => {
     // 寻找 str2 在 str1的位置
     if (!str1 || !str2 || str1.length < 1 || str1.length < str2.length) return -1
     let i1:number = 0, i2:number = 0 // 两个字符串的下标
-    const next = getNext(str2) // 得到 next 数组
+    const next = getNextArr(str2) // 得到 next 数组
     while (i1 < str1.length && i2 < str2.length) {
         if (str1[i1] === str2[i2]) {
             i1 ++
@@ -90,7 +90,7 @@ const getIndexOf = (str1:string, str2:string):number => {
 
 KMP 没有否定从 d 开始能不能匹配出乙字符串
 
-但是直接否定了 **a 到 c **之间的字符(就一个 b)是不可能匹配出来乙字符串的, 本质上就是这样加速的过程
+但是直接否定了 **a 到 c**之间的字符(就一个 b)是不可能匹配出来乙字符串的, 本质上就是这样加速的过程
 
 ## Manacher
 
